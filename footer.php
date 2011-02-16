@@ -4,7 +4,7 @@
   <div id="footer" class="clearfix">
     <div id="footer-in">
       <div class="six-col">
-        <a id="logo-footer" href="http://mozilla.org"><img width="109" height="98" src="//donate.mozilla.org/page/-/protecttheweb/assets/img/mozilla-logo-alt.png?ver=0.1" alt="Mozilla" /></a>
+        <a id="logo-footer" href="http://mozilla.org"><img width="109" height="98" src="https://donate.mozilla.org/page/-/protecttheweb/assets/img/mozilla-logo-alt.png?ver=0.1" alt="Mozilla" /></a>
         <p id="copyright">
           <?= _('Portions of this content are &copy;1998&ndash;2011 by individual mozilla.org contributors. Content available under a Creative Commons <a href="http://mozilla.org/foundation/licensing/website-content.html">license</a>.') ?>
         </p>
