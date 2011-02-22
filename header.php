@@ -66,6 +66,7 @@
           <li><span><?= _('Access to cool Mozilla swag that will impress your friends') ?></span></li>
           <li><span><?= /* L10n: This can be replaced with a local idiom that means "good feelings" */ _('Good feelings in the cockles of your heart') ?></span></li>
         </ul>
+		<p><a href="http://www.mozilla.org/join/faq.html"><?= _('Have questions?') ?></p>
       </div><!--/content-->
     </div><!--/in-->
   </section>
