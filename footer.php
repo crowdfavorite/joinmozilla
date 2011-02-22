@@ -6,7 +6,7 @@
       <div class="six-col">
         <a id="logo-footer" href="http://mozilla.org"><img width="109" height="98" src="https://donate.mozilla.org/page/-/protecttheweb/assets/img/mozilla-logo-alt.png?ver=0.1" alt="Mozilla" /></a>
         <p id="copyright">
-          <?= _('Portions of this content are &copy;1998&ndash;2011 by individual mozilla.org contributors. Content available under a Creative Commons <a href="http://mozilla.org/foundation/licensing/website-content.html">license</a>.') ?>
+          <?= sprintf( /* L10n: Arguments: %d is a year, %s is a URL. */ _('Portions of this content are &copy;1998&ndash;%d by individual mozilla.org contributors. Content available under a Creative Commons <a href="%s">license</a>.'), 2011, 'http://mozilla.org/foundation/licensing/website-content.html') ?>
         </p>
         <ul id="copyright-links">
           <li><a href="http://mozilla.org/contact/" class="first"><?= _('Contact Us') ?></a></li>

@@ -37,7 +37,9 @@ require_once('header.php');
                               <label class="fieldlabel"></label>
                               <input id="q_0" type="radio" value="5" name="amount" onclick="" />
                               <label for="q_0">
-                                <span class="radio"><?= _('$5.00 - Sign me up and use my $5 to build a Web of good') ?></span>
+                                <span class="radio">
+                                  <?= sprintf( /* L10n: Please use US dollars as the currency. Both formatting arguments are the same number. Note that the first $ sign in both cases is an actual dollar sign; it is not part of the format string.*/ _('$%1$.2f - Sign me up and use my $%1$d to build a Web of good'), 5) ?>
+                                </span>
                               </label>
                             </td>
                           </tr>
@@ -46,7 +48,9 @@ require_once('header.php');
                               <label class="fieldlabel"></label>
                               <input id="q_1" type="radio" value="30" name="amount" onclick="" />
                               <label for="q_1">
-                                <span class="radio"><?= _('$30.00 - Sign me up, use my donation to build a Web of good and send me a Mozilla t-shirt') ?></span>
+                                <span class="radio">
+                                <?= sprintf( /* L10n: Please use US dollars as the currency. Both formatting arguments are the same number. Note that the first $ sign in both cases is an actual dollar sign; it is not part of the format string. */ _('$%1.2f - Sign me up, use my donation to build a Web of good and send me a Mozilla t-shirt'), 30) ?>
+                                </span>
                               </label>
                             </td>
                           </tr>
