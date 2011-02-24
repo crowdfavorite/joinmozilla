@@ -29,7 +29,7 @@ require_once('header.php');
   </p>
   <strong><?= _('When I Join Mozilla, what happens to my data?') ?></strong>
   <p>
-    <?= /* TODO: Replace 'http://mozilla.org/' with actual URL for Join Mozilla ToS. */ ?>
+    <?php /* TODO: Replace 'http://mozilla.org/' with actual URL for Join Mozilla ToS. */ ?>
     <?= sprintf( /* L10n: both placeholders are URLs. */ _('At the point of signing up your data is being given to Mozilla (which includes the Mozilla Foundation and Corporation). We will never sell, rent, or give your information to any third-party, and will only contact you as part of this program. For more information, check out our <a href="%s">terms of service</a> and <a href="%s">privacy policy.</a>'), "http://mozilla.org/", "http://www.mozilla.org/about/policies/privacy-policy.html") ?>
   </p>
   <strong><?= _('How will my data be used?') ?></strong>
