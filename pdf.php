@@ -15,11 +15,14 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) != 'POST') {
 @header('Cache-Control: post-check=0, pre-check=0', false);
 @header('Pragma: no-cache');
 
+require_once('config.php');
+
 // constants
-define('APPLICATION_ROOT', $_SERVER['DOCUMENT_ROOT'].'/');
-define('LIB_DIR', APPLICATION_ROOT.'lib/'); // requires trailing slash
+#define('APPLICATION_ROOT', $_SERVER['DOCUMENT_ROOT'].'/');
+define('APPLICATION_ROOT', realpath(dirname(__FILE__)).'/');
+define('LIB_DIR', APPLICATION_ROOT.'/lib/'); // requires trailing slash
 define('FPDF_FONTPATH', LIB_DIR.'fonts/'); // requires trailing slash
-define('PDF_TEMPLATE_DIR', APPLICATION_ROOT.'assets/pdf/'); // requires trailing slash
+define('PDF_TEMPLATE_DIR', APPLICATION_ROOT.'/assets/pdf/'); // requires trailing slash
 
 // get libs
 require_once(PDF_TEMPLATE_DIR.'pdf-config.php');
@@ -30,7 +33,7 @@ require_once(LIB_DIR.'FPDI-1.4/fpdi.php');
 $locale = (!empty($_REQUEST['locale']) ? $_REQUEST['locale'] : 'en-US');
 putenv("LC_ALL=" . $locale);
 setlocale(LC_ALL , $locale);
-ep($locale);
+
 bindtextdomain('messages', APPLICATION_ROOT . '/locale');
 bind_textdomain_codeset("messages", "UTF-8");
 textdomain('messages');
