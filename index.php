@@ -59,6 +59,27 @@ require_once('header.php');
                       </table>
                     </td>
                   </tr>
+                  <tr>
+                    <td class="contribheader"><?= _('T-Shirt Size') ?></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <tr>
+                          <td>
+                            <label class="fieldlabel"><?= _('Women (S, M, L, XL, XXL)') ?><br /></label>
+                            <input size="30" name="custom1" type="text" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="fieldlabel"><?= _('Men (S, M, L, XL, XXL)') ?><br /></label>
+                            <input size="30" name="custom2" type="text" />
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </td>
