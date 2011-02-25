@@ -36,9 +36,14 @@ bind_textdomain_codeset("messages", "UTF-8");
 textdomain('messages');
 
 // Simplify the passed in language code
+// this application's default is en-US, but locales should have underscores
+// strip based on dash or underscore for safety's sake
 $lang = $locale;
 if (strpos($lang, '-') != false) {
 	$lang = substr($lang, 0, strpos($lang, '-'));
+}
+elseif (strpos($lang, '_') != false) {
+	$lang = substr($lang, 0, strpos($lang, '_'));
 }
 
 // set date format

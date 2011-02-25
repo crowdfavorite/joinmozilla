@@ -60,7 +60,14 @@ require_once('config.php');
             };
           };
         });
-    </script>
+		// form submission
+		jQuery(function($) {
+			$('.call-to-action').click(function() {
+				$('form#get-pdf').removeAttr('onsubmit').submit();
+				return false;
+			});
+		});
+	</script>
     </head>
     <body class="page-thanks"> 
     <div id="act-1" class="act"> 
@@ -115,21 +122,4 @@ require_once('config.php');
 
     <?= /* L10n: Displayed next to a dynamic ticker showing number of downloads */ _('# of Firefox browsers distributed worldwide') ?>
 
-<!-- DEMO FUNCTIONALITY TO GET THE USER THEIR PDF -->
-<script type="text/javascript">
-	jQuery(function($) {
-		$('.call-to-action').click(function() {
-			$('form#get-pdf').removeAttr('onsubmit').submit();
-			return false;
-		});
-	});
-</script>
-<!-- /DEMO FUNCTIONALITY TO GET THE USER THEIR PDF -->
-<?php
-/*
-This div required by Facebook JS
-See http://developers.facebook.com/docs/reference/javascript/
-*/
-?>
-<div id="fb-root"></div>
 <?php require_once('footer.php'); ?>
