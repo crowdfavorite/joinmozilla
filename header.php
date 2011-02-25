@@ -45,7 +45,7 @@
       </hgroup>
       <div id="crest">
         <img id="shield" src="https://donate.mozilla.org/page/-/protecttheweb/assets/img/mozilla-crest.png?ver=0.1" alt="Mozilla" />
-        <p id="motto-1" class="content"><?= _('We\'re a non-profit organization who believes the Web should be free, open, accessible, transparent, safe and—most of all—a force for the good of humanity.') ?></p>
+        <p id="motto-1" class="content"><?= _('We\'re a non-profit organization who believes the Web should be free, open, accessible, transparent, safe and&mdash;most of all&mdash;a force for the good of humanity.') ?></p>
         <p id="motto-2" class="content"><?= _('We\'re the proud makers of Firefox and, every day, we strive to create innovations that make the Web a better place for the billions of people who use it.') ?></p>
       </div><!--/crest-->
       <div class="call-to-action">
