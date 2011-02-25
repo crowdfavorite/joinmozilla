@@ -34,8 +34,7 @@ require_once('header.php');
   </p>
   <strong><?= _('How will my data be used?') ?></strong>
   <p>
-    <?= _('By signing up for the Join Mozilla program, your data will only be used by Mozilla (and its
-      service providers). You will only receive information Mozilla related information.') ?>
+    <?= _('By signing up for the Join Mozilla program, your data will only be used by Mozilla (and its service providers). You will only receive information Mozilla related information.') ?>
   </p>
   <strong><?= _('Help! I have a question about being part of Join Mozilla. Who do I ask?') ?></strong>
   <p>
