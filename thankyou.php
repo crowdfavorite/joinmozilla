@@ -107,13 +107,13 @@ require_once('config.php');
           </aside> 
           <a class="call-to-action" href="#"> 
             <img id="mozilla-card" src="assets/img/page-thanks/card.png" alt="" width="227" height="153" />
-		  </a>
-		  <form method="post" id="get-pdf" name="get-pdf" action="pdf.php" target="_blank" onsubmit="return false;">
-  			<input type="hidden" name="lang" value="<?= $locale ?>">
-  			<label for="supporter-name"><?= _('Please enter your name as you would like it to appear on your Mozilla Supporter card.') ?></label>
-  			<input type="text" id="supporter-name" name="name" value="" />
-		  </form>
-		  <a class="call-to-action" href="#">
+          </a>
+          <form method="post" id="get-pdf" name="get-pdf" action="pdf.php" target="_blank" onsubmit="return false;">
+            <input type="hidden" name="lang" value="<?= $locale ?>">
+            <label for="supporter-name"><?= _('Please enter your name as you would like it to appear on your Mozilla Supporter card.') ?></label>
+            <input type="text" id="supporter-name" name="name" value="" />
+          </form>
+          <a class="call-to-action" href="#">
             <span id="print-card-button" class="button fwd" href="#"><span><?= _('Print My Card') ?></span></span> 
           </a> 
         </div><!--/call-to-action--> 
