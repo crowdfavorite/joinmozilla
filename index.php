@@ -83,7 +83,7 @@ require_once('header.php');
 <h2><?= _('Legal Compliance') ?></h2>
 <p>
   <input type="checkbox" id="legal_agree" />
-  <label for="legal_agree"><?= sprintf(/* L10n: The placeholder '%s' is a URL. */ _('I agree to the <a href="%s">Mozilla privacy policy</a>'), "http://www.mozilla.org/about/policies/privacy-policy.html") ?></label>
+  <label for="legal_agree"><?= sprintf(/* L10n: The placeholder '%s' is a URL. */ _('I agree to the <a href="%s">Mozilla privacy policy</a>.'), "http://www.mozilla.org/about/policies/privacy-policy.html") ?></label>
 </p>
 
 <div class="bsd-contribForm-belowContent">
