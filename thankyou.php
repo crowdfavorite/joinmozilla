@@ -49,9 +49,8 @@ require_once('config.php');
                     e.preventDefault();
                     FB.ui({
                     "method":"feed",
-                    "caption":"<?= _('I protect the Internet!') ?>",
                     "description":"<?= _('I just joined Mozilla, the makers of Firefox. Together we&rsquo;re protecting the world&rsquo;s largest public resource. Join us today!') ?>",
-                    "name":"<?= _('Protect the Web') ?>",
+                    "name":"<?= _('I protect the Internet!') ?>",
                     "picture":"<?php echo URL_BASE; ?>assets/img/mozilla-crest.png",
                     "link":"http://www.mozilla.org/join"
                 }, function() {
