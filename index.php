@@ -23,6 +23,7 @@ require_once('header.php');
         <tbody>
           <tr>
             <td class="contribcolumn" style="width: 300px;">
+              <label class="fieldlabel"></label><input id="signup_optin" name="signup_optin" value="1" type="checkbox"><label for="signup_optin"><span class="radio"><?= _('Sign up for the mailing list') ?></span></label>
               <table>
                 <tbody>
                   <tr>
