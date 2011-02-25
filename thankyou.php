@@ -74,7 +74,7 @@ textdomain('messages');
           <aside class="social"> 
             <h1 class="title"><?= _('Brag about it now:') ?></h1> 
             <ul> 
-              <li onclick="" class="twitter"><a target="_blank" href="http://twitter.com/share?text=<?php echo urlencode('I just made the web better and Joined Mozilla. You can too!'); ?>&amp;url=<?php echo urlencode('http://www.mozilla.org/join'); ?>"><?= _('Twitter') ?></a></li> 
+              <li class="twitter"><a onclick="window.open(this.href, 'joinmozilla', 'location=false,status=false,toolbar=false,width=550,height=400'); return false;" href="http://twitter.com/share?text=<?php echo urlencode('I just made the web better and Joined Mozilla. You can too!'); ?>&amp;url=<?php echo urlencode('http://www.mozilla.org/join'); ?>"><?= _('Twitter') ?></a></li> 
               <li class="facebook"><a href="#"><?= _('Facebook') ?></a></li> 
             </ul> 
           </aside> 
