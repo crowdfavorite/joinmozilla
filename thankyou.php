@@ -110,7 +110,7 @@ textdomain('messages');
             <h1 class="title"><?= _('Brag about it now:') ?></h1> 
             <ul> 
               <li class="twitter"><a onclick="window.open(this.href, 'joinmozilla', 'location=false,status=false,toolbar=false,width=550,height=400'); return false;" href="http://twitter.com/share?text=<?= urlencode(_('I just made the web better and Joined Mozilla. You can too!')) ?>&amp;url=<?= urlencode('http://www.mozilla.org/join'); ?>"><?= _('Twitter') ?></a></li> 
-              <li class="facebook"><a href="#"><?= _('Facebook') ?></a></li> 
+              <li class="facebook"><a id="facebook-link" href="#"><?= _('Facebook') ?></a></li> 
             </ul> 
           </aside> 
           <a class="call-to-action" href="#"> 
