@@ -21,10 +21,9 @@ header('Content-type: text/html; charset=utf-8');
 if (array_key_exists('locale', $_GET))
     $locale = $_GET['locale'];
 else
-    $locale = 'en';
-$gettext_locale = $locales[$locale];
-putenv("LC_ALL=" . $gettext_locale);
-setlocale(LC_ALL , $gettext_locale);
+    $locale = 'en_US';
+putenv("LC_ALL=" . $locale);
+setlocale(LC_ALL , $locale);
 
 ?>
 
@@ -38,7 +37,7 @@ setlocale(LC_ALL , $gettext_locale);
       Select the locale to test: 
       <select name="locale" onchange="this.form.submit();">
       <?php foreach ($locales as $short => $long) { ?>
-        <option value="<?= $short ?>" <?= ($short == $locale) ? 'selected="selected"' : ''?>><?= $short ?></option>
+        <option value="<?= $long ?>" <?= ($long == $locale) ? 'selected="selected"' : ''?>><?= $short ?></option>
       <?php } ?>
       </select>
     </form>
