@@ -88,4 +88,22 @@ textdomain('messages');
 
     <?= /* L10n: Displayed next to a dynamic ticker showing number of downloads */ _('# of Firefox browsers distributed worldwide') ?>
 
+<!-- DEMO FUNCTIONALITY TO GET THE USER THEIR PDF -->
+<form method="post" id="get-pdf" name="get-pdf" action="pdf.php" target="_blank" onsubmit="return false;">
+	<!-- these are all fields required by the PDF generator and should be intl'd as necessary -->
+	<input type="hidden" name="name" value="John Smith" />
+	<input type="hidden" name="date" value="<?php date('m.d.Y') ?>" />
+	<input type="hidden" name="on_date" value="<?= _('ON').' '.date('m.d.Y') ?>" />
+	<input type="hidden" name="endorsed_by" value="<?= _('Endorsed by') ?>" />
+</form>
+<script type="text/javascript">
+	jQuery(function($) {
+		$('.call-to-action').click(function() {
+			$('form#get-pdf').removeAttr('onsubmit').submit();
+			return false;
+		});
+	});
+</script>
+<!-- /DEMO FUNCTIONALITY TO GET THE USER THEIR PDF -->
+
 <?php require_once('footer.php'); ?>
