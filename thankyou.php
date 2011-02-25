@@ -109,7 +109,7 @@ require_once('config.php');
             <img id="mozilla-card" src="assets/img/page-thanks/card.png" alt="" width="227" height="153" />
 		  </a>
 		  <form method="post" id="get-pdf" name="get-pdf" action="pdf.php" target="_blank" onsubmit="return false;">
-			<input type="hidden" name="lang" value="<?= $locale ?>">
+			<input type="hidden" name="locale" value="<?= $locale ?>">
 			<label for="supporter-name"><?= _('Please enter your name as you would like it to appear on your Mozilla Supporter card.') ?></label>
 			<input type="text" id="supporter-name" name="name" value="" />
 		  </form>
