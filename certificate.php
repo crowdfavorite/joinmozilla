@@ -21,7 +21,7 @@ require_once('header.php');
 <?= _('I AM AN OFFICIAL, CERTIFICATE HOLDING, WEB BETTERING, OPEN SOFTWARE LOVING, PUBLIC RESOURCE PROTECTING, FORCE OF GOOD MAKING, SUPPORTER OF MOZILLA.') ?>
 </p>
 
-<p><?= sprintf( /* L10n: '%s' is a date. */ _('ENDORSED BY MOZILLA ON %s'), date(_("n/j/Y"))) ?></p>
+<p><?= sprintf( /* L10n: The first placeholder is 'Mozilla' in the English string. Feel free to be creative about whether or not this should be hardcoded. The second '%s' is a date. */ _('ENDORSED BY %s ON %s'), 'MOZILLA', date(_("n/j/Y"))) ?></p>
 
 </div>
 </section>

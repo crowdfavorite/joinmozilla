@@ -23,6 +23,7 @@ require_once('header.php');
         <tbody>
           <tr>
             <td class="contribcolumn" style="width: 300px;">
+              <label class="fieldlabel"></label><input id="signup_optin" name="signup_optin" value="1" type="checkbox"><label for="signup_optin"><span class="radio"><?= _('Sign up for the mailing list') ?></span></label>
               <table>
                 <tbody>
                   <tr>
@@ -54,6 +55,18 @@ require_once('header.php');
                               </label>
                             </td>
                           </tr>
+                          <tr>
+                            <td>
+                              <label class="fieldlabel"></label>
+                              <input id="q_other" name="amount" value="other" type="radio" />
+                              <label for="q_other">
+                                <span class="radio">
+                                  <?= /* L10n: Other donation amount */ _('Other:') ?>
+                                </span>
+                              </label>&nbsp;
+                              <input size="4" intl_currency_symbol="USD" name="amount_other" type="text" /> <?= /* L10n: Currency symbol */ _('(USD)') ?>
+                            </td>
+                          </tr>
                         </tbody>
                       </table>
                     </td>
@@ -65,6 +78,24 @@ require_once('header.php');
         </tbody>
       </table>
   </form>
+</div>
+
+<h2><?= _('Legal Compliance') ?></h2>
+<p>
+  <input type="checkbox" id="legal_agree" />
+  <label for="legal_agree"><?= sprintf(/* L10n: The placeholder '%s' is a URL. */ _('I agree to the <a href="%s">Mozilla privacy policy</a>.'), "http://www.mozilla.org/about/policies/privacy-policy.html") ?></label>
+</p>
+
+<div class="bsd-contribForm-belowContent">
+  <p>
+    <small class="legal"><?= _('By clicking \'Process Contribution\' you will be registered as a Mozilla Supporter and receive Mozilla related email communication. You can unsubscribe from this communication at any time.') ?></small>
+  </p>
+  <p>
+    <small class="legal"><?= _('Unfortunately, we can only currently ship the T-shirt to your billing address.') ?></small>
+  </p>
+  <p>
+    <small class="legal"><?= _('Contributions go to the Mozilla Foundation, a 501(c)(3) organization, to be used in its discretion for its charitable purposes. They are tax-deductible in the U.S. to the fullest extent permitted by law. Fair market value of the T-shirt is $7 USD.') ?></small>
+  </p>
 </div>
 <?php
 

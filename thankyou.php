@@ -85,4 +85,6 @@ textdomain('messages');
       </div><!--/in--> 
     </section><!--/act-2--> 
 
+    <?= /* L10n: Displayed next to a dynamic ticker showing number of downloads */ _('# of Firefox browsers distributed worldwide') ?>
+
 <?php require_once('footer.php'); ?>
