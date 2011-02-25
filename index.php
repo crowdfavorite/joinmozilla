@@ -66,6 +66,24 @@ require_once('header.php');
       </table>
   </form>
 </div>
+
+<h2><?= _('Legal Compliance') ?></h2>
+<p>
+  <input type="checkbox" id="legal_agree" />
+  <label for="legal_agree"><?= sprintf(/* L10n: The placeholder '%s' is a URL. */ _('I agree to the <a href="%s">Mozilla privacy policy</a>'), "http://www.mozilla.org/about/policies/privacy-policy.html") ?></label>
+</p>
+
+<div class="bsd-contribForm-belowContent">
+  <p>
+    <small class="legal"><?= _('By clicking \'Process Contribution\' you will be registered as a Mozilla Supporter and receive Mozilla related email communication. You can unsubscribe from this communication at any time.') ?></small>
+  </p>
+  <p>
+    <small class="legal"><?= _('Unfortunately, we can only currently ship the T-shirt to your billing address.') ?></small>
+  </p>
+  <p>
+    <small class="legal"><?= _('Contributions go to the Mozilla Foundation, a 501(c)(3) organization, to be used in its discretion for its charitable purposes. They are tax-deductible in the U.S. to the fullest extent permitted by law. Fair market value of the T-shirt is $7 USD.') ?></small>
+  </p>
+</div>
 <?php
 
 require_once('footer.php');
