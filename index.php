@@ -55,6 +55,18 @@ require_once('header.php');
                               </label>
                             </td>
                           </tr>
+                          <tr>
+                            <td>
+                              <label class="fieldlabel"></label>
+                              <input id="q_other" name="amount" value="other" type="radio" />
+                              <label for="q_other">
+                                <span class="radio">
+                                  <?= /* L10n: Other donation amount */ _('Other:') ?>
+                                </span>
+                              </label>&nbsp;
+                              <input size="4" intl_currency_symbol="USD" name="amount_other" type="text" /> <?= /* L10n: Currency symbol */ _('(USD)') ?>
+                            </td>
+                          </tr>
                         </tbody>
                       </table>
                     </td>
