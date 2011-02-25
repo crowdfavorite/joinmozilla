@@ -52,7 +52,7 @@ textdomain('messages');
             (function() {
                 window.fbAsyncInit = function () {
                     FB.init({
-                        appId  : 'YOUR APP ID',
+                        appId  : '198340516862242',
                         status : true, // check login status
                         cookie : true, // enable cookies to allow the server to access the session
                     });
