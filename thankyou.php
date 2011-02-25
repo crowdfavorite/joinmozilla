@@ -44,7 +44,7 @@ require_once('config.php');
                 cookie : true, // enable cookies to allow the server to access the session
             });
             var link = document.getElementById("facebook-link");
-            if (link > 0) {
+            if (link) {
                 link.addEventListener("click", function(e) {
                     e.preventDefault();
                     FB.ui({
