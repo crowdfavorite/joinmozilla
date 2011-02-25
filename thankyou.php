@@ -1,4 +1,10 @@
 <?php
+/**
+ * Override default URL base in config.php
+ * and use files from this domain. We're loading local resources because Firefox
+ * doesn't load font files cross-domain.
+ */
+define('URL_BASE', '');
 require_once('config.php');
 ?>
 <!DOCTYPE html> 
