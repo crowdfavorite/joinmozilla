@@ -15,14 +15,12 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) != 'POST') {
 @header('Cache-Control: post-check=0, pre-check=0', false);
 @header('Pragma: no-cache');
 
-require_once('config.php');
-
 // constants
 #define('APPLICATION_ROOT', $_SERVER['DOCUMENT_ROOT'].'/');
 define('APPLICATION_ROOT', realpath(dirname(__FILE__)).'/');
-define('LIB_DIR', APPLICATION_ROOT.'/lib/'); // requires trailing slash
+define('LIB_DIR', APPLICATION_ROOT.'lib/'); // requires trailing slash
 define('FPDF_FONTPATH', LIB_DIR.'fonts/'); // requires trailing slash
-define('PDF_TEMPLATE_DIR', APPLICATION_ROOT.'/assets/pdf/'); // requires trailing slash
+define('PDF_TEMPLATE_DIR', APPLICATION_ROOT.'assets/pdf/'); // requires trailing slash
 
 // get libs
 require_once(PDF_TEMPLATE_DIR.'pdf-config.php');
