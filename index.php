@@ -33,7 +33,7 @@ setlocale(LC_ALL , $locale);
   </head>
 
   <body>
-    <form action="/" method="GET">
+    <form action="." method="GET">
       Select the locale to test: 
       <select name="locale" onchange="this.form.submit();">
       <?php foreach ($locales as $short => $long) { ?>
