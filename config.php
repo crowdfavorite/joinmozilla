@@ -10,7 +10,7 @@ if (!defined('URL_BASE')) {
   /**
    * URL base for assets CDN (default is path to BSD Tools CDN)
    */
-  define('URL_BASE', '//donate.mozilla.org/page/-/protecttheweb/');
+  define('URL_BASE', 'http://donate.mozilla.org/page/-/protecttheweb/');
 }
 /**
  * Cache-busting constant for assets
