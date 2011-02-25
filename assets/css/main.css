@@ -100,7 +100,7 @@ p{margin-bottom:1em;}
 .social h1.title{color:#d0c8b4;font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;margin-right:16px;white-space:nowrap;}
 .social ul{list-style:none;margin:0;}
 .social ul li{margin-bottom:11px;}
-.social ul a{color:#fff;display:block;line-height:24px;padding-left:40px;text-decoration:underline;}
+.social ul a{color:#fff !important;display:block;line-height:24px;padding-left:40px;text-decoration:underline;}
 .social ul .twitter a{background-image:url(../img/sprite-y.24bit.png);background-position:0 -1200px;background-repeat:no-repeat;}
 .social ul .facebook a{background-image:url(../img/sprite-y.24bit.png);background-position:0 -1300px;background-repeat:no-repeat;}
 #act-1{background:url(../img/act1-crowd.jpg) center bottom repeat-x;padding-top:15px;padding-bottom:71px;}
