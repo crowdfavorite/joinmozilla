@@ -57,7 +57,12 @@ require_once('config.php');
                     "method":"feed",
                     "description":"<?= _('I just joined Mozilla, the makers of Firefox. Together we&rsquo;re protecting the world&rsquo;s largest public resource. Join us today!') ?>",
                     "name":"<?= _('I protect the Internet!') ?>",
-                    "picture":"<?php echo URL_BASE; ?>assets/img/mozilla-crest.png",
+                    <?php /*
+                    Intentionally not using URL_BASE here.
+                    We need an absolute, unchanging URL for Facebook and URL_BASE can be
+                    relative
+                    */ ?>
+                    "picture":"http://donate.mozilla.org/page/-/protecttheweb/assets/img/mozilla-crest.png",
                     "link":"http://www.mozilla.org/join"
                 }, function() {
                     window.location.href = "http://www.mozilla.org/join";
