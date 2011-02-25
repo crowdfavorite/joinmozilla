@@ -75,7 +75,14 @@ textdomain('messages');
                 };
             })();
         });
-    </script>
+		// form submission
+		jQuery(function($) {
+			$('.call-to-action').click(function() {
+				$('form#get-pdf').removeAttr('onsubmit').submit();
+				return false;
+			});
+		});
+	</script>
     </head>
     <body class="page-thanks"> 
     <div id="act-1" class="act"> 
@@ -129,16 +136,5 @@ textdomain('messages');
     </section><!--/act-2--> 
 
     <?= /* L10n: Displayed next to a dynamic ticker showing number of downloads */ _('# of Firefox browsers distributed worldwide') ?>
-
-<!-- DEMO FUNCTIONALITY TO GET THE USER THEIR PDF -->
-<script type="text/javascript">
-	jQuery(function($) {
-		$('.call-to-action').click(function() {
-			$('form#get-pdf').removeAttr('onsubmit').submit();
-			return false;
-		});
-	});
-</script>
-<!-- /DEMO FUNCTIONALITY TO GET THE USER THEIR PDF -->
 
 <?php require_once('footer.php'); ?>
