@@ -37,31 +37,29 @@ require_once('config.php');
     ?>
     <script type="text/javascript">
         require(["http://connect.facebook.net/en_US/all.js"], function(){
-            (function() {
-                window.fbAsyncInit = function () {
-                    FB.init({
-                        appId  : '198340516862242',
-                        status : true, // check login status
-                        cookie : true, // enable cookies to allow the server to access the session
-                    });
-                    var link = document.getElementById("facebook-link");
-                    if (link > 0) {
-                        link.addEventListener("click", function(e) {
-                            e.preventDefault();
-                            FB.ui({
-                            "method":"feed",
-                            "caption":"<?= _('I protect the Internet!') ?>",
-                            "description":"<?= _('I just joined Mozilla, the makers of Firefox. Together we&rsquo;re protecting the world&rsquo;s largest public resource. Join us today!') ?>",
-                            "name":"<?= _('Protect the Web') ?>",
-                            "picture":"<?php echo URL_BASE; ?>assets/img/mozilla-crest.png",
-                            "link":"http://www.mozilla.org/join"
-                        }, function() {
-                            window.location.href = "http://www.mozilla.org/join";
-                        });
-                        }, false);
-                    };
-                };
-            })();
+          FB.init({
+              appId  : '198340516862242',
+              status : true, // check login status
+              cookie : true, // enable cookies to allow the server to access the session
+          });
+          (function(){
+            var link = document.getElementById("facebook-link");
+            if (link > 0) {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    FB.ui({
+                    "method":"feed",
+                    "caption":"<?= _('I protect the Internet!') ?>",
+                    "description":"<?= _('I just joined Mozilla, the makers of Firefox. Together we&rsquo;re protecting the world&rsquo;s largest public resource. Join us today!') ?>",
+                    "name":"<?= _('Protect the Web') ?>",
+                    "picture":"<?php echo URL_BASE; ?>assets/img/mozilla-crest.png",
+                    "link":"http://www.mozilla.org/join"
+                }, function() {
+                    window.location.href = "http://www.mozilla.org/join";
+                });
+                }, false);
+            };
+          })();
         });
     </script>
     </head>
@@ -128,5 +126,11 @@ require_once('config.php');
 	});
 </script>
 <!-- /DEMO FUNCTIONALITY TO GET THE USER THEIR PDF -->
-
+<?php
+/*
+This div required by Facebook JS
+See http://developers.facebook.com/docs/reference/javascript/
+*/
+?>
+<div id="fb-root"></div>
 <?php require_once('footer.php'); ?>
