@@ -23,29 +23,64 @@ textdomain('messages');
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]--> 
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js not-ie"> <!--<![endif]--> 
 <head> 
-  <meta charset="utf-8" /> 
-  <title><?= _('Join Mozilla') ?></title> 
+    <meta charset="utf-8" /> 
+    <title><?= _('Join Mozilla') ?></title> 
   
   <!-- Empty conditional comment hack
        Prevents load stacking in IE8
        See http://www.phpied.com/conditional-comments-block-downloads/ --> 
-  <!--[if IE]><![endif]--> 
+       <!--[if IE]><![endif]--> 
   
-  <!-- Chrome Frame for browsers that support it --> 
-  <meta http-equiv="X-UA-Compatible" content="chrome=1"> 
+    <!-- Chrome Frame for browsers that support it --> 
+    <meta http-equiv="X-UA-Compatible" content="chrome=1"> 
     <meta name="viewport" content="width=978" /> 
     <meta name="DC.creator" content="Crowd Favorite - http://www.crowdfavorite.com" /> 
     
     <link rel="shortcut icon" type="image/ico" href="http://mozilla.org/favicon.ico" /> 
     <link rel="stylesheet" href="assets/css/main.css?ver=0.1" type="text/css" media="screen" /> 
     
-    <script type="text/javascript" src="assets/js/modernizr.js?ver=0.1"></script> 
-    <script type="text/javascript" data-main="main" src="assets/js/require-jquery.js?ver=0.1"></script> 
+    <?php
+    /*
+    Load Facebook connect Javascript asyncronously and initialize stream share
+    http://developers.facebook.com/docs/reference/javascript/fb.init/
+    http://developers.facebook.com/docs/reference/javascript/FB.ui/
+    http://developers.facebook.com/docs/reference/dialogs/feed/
+    */
+    ?>
+    <script type="text/javascript">
+        require(["http://connect.facebook.net/en_US/all.js"], function(){
+            (function() {
+                window.fbAsyncInit = function () {
+                    FB.init({
+                        appId  : 'YOUR APP ID',
+                        status : true, // check login status
+                        cookie : true, // enable cookies to allow the server to access the session
+                    });
+                    var link = document.getElementById("facebook-link");
+                    if (link > 0) {
+                        link.addEventListener("click", function(e) {
+                            e.preventDefault();
+                            FB.ui({
+                            "method":"feed",
+                            "caption":"<?= _('I protect the Internet!') ?>",
+                            "description":"<?= _('I just joined Mozilla, the makers of Firefox. Together we&rsquo;re protecting the world&rsquo;s largest public resource. Join us today!') ?>",
+                            "name":"<?= _('Protect the Web') ?>",
+                            "picture":"assets/img/mozilla-crest.png",
+                            "link":"http://www.mozilla.org/join"
+                        }, function() {
+                            window.location.href = "http://www.mozilla.org/join";
+                        });
+                        }, false);
+                    };
+                };
+            })();
+        });
+    </script>
     </head>
     <body class="page-thanks"> 
     <div id="act-1" class="act"> 
       <header id="moz-header"> 
-	      <h1><a href="http://mozilla.org/"><img id="moz-logo" src="assets/img/mozilla-logo.png?ver=0.1" alt="Mozilla" width="109" height="28" /></a></h1> 
+          <h1><a href="http://mozilla.org/"><img id="moz-logo" src="assets/img/mozilla-logo.png?ver=0.1" alt="Mozilla" width="109" height="28" /></a></h1> 
          <nav> 
             <ul> 
                <li><a href="http://www.mozilla.org/about/"><?= _('About Us') ?></a></li> 
