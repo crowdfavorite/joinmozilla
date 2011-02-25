@@ -20,6 +20,7 @@
 	<meta name="DC.creator" content="Crowd Favorite - http://www.crowdfavorite.com" />
  
 	<link rel="shortcut icon" type="image/ico" href="http://mozilla.org/favicon.ico" />
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="https://donate.mozilla.org/page/-/protecttheweb/assets/css/main.css?ver=0.1" type="text/css" media="screen" />
 	
 	<script type="text/javascript" src="https://donate.mozilla.org/page/-/protecttheweb/assets/js/modernizr.js?ver=0.1"></script>
