@@ -102,7 +102,14 @@ require_once('config.php');
             </ul> 
           </aside> 
           <a class="call-to-action" href="#"> 
-            <img id="mozilla-card" src="assets/img/page-thanks/card.png" alt="" width="227" height="153" /> 
+            <img id="mozilla-card" src="assets/img/page-thanks/card.png" alt="" width="227" height="153" />
+		  </a>
+		  <form method="post" id="get-pdf" name="get-pdf" action="pdf.php" target="_blank" onsubmit="return false;">
+			<input type="hidden" name="lang" value="<?= $locale ?>">
+			<label for="supporter-name"><?= _('Please enter your name as you would like it to appear on your Mozilla Supporter card.') ?></label>
+			<input type="text" id="supporter-name" name="name" value="" />
+		  </form>
+		  <a class="call-to-action" href="#">
             <span id="print-card-button" class="button fwd" href="#"><span><?= _('Print My Card') ?></span></span> 
           </a> 
         </div><!--/call-to-action--> 
@@ -112,13 +119,6 @@ require_once('config.php');
     <?= /* L10n: Displayed next to a dynamic ticker showing number of downloads */ _('# of Firefox browsers distributed worldwide') ?>
 
 <!-- DEMO FUNCTIONALITY TO GET THE USER THEIR PDF -->
-<form method="post" id="get-pdf" name="get-pdf" action="pdf.php" target="_blank" onsubmit="return false;">
-	<!-- these are all fields required by the PDF generator and should be intl'd as necessary -->
-	<input type="hidden" name="name" value="John Smith" />
-	<input type="hidden" name="date" value="<?php date('m.d.Y') ?>" />
-	<input type="hidden" name="on_date" value="<?= _('ON').' '.date('m.d.Y') ?>" />
-	<input type="hidden" name="endorsed_by" value="<?= _('Endorsed by') ?>" />
-</form>
 <script type="text/javascript">
 	jQuery(function($) {
 		$('.call-to-action').click(function() {
