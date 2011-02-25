@@ -1,5 +1,7 @@
 <?php
 /*
+- All passed in language identifiers will be stripped of dash and trailing chars
+	- ie: en-US will become just en
 - All coordinates from top left of template
  	- fudged due to inaccuracies of pdf engine
 - All measurements in points
@@ -22,7 +24,13 @@ $config = array(
 	),
 	// Available Template Languages, will default to 'en'
 	'langs' => array(
-		'en'
+		'en',
+		'de'
+	),
+	// Date formats for known languages, processed by strftime for intl: http://us3.php.net/strftime
+	'datestrings' => array(
+		'en' => '%m.%e.%Y',
+		'de' => '%e. %m. %Y'
 	),
 	// Default name in case something goes wrong
 	'default_name' => 'Fabulous Mozilla Supporter',
