@@ -1,19 +1,5 @@
 <?php
-
-define('APPLICATION_ROOT', $_SERVER['DOCUMENT_ROOT']);
-
-header('Content-type: text/html; charset=utf-8');
-if (array_key_exists('locale', $_GET))
-  $locale = $_GET['locale'];
-else
-  $locale = 'en-US';
-putenv("LC_ALL=" . $locale);
-setlocale(LC_ALL , $locale);
-
-bindtextdomain('messages', APPLICATION_ROOT . '/locale');
-bind_textdomain_codeset("messages", "UTF-8");
-textdomain('messages');
-
+require_once('config.php');
 ?>
 <!DOCTYPE html> 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
@@ -37,8 +23,10 @@ textdomain('messages');
     <meta name="DC.creator" content="Crowd Favorite - http://www.crowdfavorite.com" /> 
     
     <link rel="shortcut icon" type="image/ico" href="http://mozilla.org/favicon.ico" /> 
-    <link rel="stylesheet" href="assets/css/main.css?ver=0.1" type="text/css" media="screen" /> 
+    <link rel="stylesheet" href="<?= URL_BASE; ?>assets/css/main.css?ver=<?= VER ?>" type="text/css" media="screen" /> 
     
+    <script type="text/javascript" src="<?= URL_BASE ?>assets/js/modernizr.js?ver=<?= VER ?>"></script>
+	<script type="text/javascript" data-main="main" src="<?= URL_BASE ?>assets/js/require-jquery.js?ver=<?= VER ?>"></script>
     <?php
     /*
     Load Facebook connect Javascript asyncronously and initialize stream share
@@ -49,31 +37,28 @@ textdomain('messages');
     ?>
     <script type="text/javascript">
         require(["http://connect.facebook.net/en_US/all.js"], function(){
-            (function() {
-                window.fbAsyncInit = function () {
-                    FB.init({
-                        appId  : '198340516862242',
-                        status : true, // check login status
-                        cookie : true, // enable cookies to allow the server to access the session
-                    });
-                    var link = document.getElementById("facebook-link");
-                    if (link > 0) {
-                        link.addEventListener("click", function(e) {
-                            e.preventDefault();
-                            FB.ui({
-                            "method":"feed",
-                            "caption":"<?= _('I protect the Internet!') ?>",
-                            "description":"<?= _('I just joined Mozilla, the makers of Firefox. Together we&rsquo;re protecting the world&rsquo;s largest public resource. Join us today!') ?>",
-                            "name":"<?= _('Protect the Web') ?>",
-                            "picture":"assets/img/mozilla-crest.png",
-                            "link":"http://www.mozilla.org/join"
-                        }, function() {
-                            window.location.href = "http://www.mozilla.org/join";
-                        });
-                        }, false);
-                    };
-                };
-            })();
+          window.fbAsyncInit = function() {
+            FB.init({
+                appId  : '198340516862242',
+                status : true, // check login status
+                cookie : true, // enable cookies to allow the server to access the session
+            });
+            var link = document.getElementById("facebook-link");
+            if (link) {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    FB.ui({
+                    "method":"feed",
+                    "description":"<?= _('I just joined Mozilla, the makers of Firefox. Together we&rsquo;re protecting the world&rsquo;s largest public resource. Join us today!') ?>",
+                    "name":"<?= _('I protect the Internet!') ?>",
+                    "picture":"<?php echo URL_BASE; ?>assets/img/mozilla-crest.png",
+                    "link":"http://www.mozilla.org/join"
+                }, function() {
+                    window.location.href = "http://www.mozilla.org/join";
+                });
+                }, false);
+            };
+          };
         });
 		// form submission
 		jQuery(function($) {
