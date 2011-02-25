@@ -41,19 +41,20 @@ textdomain('messages');
     
     <script type="text/javascript" src="assets/js/modernizr.js?ver=0.1"></script> 
     <script type="text/javascript" data-main="main" src="assets/js/require-jquery.js?ver=0.1"></script> 
-    </head><body class="page-thanks"> 
+    </head>
+    <body class="page-thanks"> 
     <div id="act-1" class="act"> 
       <header id="moz-header"> 
-	<h1><a href="http://mozilla.org/"><img id="moz-logo" src="assets/img/mozilla-logo.png?ver=0.1" alt="Mozilla" width="109" height="28" /></a></h1> 
-	<nav> 
-          <ul> 
-            <li><a href="http://www.mozilla.org/about/"><?= _('About Us') ?></a></li> 
-            <li><a href="http://www.mozilla.org/community/"><?= _('Community Map') ?></a></li> 
-            <li><a href="http://www.mozilla.org/projects/"><?= _('Our Projects') ?></a></li> 
-            <li><a href="http://www.mozilla.org/contribute/"><?= _('Get Involved') ?></a></li> 
-          </ul> 
-	</nav> 
-      </header>		
+	      <h1><a href="http://mozilla.org/"><img id="moz-logo" src="assets/img/mozilla-logo.png?ver=0.1" alt="Mozilla" width="109" height="28" /></a></h1> 
+         <nav> 
+            <ul> 
+               <li><a href="http://www.mozilla.org/about/"><?= _('About Us') ?></a></li> 
+               <li><a href="http://www.mozilla.org/community/"><?= _('Community Map') ?></a></li> 
+               <li><a href="http://www.mozilla.org/projects/"><?= _('Our Projects') ?></a></li> 
+               <li><a href="http://www.mozilla.org/contribute/"><?= _('Get Involved') ?></a></li> 
+            </ul> 
+         </nav>
+      </header>
       <div class="in"> 
         <div class="title-card"> 
           <h1><?= _('Join Mozilla') ?></h1> 
@@ -73,7 +74,7 @@ textdomain('messages');
           <aside class="social"> 
             <h1 class="title"><?= _('Brag about it now:') ?></h1> 
             <ul> 
-              <li class="twitter"><a href="#"><?= _('Twitter') ?></a></li> 
+              <li onclick="" class="twitter"><a target="_blank" href="http://twitter.com/share?text=<?php echo urlencode('I just made the web better and Joined Mozilla. You can too!'); ?>&amp;url=<?php echo urlencode('http://www.mozilla.org/join'); ?>"><?= _('Twitter') ?></a></li> 
               <li class="facebook"><a href="#"><?= _('Facebook') ?></a></li> 
             </ul> 
           </aside> 

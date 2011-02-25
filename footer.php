@@ -1,4 +1,4 @@
-</div><!--/in-->
+   </div><!--/in-->
 </section><!--/act-3-->
 <footer id="footer-wrap">
   <div id="footer" class="clearfix">
