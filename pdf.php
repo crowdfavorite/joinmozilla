@@ -30,7 +30,7 @@ require_once(LIB_DIR.'FPDI-1.4/fpdi.php');
 $locale = (!empty($_REQUEST['locale']) ? $_REQUEST['locale'] : 'en-US');
 putenv("LC_ALL=" . $locale);
 setlocale(LC_ALL , $locale);
-
+ep($locale);
 bindtextdomain('messages', APPLICATION_ROOT . '/locale');
 bind_textdomain_codeset("messages", "UTF-8");
 textdomain('messages');
