@@ -121,5 +121,11 @@ require_once('config.php');
     </section><!--/act-2--> 
 
     <?= /* L10n: Displayed next to a dynamic ticker showing number of downloads */ _('# of Firefox browsers distributed worldwide') ?>
-
+    <?php
+    /*
+    This div required by Facebook JS
+    See http://developers.facebook.com/docs/reference/javascript/
+    */
+    ?>
+    <div id="fb-root"></div>
 <?php require_once('footer.php'); ?>
