@@ -49,8 +49,8 @@ require_once('config.php');
                     e.preventDefault();
                     FB.ui({
                     "method":"feed",
-                    "description":"<?= _('I just joined Mozilla, the makers of Firefox. Together we&rsquo;re protecting the world&rsquo;s largest public resource. Join us today!') ?>",
-                    "name":"<?= _('I protect the Internet!') ?>",
+                    "description":"<?= /* L10n: Facebook status update body */ _('I just joined Mozilla, the makers of Firefox. Together we&rsquo;re protecting the world&rsquo;s largest public resource. Join us today!') ?>",
+                    "name":"<?= /* L10n: Facebook status update title */ _('I protect the Internet!') ?>",
                     "picture":"<?php echo URL_BASE; ?>assets/img/mozilla-crest.png",
                     "link":"http://www.mozilla.org/join"
                 }, function() {
