@@ -116,7 +116,7 @@ foreach ($config['pages'] as $template) {
 }
 
 // deliver
-$pdf->Output('foo.pdf', $config['delivery_method']);
+$pdf->Output('join-mozilla.pdf', $config['delivery_method']);
 
 exit;
 ?>
