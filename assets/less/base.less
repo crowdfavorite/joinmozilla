@@ -1,22 +1,13 @@
 /**
  * @package protecttheweb
+ * Base styles and utility classes.
+ *
+ * Don't compile this file! It's included in main-*.less
  */
-/* League Gothic font face embed. */
-@font-face {
-	font-family: 'LeagueGothicRegular';
-	src: url('../fonts/league-gothic/League_Gothic-webfont.eot');
-	src: local('foobarbazbing'), url('../fonts/league-gothic/League_Gothic-webfont.woff') format('woff'), url('../fonts/league-gothic/League_Gothic-webfont.ttf') format('truetype'), url('../fonts/league-gothic/League_Gothic-webfont.svg#webfont1Lb5Pdit') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-/* Museo sans font embed (for Mozilla header) */
-@font-face {
-	font-family: 'MuseoSans500';
-	src: url('../fonts/museo-sans/MuseoSans_500-webfont.eot');
-	src: local('foobarbazbing'), url('../fonts/museo-sans/MuseoSans_500-webfont.woff') format('woff'), url('../fonts/museo-sans/MuseoSans_500-webfont.ttf') format('truetype'), url('../fonts/museo-sans/MuseoSans_500-webfont.svg#webfont9JLmVUVg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+
+
+/** @section Reset
+ -------------------------------------------------- */
 /* 
   html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
   v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
@@ -158,32 +149,6 @@ html.webkit select {
 	height: 1;
 	overflow: hidden;
 	width: 1px;
-}
-
-/**
- * Tip: adding the param parenthesis to a set of rules makes it an explicit mixin.
- * That means it won't show up in the compiled code unless you use it as a mixin.
- */
-.font-display() {
-	font-family: "LeagueGothicRegular", Impact, Charcoal, "Arial Narrow Bold", Arial, sans-serif;
-	font-weight: normal;
-	line-height: 1;
-	text-transform: uppercase;
-}
-.font-display-2() {
-	font-family: Georgia, Times, serif;
-	font-style: italic;
-	font-weight: normal;
-	line-height: 1.2;
-}
-.font-display-3() {
-	font-family: "MuseoSans500", Trebuchet, sans-serif;
-	font-weight: normal;
-}
-.font-text() {
-	font-family: Georgia, Times, serif;
-	font-size: 1.6em;
-	line-height: 1.375;
 }
 
 .sprite(@position, @background: url(../img/sprite-y.24bit.png) ) {
