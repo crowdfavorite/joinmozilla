@@ -27,11 +27,6 @@ $config = array(
 		'en',
 		'de'
 	),
-	// Date formats for known languages, processed by strftime for intl: http://us3.php.net/strftime
-	'datestrings' => array(
-		'en' => '%m.%e.%Y',
-		'de' => '%e. %m. %Y'
-	),
 	// Default name in case something goes wrong
 	'default_name' => 'Fabulous Mozilla Supporter',
 	// delivery method

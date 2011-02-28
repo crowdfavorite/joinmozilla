@@ -48,17 +48,12 @@ elseif (strpos($lang, '_') != false) {
 }
 
 // set date format
-if (!empty($config['datestrings'][$lang])) {
-	$date_format = $config['datestrings'][$lang];
-}
-else {
-	$date_format = $config['datestrings']['en'];
-}
+$date_format = /*L10n: Used on both certificate & card. See http://php.net/strftime for formatting directions */ _('%m.%e.%Y');
 
 // Config variable entities
 $date = strftime($date_format);
-$endorsed_by = _(strtoupper('Endorsed By'));
-$on_date = _('ON').' '.strftime($date_format);
+$endorsed_by = /*L10n: Displayed on the left-hand side of the certificate, before "Mozilla on <date>" */ _('ENDORSED BY');
+$on_date = sprintf( /*L10n: Displayed on the right-hand side of the certificate, after "Endorsed by Mozilla" */ _('ON %s'), strftime($date_format));
 $name = (!empty($_REQUEST['name']) ? strtoupper($_REQUEST['name']) : $config['default_name']);
 
 // init
