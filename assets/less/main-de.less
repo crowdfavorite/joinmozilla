@@ -1,0 +1,47 @@
+/**
+ * @package protecttheweb
+ * Master Stylesheet
+ *
+ * Compile this file.
+ * When compiling LESS to CSS, the "main-*.less" files are the only files that should be compiled, leaving a single CSS file (en.css).
+ * Set the "minify" option when compiling for extra karma points!
+ */
+
+/**
+ * No League Gothic :(. It has no international characters.
+ */
+
+/* Museo sans font embed (for Mozilla header) */
+@font-face {
+	font-family: 'MuseoSans500';
+	src: url('../fonts/museo-sans/MuseoSans_500-webfont.eot');
+	src: local('foobarbazbing'), url('../fonts/museo-sans/MuseoSans_500-webfont.woff') format('woff'), url('../fonts/museo-sans/MuseoSans_500-webfont.ttf') format('truetype'), url('../fonts/museo-sans/MuseoSans_500-webfont.svg#webfont9JLmVUVg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.font-display() {
+	font-family: Impact, Charcoal, "Arial Narrow Bold", Arial, sans-serif;
+	font-weight: normal;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.font-display-2() {
+	font-family: Georgia, Times, serif;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 1.2;
+}
+.font-display-3() {
+	font-family: "MuseoSans500", Trebuchet, sans-serif;
+	font-weight: normal;
+}
+.font-text() {
+	font-family: Georgia, Times, serif;
+	font-size: 1.6em;
+	line-height: 1.375;
+}
+@import "base";
+@import "bsd-form";
+@import "moz";
+@import "structure";
