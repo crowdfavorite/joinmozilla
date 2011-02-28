@@ -55,14 +55,9 @@ require_once('config.php');
                     e.preventDefault();
                     FB.ui({
                     "method":"feed",
-                    "description":"<?= _('I just joined Mozilla, the makers of Firefox. Together we&rsquo;re protecting the world&rsquo;s largest public resource. Join us today!') ?>",
-                    "name":"<?= _('I protect the Internet!') ?>",
-                    <?php /*
-                    Intentionally not using URL_BASE here.
-                    We need an absolute, unchanging URL for Facebook and URL_BASE can be
-                    relative
-                    */ ?>
-                    "picture":"http://donate.mozilla.org/page/-/protecttheweb/assets/img/mozilla-crest.png",
+                    "description":"<?= /* L10n: Facebook status update body */ _('I just joined Mozilla, the makers of Firefox. Together we&rsquo;re protecting the world&rsquo;s largest public resource. Join us today!') ?>",
+                    "name":"<?= /* L10n: Facebook status update title */ _('I protect the Internet!') ?>",
+              		"picture":"http://donate.mozilla.org/page/-/protecttheweb/assets/img/mozilla-crest.png",
                     "link":"http://www.mozilla.org/join"
                 }, function() {
                     window.location.href = "http://www.mozilla.org/join";
@@ -112,7 +107,7 @@ require_once('config.php');
           <aside class="social"> 
             <h1 class="title"><?= _('Brag about it now:') ?></h1> 
             <ul> 
-              <li class="twitter"><a onclick="window.open(this.href, 'joinmozilla', 'location=false,status=false,toolbar=false,width=550,height=400'); return false;" href="http://twitter.com/share?text=<?= urlencode(_('I just made the web better and Joined Mozilla. You can too!')) ?>&amp;url=<?= urlencode('http://www.mozilla.org/join'); ?>"><?= _('Twitter') ?></a></li> 
+              <li class="twitter"><a onclick="window.open(this.href, 'joinmozilla', 'location=false,status=false,toolbar=false,width=550,height=400'); return false;" href="http://twitter.com/share?text=<?= /* L10n: Tweet, 120 characters max */ urlencode(_('I just made the web better and Joined Mozilla. You can too!')) ?>&amp;url=<?= urlencode('http://www.mozilla.org/join'); ?>"><?= _('Twitter') ?></a></li> 
               <li class="facebook"><a id="facebook-link" href="#"><?= _('Facebook') ?></a></li> 
             </ul> 
           </aside> 
