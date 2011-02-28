@@ -111,7 +111,8 @@ foreach ($config['pages'] as $template) {
 }
 
 // deliver
-$pdf->Output('join-mozilla.pdf', $config['delivery_method']);
+$pdfname = /*L10n: Used for certificate download filename */ _('Join-Mozilla-Supporter');
+$pdf->Output($pdfname.'.pdf', $config['delivery_method']);
 
 exit;
 ?>
