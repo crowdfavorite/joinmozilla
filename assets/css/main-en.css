@@ -130,7 +130,7 @@ html.multiplebgs #act-2{background:url(../img/act2-background.png) center bottom
 #act-3 #merch-shirt{left:0;top:650px;}#act-3 #merch-shirt:hover{-moz-transform:rotate(-4deg);-o-transform:rotate(-4deg);transform:rotate(-4deg);}
 .page-thanks{background:#847e70 url(../img/page-thanks/act1-crowd.jpg) center top repeat-x;}.page-thanks #act-1,.page-thanks #act-2{background:transparent !important;}
 .page-thanks #act-1{height:169px;padding-bottom:0;}
-.page-thanks #act-1 h1{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:1;text-transform:uppercase;font-size:9em;line-height:.80;text-align:center;}
+.page-thanks #act-1 h1{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:1;text-transform:uppercase;font-size:9em;line-height:.80;margin-left:206px;}
 .page-thanks #act-1 .title-card{position:relative;zoom:1;}
 .page-thanks #act-1 .title-card h1{position:relative;z-index:2;}
 .page-thanks #act-2{padding-top:16px;}

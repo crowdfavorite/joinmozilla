@@ -317,7 +317,9 @@ html.multiplebgs #act-2 {
 		.font-display;
 		font-size: 9em;
 		line-height: .80;
-		text-align: center;
+		/* Let text flow from left instead of truly centering.
+		This makes for better results with translating. */
+		margin-left: 206px;
 	}
 	
 	#act-1 .title-card {
