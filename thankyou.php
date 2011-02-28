@@ -126,7 +126,7 @@ require_once('config.php');
       </div><!--/in--> 
     </section><!--/act-2--> 
 
-    <?= /* L10n: Displayed next to a dynamic ticker showing number of downloads _('# of Firefox browsers distributed worldwide') */ ?>
+    <?= /* L10n: Displayed next to a dynamic ticker showing number of downloads */ _('# of Firefox browsers distributed worldwide') ?>
     <?php
     /*
     This div required by Facebook JS
