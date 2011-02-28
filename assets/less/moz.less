@@ -1,0 +1,151 @@
+/** @section Red Mozilla Header
+ * Custom original styles
+ -------------------------------------------------- */
+
+#moz-header {
+	.sprite(0 -600px);
+	.str-container( 980px );
+	height: 57px;
+	margin-bottom: 34px;
+	padding-bottom: 3px;
+	position: relative;
+	z-index: 5;
+}
+#moz-logo {
+	left: 19px;
+	position: absolute;
+	top: 11px;
+}
+#moz-header nav {
+	.sprite(right -700px);
+	.nav;
+	line-height: 53px;
+	left: 343px;
+	padding-right: 2px;
+	position: absolute;
+	top: 0;
+}
+#moz-header nav ul li {
+	/* Set up sprite, but do not show */
+	.sprite(0 300px);
+}
+#moz-header nav ul li:hover {
+	/* Move sprite */
+	background-position: 0 -400px;
+}
+#moz-header nav li:focus,
+#moz-header nav li:active,
+#moz-header nav li.active {
+	background-position: right -900px !important;
+}
+#moz-header nav ul a {
+	.sprite(0 -700px);
+	color: #fff;
+	font-size: 16px;
+	.font-display-3;
+	padding: 0 9px 4px;
+}
+/* We set cool focus styles. Let's remove outlines */
+#moz-header a:focus {
+	outline: none;
+}
+#moz-header nav li:focus a,
+#moz-header nav li:active a,
+#moz-header nav li.active a {
+	.sprite(0 -800px);
+}
+
+/** @section Mozilla Footer styles
+ * Based on styles found at http://www.mozilla.org/style/screen-2010.css?date=2010-12-05
+ -------------------------------------------------- */
+
+#footer-wrap {
+	background: #2a2a2a;
+	border-top: 13px solid #a5151e;
+	min-width: 980px;
+	/* This keeps very wide #footer-in from creating horizontal scroll bar */
+	overflow: hidden;
+}
+
+/* Make room for line to crawl all the way to right edge of screen. */
+#footer-in {
+	width: 23000px;
+	
+	.cols { clear:both; } /* @todo: add more col possibilities */
+	.five-col {
+		display: inline;
+		float: left;
+		width: 200px;
+		padding-right: 20px;
+	}
+	.six-col {
+		display: inline;
+		float: left;
+		padding-right: 20px;
+		width: 170px;
+	}
+	.cols > *:last-child { margin-right:0; padding-right:0; }
+	
+	.footer-nav-title {
+		margin-bottom: 10px;
+	}
+}
+/* Old IE doesn't like the fancy footer. */
+.ie7 #footer-in,
+.ie6 #footer-in {
+	width: auto;
+}
+/* Alternate layout for footer that's not so wide */
+.ie7 #footer-in .five-col,
+.ie6 #footer-in .five-col {
+	width: 177px;
+}
+
+#footer {
+	clear: both;
+	color: #999;
+	margin: 0 auto;
+	padding: 32px 0 50px 0;
+	position: relative;
+	width: 980px;
+	height: 1%;
+	
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p {
+		color:#999;
+	}
+}
+
+#footer-navs {
+	border-top: 1px solid #404040;
+	padding-top: 15px;
+}
+
+.footer-nav { list-style:none; margin:0; }
+.footer-nav li { font-size:12px; background:none; padding-left:0; margin-bottom: 0.25em; }
+.footer-nav-title { font-family:Arial, sans-serif; font-size:12px; }
+#footer .col-span { font-size:13px; }
+#footer .six-col { background:#2a2a2a; }
+#copyright {
+	font-size: 11px;
+	padding-top: 11px;
+	margin-bottom: 14px;
+}
+#copyright-links {
+	list-style: none;
+	margin: 0;
+}
+#copyright-links li {
+	margin-bottom: 4px;
+}
+#copyright-links a {
+	font-size:11px;
+}
+
+#languages { float:right; margin-left:20px; }
+#languages select { margin-left:10px; }

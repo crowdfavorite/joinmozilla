@@ -1,0 +1,242 @@
+/** @section BSD form styles
+ -------------------------------------------------- */
+
+@leftoffset: 245px;
+
+
+.bsd-contribForm-aboveContent,
+.bsd-contribForm-belowContent,
+.contriberrorbanner {
+	margin-left: @leftoffset;
+}
+
+/* Override BSD forms code */
+html .contriberrorbanner {
+	color: #921011 !important;
+	font-weight: normal;
+	font-size: 1.4em;
+}
+
+/**
+ * IE edge cases for alternate table layout
+ * since IE does not allow td { display: block; }
+ */
+html.ie6 #contribution .contribcolumn table > tbody > tr > td.nested_table > table > tr > td > .field.fieldlabel,
+html.ie7 #contribution .contribcolumn table > tbody > tr > td.nested_table > table > tr > td > .fieldlabel,
+html.ie8 #contribution .contribcolumn table > tbody > tr > td.nested_table > table > tr > td > .fieldlabel,
+html.ie6 #contribution #payment_options .fieldlabel,
+html.ie7 #contribution #payment_options .fieldlabel,
+html.ie8 #contribution #payment_options .fieldlabel {
+	display: block;
+	float: none;
+	text-align: left;
+}
+html.ie6 #contribution .nested_table input[type=text],
+html.ie7 #contribution .nested_table input[type=text],
+html.ie8 #contribution .nested_table input[type=text],
+html.ie6 #contribution #payment_options input[type=text],
+html.ie7 #contribution #payment_options input[type=text],
+html.ie8 #contribution #payment_options input[type=text] {
+	width: 200px;
+}
+
+#contribution #payment_options td {
+	display: table-data;
+	width: auto;
+}
+
+/**
+ * Contribution form
+ * We give it high specificity because BSD likes to add it's own styles *below* ours.
+ */
+body #contribution {
+	@width: 495px;
+	@labelwidth: 124px;
+	
+	font-size: 1.4em;
+	margin-left: @leftoffset;
+	margin-bottom: 25px;
+	width: @width;
+	
+	table {
+		table-layout: fixed;
+	}
+	
+	table,
+	tbody,
+	tr {
+		border-collapse: collapse;
+		border-spacing: 0;
+		width: @width;
+		margin: 0;
+		padding: 0;
+	}
+	
+	br {
+		display: none;
+	}
+	
+	th,
+	td {
+		position: relative;
+		padding: 4px 0 5px;
+		width: @width;
+	}
+	
+	input[type="text"],
+	input[type="email"],
+	input.text {
+		width: 355px;
+	}
+	
+	label {
+		font-weight: normal;
+	}
+	
+	/* Override form styles that BSD shoves in */
+	.error {
+		color: #921011 !important;
+		font-weight: normal !important;
+	}
+	
+	.contribheader {
+		background: url(../img/bullet.png) 0 bottom repeat-x;
+		.font-display;
+		font-size: 36px;
+		padding-bottom: 10px;
+		padding-top: 30px;
+	}
+	
+	label.error,
+	.fieldlabel,
+	.radio {
+		color: #e4dcc9;
+		.font-display-2;
+		font-size: 16px;
+	}
+	label.error,
+	.fieldlabel {
+		float: left;
+		height: 30px;
+		line-height: 30px;
+		margin-right: 10px;
+		text-transform: capitalize;
+		width: @labelwidth - 10px;
+		white-space: nowrap;
+	}
+	.radio {
+		line-height: 22px;
+		margin-right: 10px;
+	}
+	
+	/* "Required field" errors */
+	span.error {
+		.hide();
+	}
+	
+	td.nested_table {
+		border: 0;
+	}
+	
+	table.amounts input[type=text] {
+		width: 3.5em;
+	}
+	/* Only use this one if using the custom field type in BSD for ammounts */
+	table.amounts .fieldlabel {
+		display: none;
+	}
+	table.amounts .radio {
+		display: block;
+		margin-left: 23px;
+	}
+	/* Radios */
+	table.amounts #q_0,
+	table.amounts #q_1 {
+		display: block;
+		float: left;
+		margin-top: 6px;
+	}
+	
+	td.contribbutton {
+		padding-top: 24px;
+	}
+	td.contribbutton .fieldlabel {
+		display: none;
+	}
+	
+	.nested_table td,
+	#payment_options td {
+		display: block;
+	}
+	
+	#payment_options {
+		margin-bottom: 18px;
+	}
+	#payment_options select {
+		width: 102px;
+	}
+	
+	/* Select box state */
+	#state_cd {
+		margin-left: 60px;
+		width: 311px;
+	}
+	/* Input that BSD shoves in without type attribute */
+	input#state_cd {
+		/* select box occasionally gets replaced with input by BSD js
+		but they don't include a type. Set an edge case here */
+		.input-base(295px);
+	}
+	
+	/* These Custom fields are used for T-shirt size
+	and need to be narrower for wide label */
+	input[name=custom1],
+	input[name=custom2] {
+		float: right;
+		width: 275px;
+	}
+	
+	#tickets {
+		td {
+			width: 50% !important;
+		}
+		input[type="text"],
+		input[type="email"],
+		input.text {
+			width: 220px;
+		}
+		/* empty field labels */
+		.fieldlabel {
+			display: none;
+		}
+	}
+	
+	#country_table {
+		margin-bottom: 4px;
+	}
+	
+	#t_q {
+		display: none;
+	}
+	
+	/* Spacing edge cases for inputs grouped in table */
+	#addr1,
+	#firstname {
+		margin-bottom: 9px;
+	}
+	#country {
+		margin-bottom: 5px;
+	}
+	
+	#cc_number {
+		width: 190px;
+	}
+	
+	/**
+	 * Submit button
+	 */
+	#processbutton {
+		.button-input;
+		font-size: 36px;
+	}
+}
