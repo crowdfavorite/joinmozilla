@@ -112,7 +112,7 @@ require_once('config.php');
             </ul> 
           </aside> 
           <a class="call-to-action" href="#"> 
-            <img id="mozilla-card" src="assets/img/page-thanks/card.png" alt="" width="227" height="153" />
+            <img id="mozilla-card" src="assets/img/page-thanks/card-<?= $locale ?>.png" alt="" width="227" height="153" />
           </a>
           <form method="post" id="get-pdf" name="get-pdf" action="pdf.php" target="_blank" onsubmit="return false;">
             <input type="hidden" name="locale" value="<?= $locale ?>">

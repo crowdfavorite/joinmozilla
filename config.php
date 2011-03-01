@@ -21,7 +21,7 @@ define('VER', '0.1');
 
 header('Content-type: text/html; charset=utf-8');
 if (array_key_exists('locale', $_GET))
-  $locale = $_GET['locale'];
+  $locale = htmlspecialchars($_GET['locale']);
 else
   $locale = 'en-US';
 putenv("LC_ALL=" . $locale);
