@@ -56,6 +56,14 @@ $endorsed_by = /*L10n: Displayed on the left-hand side of the certificate, befor
 $on_date = sprintf( /*L10n: Displayed on the right-hand side of the certificate, after "Endorsed by Mozilla" */ _('ON %s'), strftime($date_format));
 $name = (!empty($_REQUEST['name']) ? strtoupper($_REQUEST['name']) : $config['default_name']);
 
+// UTF 8 Haxie for FPDF
+// If this continues to cause problems then a switch to the paid PDFLib may
+// be in order as free pdf generators seem to all be limited in one form or another [shawn]
+$date = utf8_decode($date);
+$endorsed_by = utf8_decode($endorsed_by);
+$on_date = utf8_decode($on_date);
+$name = utf8_decode($name);
+
 // init
 $pdf =& new FPDI('P', 'pt');
 $pdf->SetAuthor($config['info']['author']);

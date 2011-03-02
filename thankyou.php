@@ -46,8 +46,8 @@ require_once('config.php');
           window.fbAsyncInit = function() {
             FB.init({
                 appId  : '198340516862242',
-                status : true, // check login status
-                cookie : true, // enable cookies to allow the server to access the session
+                status : false, // check login status
+                cookie : false, // enable cookies to allow the server to access the session
             });
             var link = document.getElementById("facebook-link");
             if (link) {
