@@ -55,6 +55,7 @@ $date = strftime($date_format);
 $endorsed_by = /*L10n: Displayed on the left-hand side of the certificate, before "Mozilla on <date>" */ _('ENDORSED BY');
 $on_date = sprintf( /*L10n: Displayed on the right-hand side of the certificate, after "Endorsed by Mozilla" */ _('ON %s'), strftime($date_format));
 $name = (!empty($_REQUEST['name']) ? $_REQUEST['name'] : $config['default_name']);
+// fallback support for servers that don't have mbstring support installed in PHP
 $name = (function_exists('mb_strtoupper') ? mb_strtoupper($name, 'UTF-8') : strtoupper($name));
 
 
