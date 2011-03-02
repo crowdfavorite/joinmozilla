@@ -54,7 +54,9 @@ $date_format = /*L10n: Used on both certificate & card. See http://php.net/strft
 $date = strftime($date_format);
 $endorsed_by = /*L10n: Displayed on the left-hand side of the certificate, before "Mozilla on <date>" */ _('ENDORSED BY');
 $on_date = sprintf( /*L10n: Displayed on the right-hand side of the certificate, after "Endorsed by Mozilla" */ _('ON %s'), strftime($date_format));
-$name = (!empty($_REQUEST['name']) ? strtoupper($_REQUEST['name']) : $config['default_name']);
+$name = (!empty($_REQUEST['name']) ? $_REQUEST['name'] : $config['default_name']);
+$name = (function_exists('mb_strtoupper') ? mb_strtoupper($name, 'UTF-8') : strtoupper($name));
+
 
 // UTF 8 Haxie for FPDF
 // If this continues to cause problems then a switch to the paid PDFLib may
