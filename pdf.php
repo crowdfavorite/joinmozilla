@@ -1,11 +1,9 @@
 <?php
-# Allow only posting of data unless you know the secret pass-code-phrase-entry-word
+# Allow only POST request methods
 if (strtoupper($_SERVER['REQUEST_METHOD']) != 'POST') {
-	if (empty($_REQUEST['pw']) || $_REQUEST['pw'] != 'heynowheynowaikoaikoallday') {
-		@header('HTTP/1.1 405 Method Not Allowed');
-		@header('Status: 405 Method Not Allowed');
-		exit;
-	}
+	@header('HTTP/1.1 405 Method Not Allowed');
+	@header('Status: 405 Method Not Allowed');
+	exit;
 }
 
 # prevent caching
@@ -26,9 +24,13 @@ define('PDF_TEMPLATE_DIR', APPLICATION_ROOT.'assets/pdf/'); // requires trailing
 require_once(PDF_TEMPLATE_DIR.'pdf-config.php');
 require_once(LIB_DIR.'fpdf16/fpdf.php');
 require_once(LIB_DIR.'FPDI-1.4/fpdi.php');
-
 // Set-up translations
-$locale = (!empty($_REQUEST['locale']) ? $_REQUEST['locale'] : 'en-US');
+$locale = htmlspecialchars(!empty($_POST['locale']) ? $_POST['locale'] : 'en_US');
+// if we don't have a proper match to a language code then revert to english
+if (!preg_match('/[a-z]{2}[\-_][A-Z]{2}/', $locale)) {
+	$locale = 'en_US';
+}
+
 putenv("LC_ALL=" . $locale);
 setlocale(LC_ALL , $locale);
 
@@ -54,7 +56,11 @@ $date_format = /*L10n: Used on both certificate & card. See http://php.net/strft
 $date = strftime($date_format);
 $endorsed_by = /*L10n: Displayed on the left-hand side of the certificate, before "Mozilla on <date>" */ _('ENDORSED BY');
 $on_date = sprintf( /*L10n: Displayed on the right-hand side of the certificate, after "Endorsed by Mozilla" */ _('ON %s'), strftime($date_format));
-$name = (!empty($_REQUEST['name']) ? $_REQUEST['name'] : $config['default_name']);
+
+// Name sanitization, be stringent and disallow PDF object delimiter chars
+$find = array('/', '(', ')', '>', '<', '%', '{', '}', '[', ']');
+$name = (!empty($_POST['name']) ? str_replace($find, '', $_POST['name']) : $config['default_name']);
+
 // fallback support for servers that don't have mbstring support installed in PHP
 $name = (function_exists('mb_strtoupper') ? mb_strtoupper($name, 'UTF-8') : strtoupper($name));
 
