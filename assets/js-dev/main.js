@@ -1,13 +1,12 @@
 /*
-Note: don't load Modernizr.js through require.
-It won't work properly in IE when loaded through require.
+Note: don't load Modernizr.js through require.js.
+The HTML5 shim doesn't work properly in IE when loaded through require.js -- don't know why.
 Instead, add the script tag to the head of the document above the require call.
 
-Every JS file in the working HTML has a .min minified equivalent.
-Use the .min version of the scripts if you want to use the parallel-load
-client-side functionality of Require JS.
-If you are going to compile server-side with Require, use the uncompressed versions
+Since we're using the server-side compiler with Require, we use the uncompressed script versions
 to prevent double-compression warnings.
+
+If you were to use Require.js on the client side instead, you would want to use minified scripts instead.
 */
 /* Add class to head for webkit. Used for select box styles */
 require(["jquery", "modernizr.webkit", "jquery.scrollTo", "jquery.localscroll"], function($) {
