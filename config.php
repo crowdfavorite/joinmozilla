@@ -9,8 +9,12 @@ define('APPLICATION_ROOT', $_SERVER['DOCUMENT_ROOT']);
 if (!defined('URL_BASE')) {
   /**
    * URL base for assets CDN (default is path to BSD Tools CDN)
+   *
+   * It's VERY IMPORTANT that this use the protocol-relative URL format for a couple reasons.
+   * 1. It won't cause security warnings in IE because you won't be mixing http:// and https://
+   * 2. If you use http://, BSD will re-write and proxy the URL, BREAKING WEBFONTS IN Firefox.
    */
-  define('URL_BASE', 'http://donate.mozilla.org/page/-/protecttheweb/');
+  define('URL_BASE', '//donate.mozilla.org/page/-/protecttheweb/');
 }
 /**
  * Cache-busting constant for assets
