@@ -1,31 +1,10 @@
 <?php require_once('config.php'); ?>
 <!DOCTYPE html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js not-ie"> <!--<![endif]-->
+   <?= html_open(); ?>
    <head>
    <meta charset="utf-8" />
    <title><?= _('Join Mozilla') ?></title>
-
-   <!-- Empty conditional comment hack
-    Prevents load stacking in IE8
-    See http://www.phpied.com/conditional-comments-block-downloads/ -->
-   <!--[if IE]><![endif]-->
-
-   <!-- Chrome Frame for browsers that support it -->
-   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-   <meta name="viewport" content="width=978" />
-   <meta name="DC.creator" content="Crowd Favorite - http://www.crowdfavorite.com" />
-
-   <link rel="shortcut icon" type="image/ico" href="http://mozilla.org/favicon.ico" />
-
-   <link rel="stylesheet" href="<?= URL_BASE; ?>assets/css/main-en.css?ver=<?= VER; ?>" type="text/css" media="screen" />
-
-   <script type="text/javascript" src="<?= URL_BASE; ?>assets/js/modernizr.js?ver=<?= VER; ?>"></script>
-   <script type="text/javascript" data-main="<?= URL_BASE; ?>assets/js/main.js" src="<?= URL_BASE; ?>assets/js/require-jquery.js?ver=<?= VER; ?>"></script>
+   <?= head_shared() ?>
    </head>
    <body class="page-index">
      <div id="act-1" class="act">
