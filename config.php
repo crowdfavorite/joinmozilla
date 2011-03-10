@@ -24,6 +24,12 @@ if (array_key_exists('locale', $_GET))
   $locale = htmlspecialchars($_GET['locale']);
 else
   $locale = 'en-US';
+
+/**
+ * Consistent locale string for images so we can translate them.
+ */
+$img_locale = str_replace('-', '_', $locale);
+
 putenv("LC_ALL=" . $locale);
 setlocale(LC_ALL , $locale);
 

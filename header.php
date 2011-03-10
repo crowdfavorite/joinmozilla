@@ -62,7 +62,7 @@
         <h2><?= _('Joining gives you:') ?></h2>
       </hgroup>
       <div class="content">
-        <img id="img-merch" src="<?= URL_BASE; ?>assets/img/merch-<?= $locale ?>.png?ver=<?= VER ?>" alt="" />
+        <img id="img-merch" src="<?= URL_BASE; ?>assets/img/merch-<?= $img_locale ?>.png?ver=<?= VER ?>" alt="" />
         <ul>
           <li><span><?= _('Deep inner pride for helping Mozilla build a Web for everyone') ?></span></li>
           <li><span><?= _('Access to cool Mozilla swag that will impress your friends') ?></span></li>
@@ -74,5 +74,5 @@
   </section>
   <section id="act-3" class="act">
     <div class="in">
-      <img id="merch-shirt" src="<?= URL_BASE; ?>assets/img/shirt-<?= $locale ?>.png?ver=<?= VER ?>" alt="Shirt + Card - $30" />
-      <img id="merch-card" src="<?= URL_BASE; ?>assets/img/card-<?= $locale ?>.png?ver=<?= VER ?>" alt="Just the Card - $5" />
+      <img id="merch-shirt" src="<?= URL_BASE; ?>assets/img/shirt-<?= $img_locale ?>.png?ver=<?= VER ?>" alt="Shirt + Card - $30" />
+      <img id="merch-card" src="<?= URL_BASE; ?>assets/img/card-<?= $img_locale ?>.png?ver=<?= VER ?>" alt="Just the Card - $5" />
