@@ -18,6 +18,14 @@ require(["jquery", "modernizr.webkit", "jquery.scrollTo", "jquery.localscroll"],
 		});
 		
 		/**
+		 * Scroll down to form if there's an error
+		 */
+		var form = $('#contribution');
+		if (form.length > 0) {
+			form.attr("action", form.attr("action") + "#act-3");
+		};
+		
+		/**
 		 * :active state patch for IE8, IE7
 		 */
 		$('#moz-header ul li').mousedown(function(){
