@@ -59,17 +59,7 @@ require_once('config.php');
     </head>
     <body class="page-compact"> 
     <div id="act-1" class="act"> 
-      <header id="moz-header"> 
-          <h1><a href="http://mozilla.org/"><img id="moz-logo" src="assets/img/mozilla-logo.png?ver=0.1" alt="Mozilla" width="109" height="28" /></a></h1> 
-         <nav> 
-            <ul> 
-               <li><a href="http://www.mozilla.org/about/"><?= _('About Us') ?></a></li> 
-               <li><a href="http://www.mozilla.org/community/"><?= _('Community Map') ?></a></li> 
-               <li><a href="http://www.mozilla.org/projects/"><?= _('Our Projects') ?></a></li> 
-               <li><a href="http://www.mozilla.org/contribute/"><?= _('Get Involved') ?></a></li> 
-            </ul> 
-         </nav>
-      </header>
+      <?php require_once('moz-header.php'); ?>
       <div class="in"> 
         <div class="title-card"> 
           <h1><?= _('Join Mozilla') ?></h1> 
