@@ -57,7 +57,7 @@ require_once('config.php');
 		});
 	</script>
     </head>
-    <body class="page-thanks"> 
+    <body class="page-compact"> 
     <div id="act-1" class="act"> 
       <header id="moz-header"> 
           <h1><a href="http://mozilla.org/"><img id="moz-logo" src="assets/img/mozilla-logo.png?ver=0.1" alt="Mozilla" width="109" height="28" /></a></h1> 
@@ -102,7 +102,7 @@ require_once('config.php');
             <input type="text" id="supporter-name" name="name" value="" />
           </form>
           <a class="call-to-action" href="#">
-            <span id="print-card-button" class="button fwd" href="#"><span><?= _('Print My Card') ?></span></span> 
+            <span id="print-card-button" class="button fwd"><span><?= _('Print My Card') ?></span></span> 
           </a> 
         </div><!--/call-to-action--> 
       </div><!--/in--> 
@@ -115,4 +115,7 @@ require_once('config.php');
     */
     ?>
     <div id="fb-root"></div>
-<?php require_once('footer.php'); ?>
+
+    <?php require_once('moz-footer.php'); ?>
+    </body>
+</html>
