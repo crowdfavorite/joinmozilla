@@ -32,7 +32,7 @@ require_once('config.php');
     <link rel="stylesheet" href="<?= URL_BASE; ?>assets/css/main-en.css?ver=<?= VER ?>" type="text/css" media="screen" /> 
     
     <script type="text/javascript" src="<?= URL_BASE ?>assets/js/modernizr.js?ver=<?= VER ?>"></script>
-	<script type="text/javascript" data-main="main" src="<?= URL_BASE ?>assets/js/require-jquery.js?ver=<?= VER ?>"></script>
+	<script type="text/javascript" data-main="<?= URL_BASE ?>assets/js/main.js" src="<?= URL_BASE ?>assets/js/require-jquery.js?ver=<?= VER ?>"></script>
     <?php
     /*
     Load Facebook connect Javascript asyncronously and initialize stream share
