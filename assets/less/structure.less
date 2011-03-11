@@ -45,9 +45,19 @@ p {
 }
 .content {
 	.font-text;
-}
-.content a {
-	color: #fff;
+	
+	a {
+		color: #fff;
+	}
+	
+	h1,
+	h2,
+	h3 {
+		.font-display;
+		color: #fff;
+		font-size: 1.5em;
+		margin-bottom: 6px;
+	}
 }
 
 /**
@@ -341,6 +351,9 @@ html.multiplebgs #act-2 {
 	#act-2 .content {
 		color: @lighttan;
 	}
+	#act-2 .content h1 {
+		color: #fff;
+	}
 	
 	#act-2 .title-card {
 		margin-bottom: 18px;
@@ -400,6 +413,10 @@ html.multiplebgs #act-2 {
 		-moz-transition: all .3s ease-in-out;
 		-o-transition: all .3s ease-in-out;
 		transition: all .3s ease-in-out;
+	}
+	
+	#faq {
+		margin-top: 70px;
 	}
 }
 
