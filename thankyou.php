@@ -57,7 +57,7 @@ require_once('config.php');
 		});
 	</script>
     </head>
-    <body class="page-compact"> 
+    <body class="page-compact">
     <div id="act-1" class="act"> 
       <?php require_once('moz-header.php'); ?>
       <div class="in"> 

@@ -64,14 +64,12 @@ $name = (!empty($_POST['name']) ? str_replace($find, '', $_POST['name']) : $conf
 // fallback support for servers that don't have mbstring support installed in PHP
 $name = (function_exists('mb_strtoupper') ? mb_strtoupper($name, 'UTF-8') : strtoupper($name));
 
-
-// UTF 8 Haxie for FPDF
-// If this continues to cause problems then a switch to the paid PDFLib may
-// be in order as free pdf generators seem to all be limited in one form or another [shawn]
-$date = utf8_decode($date);
-$endorsed_by = utf8_decode($endorsed_by);
-$on_date = utf8_decode($on_date);
-$name = utf8_decode($name);
+// Language specific UTF 8 decoding for FPDF when defined, otherwise default to Standard Western
+$charset = (!empty($config['langs'][$lang]) ? $config['langs'][$lang] : 'ISO-8859-1');
+$date = iconv('UTF-8', $charset, $date);
+$on_date = iconv('UTF-8', $charset, $on_date);
+$endorsed_by = iconv('UTF-8', $charset, $endorsed_by);
+$name = iconv('UTF-8', $charset, $name);
 
 // init
 $pdf =& new FPDI('P', 'pt');
@@ -100,7 +98,7 @@ foreach ($config['pages'] as $template) {
 		foreach ($template['text'] as $varname => $text) {
 			// load font
 			if (!in_array($text['font'], $loaded_fonts)) {
-				$pdf->AddFont($text['font'], '', $config['fonts'][$text['font']]);
+				$pdf->AddFont($text['font'], '', sprintf($config['fonts'][$text['font']], $charset));
 				array_push($loaded_fonts, $text['font']);
 			}
 			
