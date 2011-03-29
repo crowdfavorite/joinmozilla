@@ -2,6 +2,8 @@
 /*
 - All passed in language identifiers will be stripped of dash and trailing chars
 	- ie: en-US will become just en
+- Languages can supply the character encoding required for PDF generation
+	- will default to ISO-8859-1 if not specified in $config['langs']
 - All coordinates from top left of template
  	- fudged due to inaccuracies of pdf engine
 - All measurements in points
