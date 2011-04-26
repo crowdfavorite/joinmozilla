@@ -1,4 +1,10 @@
 <?php
+
+// just in case... ~sp
+if (!defined('PHP_EOL')) {
+	define('PHP_EOL', "\n");
+}
+
 /**
  * Root path
  */
@@ -76,4 +82,47 @@ setlocale(LC_ALL , $locale);
 bindtextdomain('messages', APPLICATION_ROOT . '/locale');
 bind_textdomain_codeset("messages", "UTF-8");
 textdomain('messages');
+
+function bsdtools_custom_fields_to_select_data() {
+	/**
+	 * BSD Tools custom fields output defintions. Each 1st level array will create a Select box
+	 * Each 2nd level array item will create a select option.
+	 *
+	 * There must be a corresponding input element in the DOM for these items to replace.
+	 */
+	$fields = array(
+		'custom1' => array(
+			'ws' => /* L10n: Women's Small T-Shirt Size select text */ _("Women's Small"),
+			'wm' => /* L10n: Women's Medium T-Shirt Size select text */ _("Women's Medium"),
+			'wl' => /* L10n: Women's Large T-Shirt Size select text */ _("Women's Large"),
+			'wxl' => /* L10n: Women's XL T-Shirt Size select text */ _("Women's XL"),
+			'wxx' => /* L10n: Women's 2XL T-Shirt Size select text */ _("Women's 2XL"),
+			'ms' => /* L10n: Men's Small T-Shirt Size select text */ _("Men's Small"),
+			'mm' => /* L10n: Men's Medium T-Shirt Size select text */ _("Men's Medium"),
+			'ml' => /* L10n: Men's Large T-Shirt Size select text */ _("Men's Large"),
+			'mxl' => /* L10n: Men's XL T-Shirt Size select text */ _("Men's XL"),
+			'mxx' => /* L10n: Men's 2XL T-Shirt Size select text */ _("Men's 2XL"),
+		),
+		'custom2' => array(
+			'red' => /* L10n: Red T-Shirt select text */ _("Red"),
+			'yellow' => /* L10n: Yellow T-Shirt select text */ _("Yellow"),
+			'green' => /* L10n: Green T-Shirt select text */ _("Green")
+		)
+	);
+
+	$js = PHP_EOL."\t\tvar field_trans = {".PHP_EOL;
+	foreach ($fields as $field_name => $field_data) {
+		$field_name = addslashes($field_name);
+		$js .= "\t\t\t'{$field_name}': {".PHP_EOL;
+		foreach ($field_data as $field_key => $field_item) {
+			$field_key = addslashes($field_key);
+			$field_item = addslashes($field_item);
+			$js .= "\t\t\t\t'{$field_key}': '{$field_item}',".PHP_EOL;
+		}
+		$js .= "\t\t\t},".PHP_EOL;
+	}
+	$js .= "\t\t}; // end field trans obj";
+		
+	return $js;
+}
 ?>

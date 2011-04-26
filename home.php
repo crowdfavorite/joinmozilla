@@ -45,20 +45,20 @@ require_once('header.php');
                     </td>
                   </tr>
                   <tr>
-                    <td class="contribheader"><?= _('T-Shirt Size') ?></td>
+                    <td class="contribheader"><?= _('T-Shirt') ?></td>
                   </tr>
                   <tr>
                     <td>
                       <table>
                         <tr>
                           <td>
-                            <label class="fieldlabel"><?= _('Women (S, M, L, XL, XXL)') ?><br /></label>
+                            <label class="fieldlabel"><?= _('Size') ?><br /></label>
                             <input size="30" name="custom1" type="text" />
                           </td>
                         </tr>
                         <tr>
                           <td>
-                            <label class="fieldlabel"><?= _('Men (S, M, L, XL, XXL)') ?><br /></label>
+                            <label class="fieldlabel"><?= _('Color') ?><br /></label>
                             <input size="30" name="custom2" type="text" />
                           </td>
                         </tr>
@@ -73,6 +73,28 @@ require_once('header.php');
       </table>
   </form>
 </div>
+
+<?php if (function_exists('bsdtools_custom_fields_to_select_data')): ?>
+<script type="text/javascript">
+	console.log(jQuery);
+	jQuery(function($){
+		<?php echo bsdtools_custom_fields_to_select_data(); ?>
+		
+		console.dir(field_trans);
+		// small arrays, for loops should be just fine
+		for (i in field_trans) {
+			var _select = '<select name="' + i + '">';
+			for (j in field_trans[i]) {
+				_select += '<option value="' + j + '">' + field_trans[i][j] + '</option>';
+			}
+			_select += '</select>';
+			
+			$('input[name="' + i + '"]').replaceWith($(_select));
+			
+		}
+	});
+</script>
+<?php endif; ?>
 
 <h2><?= _('Legal Compliance') ?></h2>
 <p>
