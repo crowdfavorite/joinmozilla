@@ -76,11 +76,8 @@ require_once('header.php');
 
 <?php if (function_exists('bsdtools_custom_fields_to_select_data')): ?>
 <script type="text/javascript">
-	console.log(jQuery);
 	jQuery(function($){
 		<?php echo bsdtools_custom_fields_to_select_data(); ?>
-		
-		console.dir(field_trans);
 		// small arrays, for loops should be just fine
 		for (i in field_trans) {
 			var _select = '<select name="' + i + '">';
@@ -88,9 +85,7 @@ require_once('header.php');
 				_select += '<option value="' + j + '">' + field_trans[i][j] + '</option>';
 			}
 			_select += '</select>';
-			
-			$('input[name="' + i + '"]').replaceWith($(_select));
-			
+			$('input[name="' + i + '"]').replaceWith($(_select));			
 		}
 	});
 </script>
