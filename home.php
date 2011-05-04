@@ -78,15 +78,31 @@ require_once('header.php');
 <script type="text/javascript">
 	jQuery(function($){
 		<?php echo bsdtools_custom_fields_to_select_data(); ?>
-		// small arrays, for loops should be just fine
-		for (i in field_trans) {
-			var _select = '<select name="' + i + '">';
-			for (j in field_trans[i]) {
-				_select += '<option value="' + j + '">' + field_trans[i][j] + '</option>';
+		
+		var buildSelect = function(name, options) {
+			var _select = '<select name="' + name + '" id="' + name + '">';
+			for (j in options) {
+				_select += '<option value="' + j + '">' + options[j] + '</option>';
 			}
 			_select += '</select>';
-			$('input[name="' + i + '"]').replaceWith($(_select));			
-		}
+			return $(_select);
+		};
+
+		// easy
+		$('input[name="custom2"]').replaceWith(buildSelect('custom2', field_trans.custom2));
+		// not-so-easy
+		$('input[name="custom1"]')
+			.after(buildSelect('custom1_size', field_trans.custom1_size))
+			.after(buildSelect('custom1_fit', field_trans.custom1_fit))
+			.replaceWith($('<input type="hidden" name="custom1" id="custom1" value="" />'));
+
+		$('form#contribution').submit(function() {
+			// grab custom field data and shoehorn it in to the hidden element
+			$('#custom1').val($('#custom1_fit').val() + ' ' + $('#custom1_size').val());
+			// prevent special modified fields from submitting
+			$('#custom1_size, #custom1_fit').attr('disabled', 'disabled');
+			return true;
+		});
 	});
 </script>
 <?php endif; ?>

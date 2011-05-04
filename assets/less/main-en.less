@@ -9,7 +9,8 @@
 
 /*
 League Gothic font face embed.
-Unfortunately, this font has no international characters, so we can only use it for English.
+*OMGWTF*: The current Git versions of the WebFonts contain more characters than are currently being used in production and 
+thus have a different bounding boxes. We need to account for this in the redesign
 */
 @font-face {
 	font-family: 'LeagueGothicRegular';
@@ -34,7 +35,7 @@ Unfortunately, this font has no international characters, so we can only use it 
 .font-display() {
 	font-family: "LeagueGothicRegular", Impact, Charcoal, "Arial Narrow Bold", Arial, sans-serif;
 	font-weight: normal;
-	line-height: 1;
+	line-height: 0.8;
 	text-transform: uppercase;
 }
 .font-display-2() {

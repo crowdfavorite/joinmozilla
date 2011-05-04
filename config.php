@@ -11,7 +11,7 @@ if (!defined('PHP_EOL')) {
 define('APPLICATION_ROOT', $_SERVER['DOCUMENT_ROOT']);
 
 // Un-comment line below for local development - causes resources to be loaded from local assets
-// define('URL_BASE', '');
+//define('URL_BASE', '//joinmozilla.local/');
 if (!defined('URL_BASE')) {
   /**
    * URL base for assets CDN (default is path to BSD Tools CDN)
@@ -91,22 +91,21 @@ function bsdtools_custom_fields_to_select_data() {
 	 * There must be a corresponding input element in the DOM for these items to replace.
 	 */
 	$fields = array(
-		'custom1' => array(
-			'ws' => /* L10n: Women's Small T-Shirt Size select text */ _("Women's Small"),
-			'wm' => /* L10n: Women's Medium T-Shirt Size select text */ _("Women's Medium"),
-			'wl' => /* L10n: Women's Large T-Shirt Size select text */ _("Women's Large"),
-			'wxl' => /* L10n: Women's XL T-Shirt Size select text */ _("Women's XL"),
-			'wxx' => /* L10n: Women's 2XL T-Shirt Size select text */ _("Women's 2XL"),
-			'ms' => /* L10n: Men's Small T-Shirt Size select text */ _("Men's Small"),
-			'mm' => /* L10n: Men's Medium T-Shirt Size select text */ _("Men's Medium"),
-			'ml' => /* L10n: Men's Large T-Shirt Size select text */ _("Men's Large"),
-			'mxl' => /* L10n: Men's XL T-Shirt Size select text */ _("Men's XL"),
-			'mxx' => /* L10n: Men's 2XL T-Shirt Size select text */ _("Men's 2XL"),
+		'custom1_fit' => array(
+			'womens' => /* L10n: Womens T-Shirt select text */ _("Womens"),
+			'mens' => /* L10n: Mens T-Shirt select text */ _("Mens")
+		),
+		'custom1_size' => array(
+			's' => /* L10n: Small T-Shirt Size select text */ _("Small"),
+			'm' => /* L10n: Medium T-Shirt Size select text */ _("Medium"),
+			'l' => /* L10n: Large T-Shirt Size select text */ _("Large"),
+			'xl' => /* L10n: X-Large T-Shirt Size select text */ _("XL"),
+			'xxl' => /* L10n: 2X-Large T-Shirt Size select text */ _("XXL"),
 		),
 		'custom2' => array(
-			'red' => /* L10n: Red T-Shirt select text */ _("Red"),
-			'yellow' => /* L10n: Yellow T-Shirt select text */ _("Yellow"),
-			'green' => /* L10n: Green T-Shirt select text */ _("Green")
+			'blue' => /* L10n: Blue T-Shirt select text */ _("Blue"),
+			'black' => /* L10n: Black T-Shirt select text */ _("Black"),
+			'white' => /* L10n: White T-Shirt select text */ _("White")
 		)
 	);
 
