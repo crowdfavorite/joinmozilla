@@ -6,4 +6,4 @@ We're using LESS to keep things readable on the developer's end and efficient on
 
 It's not necessary to include this directory in production code.
 
-Note that only the main-*.less files should be compiled. The output path should be the css directory.
+Note that only the main.less file should be compiled. The output path should be the css directory.

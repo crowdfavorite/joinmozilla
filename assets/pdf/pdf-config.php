@@ -2,6 +2,8 @@
 /*
 - All passed in language identifiers will be stripped of dash and trailing chars
 	- ie: en-US will become just en
+- Languages can supply the character encoding required for PDF generation
+	- will default to ISO-8859-1 if not specified in $config['langs']
 - All coordinates from top left of template
  	- fudged due to inaccuracies of pdf engine
 - All measurements in points
@@ -22,10 +24,10 @@ $config = array(
 		'author' => 'Mozilla',
 		'subject' => 'Join Mozilla Certification Files'
 	),
-	// Available Template Languages, will default to 'en'
+	// Available Font Languages, will default to 'en'
 	'langs' => array(
-		'en',
-		'de'
+		'en' => 'ISO-8859-1',
+		'de' => 'ISO-8859-2'
 	),
 	// Default name in case something goes wrong
 	'default_name' => 'Fabulous Mozilla Supporter',
@@ -33,7 +35,7 @@ $config = array(
 	'delivery_method' => 'I', // 'I' for inline, 'D' to force Download
 	// define fonts
 	'fonts' => array(
-		'LeagueGothic' => 'league-gothic.php'
+		'LeagueGothic' => 'league-gothic-%s.php'
 	),
 	// determines page order
 	'pages' => array(

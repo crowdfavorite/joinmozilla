@@ -45,20 +45,20 @@ require_once('header.php');
                     </td>
                   </tr>
                   <tr>
-                    <td class="contribheader"><?= _('T-Shirt Size') ?></td>
+                    <td class="contribheader"><?= _('T-Shirt') ?></td>
                   </tr>
                   <tr>
                     <td>
                       <table>
                         <tr>
                           <td>
-                            <label class="fieldlabel"><?= _('Women (S, M, L, XL, XXL)') ?><br /></label>
+                            <label class="fieldlabel"><?= _('Size') ?><br /></label>
                             <input size="30" name="custom1" type="text" />
                           </td>
                         </tr>
                         <tr>
                           <td>
-                            <label class="fieldlabel"><?= _('Men (S, M, L, XL, XXL)') ?><br /></label>
+                            <label class="fieldlabel"><?= _('Color') ?><br /></label>
                             <input size="30" name="custom2" type="text" />
                           </td>
                         </tr>
@@ -73,6 +73,39 @@ require_once('header.php');
       </table>
   </form>
 </div>
+
+<?php if (function_exists('bsdtools_custom_fields_to_select_data')): ?>
+<script type="text/javascript">
+	jQuery(function($){
+		<?php echo bsdtools_custom_fields_to_select_data(); ?>
+		
+		var buildSelect = function(name, options) {
+			var _select = '<select name="' + name + '" id="' + name + '">';
+			for (j in options) {
+				_select += '<option value="' + j + '">' + options[j] + '</option>';
+			}
+			_select += '</select>';
+			return $(_select);
+		};
+
+		// easy
+		$('input[name="custom2"]').replaceWith(buildSelect('custom2', field_trans.custom2));
+		// not-so-easy
+		$('input[name="custom1"]')
+			.after(buildSelect('custom1_size', field_trans.custom1_size))
+			.after(buildSelect('custom1_fit', field_trans.custom1_fit))
+			.replaceWith($('<input type="hidden" name="custom1" id="custom1" value="" />'));
+
+		$('form#contribution').submit(function() {
+			// grab custom field data and shoehorn it in to the hidden element
+			$('#custom1').val($('#custom1_fit').val() + ' ' + $('#custom1_size').val());
+			// prevent special modified fields from submitting
+			$('#custom1_size, #custom1_fit').attr('disabled', 'disabled');
+			return true;
+		});
+	});
+</script>
+<?php endif; ?>
 
 <h2><?= _('Legal Compliance') ?></h2>
 <p>
