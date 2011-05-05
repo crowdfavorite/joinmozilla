@@ -1,6 +1,6 @@
 <header id="header">
 	<div class="in">
-		<h1><a href="http://mozilla.org/"><img id="moz-logo" src="<?= URL_BASE; ?>assets/img/mozilla-logo.png?ver=<?= VER; ?>" alt="Mozilla" width="109" height="28" /></a></h1>
+		<h1><a href="http://mozilla.org/"><?= _('Mozilla Firefox') ?></a></h1>
 		<a href="http://www.mozilla.org/" class="mozilla"><?= _('Mozilla') ?></a>
 		<nav id="nav-main">
 			<ul>

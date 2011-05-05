@@ -10,11 +10,14 @@
  -------------------------------------------------- */
 
 #header {
+	.str-container(960px);
 	text-align: center;
 	height: 57px;
-	margin: 0 10px;
 }
-
+#header h1 {
+	margin: 0;
+	float: left;
+}
 #header h1 a,
 #header h1 a:link,
 #header h1 a:visited {
@@ -25,12 +28,7 @@
 	text-indent: -500px;
 	font-size: 1px;
 	overflow: hidden;
-	.transition(background 0.2s ease-in-out);
-}
-#footer h3 a:hover,
-#footer h3 a:active {
-	background: -moz-radial-gradient(center 45deg, ellipse closest-side, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%), url(http://mozcom-cdn.mozilla.net/img/template/header-logos.png) 15px 0 no-repeat;
-	.transition(background 0.2s ease-in-out);
+	-moz-transition: background 0.2s ease-in-out;
 }
 
 #nav-main {
@@ -44,20 +42,17 @@
 	font-size: 13px;
 	text-transform: uppercase;
 }
-#nav-main
-li {
+#nav-main li {
 	list-style: none
 }
-#nav-main
-ul {
+#nav-main ul {
 	float: left;
 	z-index: 99;
 	left: auto;
 	margin: 0;
 	padding: 0;
 }
-#nav-main
-li {
+#nav-main li {
 	float: left;
 	background: none;
 	margin: 0 0 0 -1px;
@@ -68,8 +63,7 @@ li {
 #nav-main ul li a,
 #nav-main ul li a:link,
 #nav-main ul li a:visited,
-#nav-main ul li
-span {
+#nav-main ul li span {
 	padding: 15px 30px 10px 10px;
 	height: 18px;
 	display: block;
@@ -82,8 +76,7 @@ span {
 	color: #484848;
 	text-decoration: none;
 }
-#nav-main ul li.current.last
-a {
+#nav-main ul li.current.last a {
 	border-color: #98b2c9
 }
 #nav-main ul li a:hover,
@@ -92,7 +85,7 @@ a {
 #nav-main ul li.hover a:link,
 #nav-main ul li.hover a:visited {
 	box-shadow: rgba(152,178,201,0.2) 0 0px 0px, inset rgba(255,255,255,0.8) 0 -6px 20px 10px;
-	.transition(0.2s linear);
+	-moz-transition: 0.2s linear;
 	-moz-transition-property: background, box-shadow, border-right;
 	background: rgb(251,253,255);
 	background: rgba(255,255,255,0);
@@ -100,35 +93,31 @@ a {
 	padding-bottom: 15px;
 }
 #nav-main ul li.last a,
-#nav-main ul li.last
-span {
+#nav-main ul li.last span {
 	border-right-color: transparent
 }
 #nav-main ul li.last a:hover,
 #nav-main ul li.last a:focus,
 #nav-main ul li.last a:active,
 .js #nav-main ul li.last a:focus,
-#nav-main ul li.hover
-a {
+#nav-main ul li.hover a {
 	border-right-color: #98b2c9
 }
 #nav-main li:hover ul,
-.js #nav-main li.hover
-ul {
+.js #nav-main li.hover ul {
 	margin-top: 47px;
 	left: 0;
 	opacity: 1;
-	.transition(opacity 0.2s ease-in-out);
+	-moz-transition: opacity 0.2s ease-in-out;
+	-webkit-transition: opacity 0.2s ease-in-out;
 }
 #nav-main ul ul,
-#nav-main ul ul
-li {
+#nav-main ul ul li {
 	height: auto;
 	border: 0;
 	float: none;
 }
-#nav-main ul
-ul {
+#nav-main ul ul {
 	position: absolute;
 	left: -999em;
 	opacity: 0;
@@ -149,16 +138,14 @@ ul {
 	background: rgba(255,255,255,0.9);
 	box-shadow: rgba(152,178,201,0.2) 0 2px 0px, inset rgba(152,178,201,0.3) 0 -2px 0;
 }
-#nav-main ul ul
-li {
+#nav-main ul ul li {
 	box-shadow: inset rgba(152,178,201,0.2) 0 -1px 0 0;
 	margin-left: 0;
 }
 #nav-main ul ul li a,
 #nav-main ul ul li a:link,
 #nav-main ul ul li a:visited,
-#nav-main ul ul li
-span {
+#nav-main ul ul li span {
 	overflow: hidden;
 	padding: 8px 10px;
 	margin: 0;
@@ -170,7 +157,8 @@ span {
 	background: none;
 	box-shadow: none;
 	position: relative;
-	.transition(background 0.1s ease-in);
+	-moz-transition: background 0.1s ease-in;
+	-webkit-transition: background 0.1s ease-in;
 }
 #nav-main ul ul li a:hover,
 #nav-main ul ul li a:focus,
@@ -183,7 +171,8 @@ span {
 	background: rgb(227,235,244);
 	background: rgba(152,178,201,0.2);
 	box-shadow: inset rgba(152,178,201,0.3) 0 2px 0px, 0 0 3px 2px rgba(152,178,201,.2) inset;
-	.transition(background 0.1s ease-out);
+	-moz-transition: background 0.1s ease-out;
+	-webkit-transition: background 0.1s ease-out;
 }
 #nav-main ul li:hover ul li a,
 #nav-main ul li.hover ul li a:link,
@@ -228,6 +217,17 @@ span {
 	-moz-box-shadow: none;
 	box-shadow: none;
 	padding: 8px 10px;
+}
+
+#header a.mozilla {
+    position: relative;
+    float: right;
+    display: block;
+    height: 49px;
+    width: 118px;
+    background: url(http://mozcom-cdn.mozilla.net/img/covehead/template/title.png) 100% 0 no-repeat;
+    text-indent: -200px;
+    overflow: hidden;
 }
 
 /** @section Mozilla Footer styles
