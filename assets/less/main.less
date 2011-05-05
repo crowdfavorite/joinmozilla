@@ -3,7 +3,8 @@
  * Master Stylesheet
  *
  * Compile this file.
- * When compiling LESS to CSS, the "main-*.less" files are the only files that should be compiled, leaving a single CSS file (en.css).
+ * When compiling LESS to CSS, the "main-*.less" file is the only file that should be compiled,
+ * leaving a single CSS file (en.css).
  * Set the "minify" option when compiling for extra karma points!
  */
 
@@ -16,14 +17,6 @@ thus have a different bounding boxes. We need to account for this in the redesig
 	font-family: 'LeagueGothicRegular';
 	src: url('../fonts/league-gothic/League_Gothic-webfont.eot');
 	src: local('foobarbazbing'), url('../fonts/league-gothic/League_Gothic-webfont.woff') format('woff'), url('../fonts/league-gothic/League_Gothic-webfont.ttf') format('truetype'), url('../fonts/league-gothic/League_Gothic-webfont.svg#webfont1Lb5Pdit') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-/* Museo sans font embed (for Mozilla header) */
-@font-face {
-	font-family: 'MuseoSans500';
-	src: url('../fonts/museo-sans/MuseoSans_500-webfont.eot');
-	src: local('foobarbazbing'), url('../fonts/museo-sans/MuseoSans_500-webfont.woff') format('woff'), url('../fonts/museo-sans/MuseoSans_500-webfont.ttf') format('truetype'), url('../fonts/museo-sans/MuseoSans_500-webfont.svg#webfont9JLmVUVg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -45,7 +38,7 @@ thus have a different bounding boxes. We need to account for this in the redesig
 	line-height: 1.2;
 }
 .font-display-3() {
-	font-family: "MuseoSans500", Trebuchet, sans-serif;
+	font-family: Trebuchet, "Lucida Grande", sans-serif;
 	font-weight: normal;
 }
 .font-text() {

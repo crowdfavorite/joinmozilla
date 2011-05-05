@@ -58,7 +58,7 @@ function head_shared() { ?>
 
 <link rel="shortcut icon" type="image/ico" href="http://mozilla.org/favicon.ico" />
 
-<link rel="stylesheet" href="<?= URL_BASE; ?>assets/css/main-en.css?ver=<?= VER; ?>" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?= URL_BASE; ?>assets/css/main.css?ver=<?= VER; ?>" type="text/css" media="screen" />
 
 <script type="text/javascript" src="<?= URL_BASE; ?>assets/js/modernizr.js?ver=<?= VER; ?>"></script>
 <script type="text/javascript" data-main="<?= URL_BASE; ?>assets/js/main.js" src="<?= URL_BASE; ?>assets/js/require-jquery.js?ver=<?= VER; ?>"></script>
@@ -92,8 +92,8 @@ function bsdtools_custom_fields_to_select_data() {
 	 */
 	$fields = array(
 		'custom1_fit' => array(
-			'womens' => /* L10n: Womens T-Shirt select text */ _("Womens"),
-			'mens' => /* L10n: Mens T-Shirt select text */ _("Mens")
+			'womens' => /* L10n: Womens T-Shirt select text */ _("Women's"),
+			'mens' => /* L10n: Mens T-Shirt select text */ _("Men's")
 		),
 		'custom1_size' => array(
 			's' => /* L10n: Small T-Shirt Size select text */ _("Small"),
