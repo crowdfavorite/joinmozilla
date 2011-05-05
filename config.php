@@ -92,8 +92,8 @@ function bsdtools_custom_fields_to_select_data() {
 	 */
 	$fields = array(
 		'custom1_fit' => array(
-			'womens' => /* L10n: Womens T-Shirt select text */ _("Womens"),
-			'mens' => /* L10n: Mens T-Shirt select text */ _("Mens")
+			'womens' => /* L10n: Womens T-Shirt select text */ _("Women's"),
+			'mens' => /* L10n: Mens T-Shirt select text */ _("Men's")
 		),
 		'custom1_size' => array(
 			's' => /* L10n: Small T-Shirt Size select text */ _("Small"),
