@@ -60,7 +60,7 @@ body #contribution #processbutton:focus,body #contribution #processbutton:active
 body #contribution #processbutton:focus,body #contribution #processbutton:active{height:54px;}
 body #contribution #custom1_fit,body #contribution #custom1_size{display:inline;width:180px;}
 body #contribution #custom1_fit{margin-right:11px;}
-#header{margin:0 auto;position:relative;width:960px;text-align:center;height:57px;}
+#header{margin:0 auto;position:relative;width:960px;text-align:center;height:61px;}
 #header h1{margin:0;float:left;}
 #header h1 a,#header h1 a:link,#header h1 a:visited{display:block;height:61px;width:160px;background:url(../img/title.png) 0 0 no-repeat;text-indent:-500px;font-size:1px;overflow:hidden;-moz-transition:background 0.2s ease-in-out;}
 #nav-main{display:inline-block;*display:inline;_height:47px;zoom:1;text-align:left;font-family:"Trebuchet MS",sans-serif;font-weight:bold;font-size:13px;text-transform:uppercase;}
