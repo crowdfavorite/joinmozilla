@@ -104,7 +104,7 @@ body #contribution #custom1_fit{margin-right:11px;}
 #copyright-links a{font-size:11px;}
 #languages{float:right;margin-left:20px;}
 #languages select{margin-left:10px;}
-body{background:#921011;color:#fff;font-family:Georgia, Times, serif;font-size:1.6em;line-height:1.375;font-size:10px;line-height:1.5;min-width:740px;}
+body{background:#921011;border-top:2px solid #686868;color:#fff;font-family:Georgia, Times, serif;font-size:1.6em;line-height:1.375;font-size:10px;line-height:1.5;min-width:740px;}
 a{color:#0089c0;text-decoration:none;}
 p{margin-bottom:1em;}
 .act{position:relative;}
@@ -125,7 +125,7 @@ p{margin-bottom:1em;}
 .page-index #act-1 .title-card h2{font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;color:#666;font-size:4.2em;}
 .page-index #crest{display:block;zoom:1;margin-bottom:28px;min-height:178px;padding-top:15px;position:relative;}.page-index #crest:after{content:" ";display:block;font-size:0;height:0;clear:both;visibility:hidden;}
 .page-index #crest #shield{left:245px;position:absolute;top:-39px;}
-.page-index #motto-1,.page-index #motto-2{color:#d4b496;width:247px;}
+.page-index #motto-1,.page-index #motto-2{color:#666;width:247px;}
 .page-index #motto-1{float:left;}
 .page-index #motto-2{float:right;}
 .page-index #act-1 .call-to-action{margin-bottom:6px;text-align:center;}
