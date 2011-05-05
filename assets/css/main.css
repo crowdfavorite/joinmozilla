@@ -120,9 +120,9 @@ p{margin-bottom:1em;}
 .social ul .facebook a{background-image:url(../img/sprite-y.24bit.png);background-position:0 -1300px;background-repeat:no-repeat;}
 #act-1{background:#fbfdfe;min-height:579px;padding-bottom:71px;}
 .multiplebgs #act-1{background:url(../img/act1-crowd.jpg) center bottom repeat-x,url(../img/act1-background.png) center top repeat-x,#fbfdfe;}
-.page-index{}.page-index #act-1 .title-card{margin-bottom:21px;text-align:center;}
-.page-index #act-1 .title-card h1{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;font-size:14em;line-height:.80;}
-.page-index #act-1 .title-card h2{color:#d4b496;font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;font-size:4.2em;}
+.page-index{}.page-index #act-1 .title-card{color:#484848;margin-bottom:21px;text-align:center;}
+.page-index #act-1 .title-card h1{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;font-size:14em;}
+.page-index #act-1 .title-card h2{font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;color:#666;font-size:4.2em;}
 .page-index #crest{display:block;zoom:1;margin-bottom:28px;min-height:178px;padding-top:15px;position:relative;}.page-index #crest:after{content:" ";display:block;font-size:0;height:0;clear:both;visibility:hidden;}
 .page-index #crest #shield{left:245px;position:absolute;top:-39px;}
 .page-index #motto-1,.page-index #motto-2{color:#d4b496;width:247px;}
