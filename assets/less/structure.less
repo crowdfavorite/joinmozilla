@@ -114,7 +114,8 @@ p {
 
 #act-1 {
 	/* Fallback for browsers that don't support multiple backgrounds */
-	background: url(../img/act1-crowd.jpg) center bottom repeat-x;
+	background: #fbfdfe;
+	min-height: 579px;
 	padding-bottom: 71px;
 }
 
@@ -122,8 +123,9 @@ p {
  * Fancy stuff for browsers that can support multiple bgs.
  */
 .multiplebgs #act-1 {
-	background: url(../img/cardboard.png) center bottom repeat,
-				url(../img/act1-crowd.jpg) center bottom repeat-x;
+	background: url(../img/act1-crowd.jpg) center bottom repeat-x,
+				url(../img/act1-background.png) center top repeat-x,
+				#fbfdfe;
 }
 
 /**
@@ -181,7 +183,7 @@ p {
  -------------------------------------------------- */
 
 #act-2 {
-	background: #767062 url(../img/act2-background.png) center bottom repeat-x;
+	background: #4e4d48 url(../img/act2-background.png) repeat-x center bottom;
 	padding-bottom: 104px;
 	padding-top: 41px;
 	/**
@@ -190,11 +192,6 @@ p {
 	 * @valid no
 	 */
 	zoom: 1;
-}
-html.multiplebgs #act-2 {
-	background: url(../img/act2-background.png) center bottom repeat-x,
-				url(../img/cardboard.png) center top,
-				#767062;
 }
 
 #act-2 .title-card {
@@ -251,7 +248,7 @@ html.multiplebgs #act-2 {
  -------------------------------------------------- */
 
 #act-3 {
-	background: #837d6f;
+	background: #757470;
 	padding-bottom: 105px;
 	
 	/* Standard blue not readable enough in this act */
