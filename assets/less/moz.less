@@ -10,13 +10,14 @@
  -------------------------------------------------- */
 
 #moz-header {
-	.sprite(0 -600px);
-	.str-container( 980px );
-	height: 57px;
+	border-top: 2px solid #686868;
+	height: 42px;
 	margin-bottom: 34px;
-	padding-bottom: 3px;
 	position: relative;
 	z-index: 5;
+}
+#moz-header .in {
+	.str-container( 980px );
 }
 #moz-logo {
 	left: 19px;
@@ -24,42 +25,29 @@
 	top: 11px;
 }
 #moz-header nav {
-	.sprite(right -700px);
 	.nav;
-	line-height: 53px;
+	line-height: 42px;
 	left: 343px;
 	padding-right: 2px;
 	position: absolute;
 	top: 0;
 }
-#moz-header nav ul li {
-	/* Set up sprite, but do not show */
-	.sprite(0 300px);
-}
-#moz-header nav ul li:hover {
-	/* Move sprite */
-	background-position: 0 -400px;
-}
-#moz-header nav li:focus,
-#moz-header nav li:active,
-#moz-header nav li.active {
-	background-position: right -900px !important;
+
+#moz-header nav li {
+	border-left: 1px solid #9fa7af;
 }
 #moz-header nav ul a {
-	.sprite(0 -700px);
-	color: #fff;
-	font-size: 16px;
 	.font-display-3;
-	padding: 0 9px 4px;
+	
+	color: #383838;
+	font-size: 13px;
+	padding: 0 10px 4px;
+	text-transform: uppercase;
+	width: 81px;
 }
 /* We set cool focus styles. Let's remove outlines */
 #moz-header a:focus {
 	outline: none;
-}
-#moz-header nav li:focus a,
-#moz-header nav li:active a,
-#moz-header nav li.active a {
-	.sprite(0 -800px);
 }
 
 /** @section Mozilla Footer styles
