@@ -110,9 +110,9 @@ body #contribution #custom1_fit{margin-right:11px;}
 .act{position:relative;}
 .act>.in{margin:0 auto;position:relative;width:740px;}
 .content{font-family:Georgia, Times, serif;font-size:1.6em;line-height:1.375;}.content h1,.content h2,.content h3{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;color:#fff;font-size:1.5em;margin-bottom:6px;}
-.social{font-size:18px;}.social h1.title,.social ul{display:-moz-inline-box;display:inline-block;zoom:1;*display:inline;vertical-align:top;}
-.social h1.title{color:#c7ccd6;font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;margin-right:16px;white-space:nowrap;}
-.social ul{list-style:none;margin:0;}
+.social h1.title,.social ul{display:-moz-inline-box;display:inline-block;zoom:1;*display:inline;vertical-align:top;}
+.social h1.title{font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;font-size:2.2em;line-height:24px;margin-right:16px;white-space:nowrap;}
+.social ul{font-size:1.8em;list-style:none;margin:0;}
 .social ul li{margin-bottom:11px;}
 .social ul a{color:#fff !important;display:block;line-height:24px;padding-left:40px;text-decoration:underline;}
 .social ul .twitter a{background-image:url(../img/sprite-y.24bit.png);background-position:0 -1200px;background-repeat:no-repeat;}
