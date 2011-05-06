@@ -136,10 +136,7 @@ body #contribution #custom1_fit{margin-right:11px;}
 #act-2 .content li span{color:#c7ccd6;}
 #act-2 #img-merch{position:absolute;right:-7px;-moz-transition:-moz-transform 0.2s linear;-o-transition:transform .2s linear;transition:transform .2s linear;top:-43px;}
 #act-2:hover #img-merch{-moz-transform:rotate(4deg);-o-transform:rotate(4deg);transform:rotate(4deg);}
-#act-3{background:#757470;padding-bottom:105px;}#act-3 a{color:#A51022;}
-#act-3 #merch-shirt,#act-3 #merch-card{-moz-transition:-moz-transform 0.2s linear;-o-transition:transform .2s linear;transition:transform .2s linear;position:absolute;}
-#act-3 #merch-card{left:0;top:482px;}#act-3 #merch-card:hover{-moz-transform:rotate(4deg);-o-transform:rotate(4deg);transform:rotate(4deg);}
-#act-3 #merch-shirt{left:0;top:650px;}#act-3 #merch-shirt:hover{-moz-transform:rotate(-4deg);-o-transform:rotate(-4deg);transform:rotate(-4deg);}
+#act-3{background:#757470;padding-bottom:105px;}
 .page-compact{background:#847e70 url(../img/page-thanks/act1-crowd.jpg) center top repeat-x;}.page-compact #act-1,.page-compact #act-2{background:transparent !important;}
 .page-compact #act-1{height:169px;padding-bottom:0;}
 .page-compact #act-1 h1{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;font-size:9em;line-height:.80;margin-left:206px;}

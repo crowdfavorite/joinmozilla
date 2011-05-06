@@ -214,55 +214,6 @@
 #act-3 {
 	background: #757470;
 	padding-bottom: 105px;
-	
-	/* Standard blue not readable enough in this act */
-	a {
-		color: #A51022;
-	}
-	
-	#merch-shirt,
-	#merch-card {
-		/* Temporarily removed due to flickering issues in latest Safari
-		   I believe this is caused by broken form table markup output by BSD Tools
-		   - Gordon 2011-02-15
-		
-		-webkit-transition: -webkit-transform .2s linear;
-		*/
-		-moz-transition: -moz-transform .2s linear;
-		-o-transition: transform .2s linear;
-		transition: transform .2s linear;
-		position: absolute;
-	}
-	
-	#merch-card {
-		/* left: 30px; */
-		left: 0;
-		top: 482px;
-		
-		&:hover {
-			-moz-transform: rotate(4deg); /* FF3.5+ */
-			/* Temporarily removed due to flickering issues in latest Safari.
-			   See notes above
-			-webkit-transform: rotate(4deg); */ /* Saf3.1+, Chrome */
-			-o-transform: rotate(4deg); /* Opera 10.5 */
-			transform: rotate(4deg);
-		}
-	}
-	
-	#merch-shirt {
-		/* left: 30px; */
-		left: 0;
-		top: 650px;
-		
-		&:hover {
-			-moz-transform: rotate(-4deg); /* FF3.5+ */
-			/* Temporarily removed due to flickering issues in latest Safari.
-			   See notes above
-			-webkit-transform: rotate(4deg); */ /* Saf3.1+, Chrome */
-			-o-transform: rotate(-4deg); /* Opera 10.5 */
-			transform: rotate(-4deg);
-		}
-	}
 }
 
 /** @section Thanks and FAQ Page Variants

@@ -43,5 +43,3 @@
   </section>
   <section id="act-3" class="act">
     <div class="in">
-      <img id="merch-shirt" src="<?= URL_BASE; ?>assets/img/shirt-<?= $img_locale ?>.png?ver=<?= VER ?>" alt="Shirt + Card - $30" />
-      <img id="merch-card" src="<?= URL_BASE; ?>assets/img/card-<?= $img_locale ?>.png?ver=<?= VER ?>" alt="Just the Card - $5" />
