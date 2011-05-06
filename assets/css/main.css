@@ -19,12 +19,12 @@ html.webkit select{background-image:url(../img/sprite-y.24bit.png);background-po
 .button-input:focus,.button-input:active{-moz-box-shadow:0 1px 0 rgba(0, 0, 0, 0.1);-webkit-box-shadow:0 1px 0 rgba(0, 0, 0, 0.1);box-shadow:0 1px 0 rgba(0, 0, 0, 0.1);border-bottom-width:2px;margin-top:2px;outline:0;top:2px;}
 .button-input:focus,.button-input:active{height:54px;}
 .legal{font-size:1.2em;}
-.bsd-contribForm-aboveContent,.bsd-contribForm-belowContent,.contriberrorbanner{margin-left:245px;}
+.bsd-contribForm-aboveContent,.bsd-contribForm-belowContent,.contriberrorbanner{margin-left:230px;}
 html .contriberrorbanner{color:#921011 !important;font-weight:normal;font-size:1.4em;}
 html.ie6 #contribution .contribcolumn table>tbody>tr>td.nested_table>table>tr>td>.field.fieldlabel,html.ie7 #contribution .contribcolumn table>tbody>tr>td.nested_table>table>tr>td>.fieldlabel,html.ie8 #contribution .contribcolumn table>tbody>tr>td.nested_table>table>tr>td>.fieldlabel,html.ie6 #contribution #payment_options .fieldlabel,html.ie7 #contribution #payment_options .fieldlabel,html.ie8 #contribution #payment_options .fieldlabel{display:block;float:none;text-align:left;}
 html.ie6 #contribution .nested_table input[type=text],html.ie7 #contribution .nested_table input[type=text],html.ie8 #contribution .nested_table input[type=text],html.ie6 #contribution #payment_options input[type=text],html.ie7 #contribution #payment_options input[type=text],html.ie8 #contribution #payment_options input[type=text]{width:200px;}
 #contribution #payment_options td{display:table-data;width:auto;}
-body #contribution{font-size:1.4em;margin-left:245px;margin-bottom:25px;width:495px;}body #contribution table{table-layout:fixed;}
+body #contribution{font-size:1.4em;margin-left:230px;margin-bottom:25px;width:495px;}body #contribution table{table-layout:fixed;}
 body #contribution table,body #contribution tbody,body #contribution tr{border-collapse:collapse;border-spacing:0;width:495px;margin:0;padding:0;}
 body #contribution br{display:none;}
 body #contribution th,body #contribution td{position:relative;padding:4px 0 5px;width:495px;}
