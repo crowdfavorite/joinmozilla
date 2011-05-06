@@ -65,6 +65,13 @@ require_once('header.php');
 						<tr>
 							<td><input type="text" name="some-name" value="" id="some-name" /></td>
 						</tr>
+						
+						<tr><td class="contribheader"> 
+		                Legal Compliance
+		              </td> 
+		            </tr><tr><td><table><tr>    <td> 
+		              <label class="fieldlabel"></label><input class="legal_confirm_checkbox" id="legal_confirm" name="legal_confirm" type="checkbox" value="1" /><label for="legal_confirm">I agree to the</label> <a href="http://www.mozilla.org/about/policies/privacy-policy.html" target="_blank">Mozilla privacy policy</a><label>.</label> 
+		            </td></tr></table></td></tr>
                       </table>
                     </td>
                   </tr>
@@ -109,12 +116,6 @@ require_once('header.php');
 	});
 </script>
 <?php endif; ?>
-
-<h2><?= _('Legal Compliance') ?></h2>
-<p>
-  <input type="checkbox" id="legal_agree" />
-  <label for="legal_agree"><?= sprintf(/* L10n: The placeholder '%s' is a URL. */ _('I agree to the <a href="%s">Mozilla privacy policy</a>.'), "http://www.mozilla.org/about/policies/privacy-policy.html") ?></label>
-</p>
 
 <div class="bsd-contribForm-belowContent">
   <p>
