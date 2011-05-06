@@ -137,12 +137,13 @@ body #contribution #custom1_fit{margin-right:11px;}
 #act-2 #img-merch{position:absolute;right:-7px;-moz-transition:-moz-transform 0.2s linear;-o-transition:transform .2s linear;transition:transform .2s linear;top:-43px;}
 #act-2:hover #img-merch{-moz-transform:rotate(4deg);-o-transform:rotate(4deg);transform:rotate(4deg);}
 #act-3{background:#757470;padding-bottom:105px;}#act-3 a{color:#a5151e;}
+.page-compact .act>.in{width:825px;}
 .page-compact #header{margin-bottom:28px;}
 .page-compact #act-1{background:#d6e6f4 url(../img/page-compact/act1-crowd.png) center bottom repeat-x;min-height:250px;padding-bottom:0;}
-.page-compact #act-1 .title-card h1{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;font-size:8.4em;line-height:.80;margin-left:218px;}
+.page-compact #act-1 .title-card h1{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;font-size:8.4em;line-height:.80;margin-left:260px;}
 .page-compact #act-1 .title-card{position:relative;zoom:1;}
 .page-compact #act-1 .title-card h1{color:#484848;position:relative;z-index:2;}
-.page-compact #act-1 .title-card #firefox-compact{left:96px;position:absolute;top:-18px;}
+.page-compact #act-1 .title-card #firefox-compact{left:138px;position:absolute;top:-18px;}
 .page-compact #act-2{background:#74736f;padding-top:16px;}
 .page-compact #act-2 .content{color:#c7ccd6;}
 .page-compact #act-2 .content h1{color:#fff;}
@@ -150,6 +151,7 @@ body #contribution #custom1_fit{margin-right:11px;}
 .page-compact #act-2 .title-card h1{font-size:6em;line-height:48px;}
 .page-compact #act-2 .col-1,.page-compact #act-2 .col-2{display:inline;float:left;}
 .page-compact #act-2 .col-1{width:430px;}
+.page-compact #act-2 .content{color:#fff;font-size:2em;}
 .page-compact #thanks{background:url(../img/page-thanks/card-crowd.24bit.png) 0 0 no-repeat;margin-left:-7px;height:303px;padding-left:377px;padding-top:70px;}
 .page-compact #thanks .call-to-action{left:0;position:absolute;top:304px;text-align:center;width:370px;}
 .page-compact #thanks .call-to-action:hover #mozilla-card{-moz-transform:rotate(-4deg);-o-transform:rotate(-4deg);transform:rotate(-4deg);}

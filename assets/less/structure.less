@@ -224,6 +224,11 @@
  -------------------------------------------------- */
 
 .page-compact {
+	.act > .in {
+		/* Content areas are wider on compact pages */
+		width: 825px;
+	}
+	
 	#header {
 		margin-bottom: 28px;
 	}
@@ -240,7 +245,7 @@
 		line-height: .80;
 		/* Let text flow from left instead of truly centering.
 		This makes for better results with translating. */
-		margin-left: 218px;
+		margin-left: 260px;
 	}
 	
 	#act-1 .title-card {
@@ -259,7 +264,7 @@
 		z-index: 2;
 	}
 	#act-1 .title-card #firefox-compact {
-		left: 96px;
+		left: 138px;
 		position: absolute;
 		top: -18px;
 	}
@@ -293,7 +298,12 @@
 	#act-2 .col-1 {
 		width: 430px;
 	}
-
+	
+	#act-2 .content {
+		color: #fff;
+		font-size: 2em;
+	}
+	
 	#thanks {
 		background: url(../img/page-thanks/card-crowd.24bit.png) 0 0 no-repeat;
 		margin-left: -7px;

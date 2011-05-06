@@ -68,13 +68,13 @@ require_once('config.php');
       </div><!--/in--> 
     </div><!--/act-1--> 
     <section id="act-2" class="act"> 
-      <div class="in"> 
+      <div class="in clearfix"> 
         <div class="col-1">
           <div class="title-card"> 
             <h1><?= _('Thanks for making<br/> the web a better place!') ?></h1> 
           </div> 
           <div class="content"> 
-            <p><?= _('You&apos;re officially a card-carrying supporter of Mozilla. Print it out. Put it in your wallet. Flash it with pride.') ?></p> 
+            <p><?= _('You&apos;re officially a card-carrying<br /> supporter of Mozilla. Print it out.<br/> Put it in your wallet. Flash it with pride.') ?></p> 
           </div> 
           <aside class="social"> 
             <h1 class="title"><?= _('Brag about it now:') ?></h1> 
@@ -84,7 +84,7 @@ require_once('config.php');
             </ul> 
           </aside> 
         </div><!--/col-1-->
-        <div id="thanks"> 
+        <div class="col-2"> 
           <a class="call-to-action" href="#"> 
             <img id="mozilla-card" src="assets/img/page-thanks/card-<?= $img_locale ?>.png" alt="" width="227" height="153" />
           </a>
@@ -96,7 +96,7 @@ require_once('config.php');
           <a class="call-to-action" href="#">
             <span id="print-card-button" class="button fwd"><span><?= _('Print My Card') ?></span></span> 
           </a> 
-        </div><!--/thanks--> 
+        </div><!--/col-2--> 
       </div><!--/in--> 
     </section><!--/act-2--> 
     <!-- <?= /* L10n: Displayed next to a dynamic ticker showing number of downloads */ _('# of Firefox browsers distributed worldwide') ?> -->
