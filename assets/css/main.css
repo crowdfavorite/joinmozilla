@@ -156,7 +156,7 @@ body #contribution #custom1_fit{margin-right:11px;}
 .page-compact #mozilla-card{-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}
 .page-compact #faq{margin-top:70px;}
 .multiplebgs .page-compact #act-1{background:url(../img/cardboard.png) center 0 repeat-x,url(../img/page-compact/act1-crowd.png) center bottom repeat-x,#d6e6f4;}
-.multiplebgs #act-2{background:#74736f url(../img/cardboard.png) center 0 repeat-x;}
+.multiplebgs #act-2{background:url(../img/cardboard.png) center 0 repeat-x,url(../img/page-compact/act2-heart.jpg) center 0 no-repeat,#74736f;}
 .card-form{width:290px;}
 .card-form .contact{font-size:1.4em;}
 .card-form input[type=text]{width:274px;}
