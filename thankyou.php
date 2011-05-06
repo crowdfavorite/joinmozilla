@@ -85,17 +85,17 @@ require_once('config.php');
           </aside> 
         </div><!--/col-1-->
         <div class="col-2"> 
-          <a class="call-to-action" href="#"> 
-            <img id="mozilla-card" src="assets/img/page-thanks/card-<?= $img_locale ?>.png" alt="" width="227" height="153" />
-          </a>
-          <form method="post" id="get-pdf" name="get-pdf" action="pdf.php" target="_blank" onsubmit="return false;">
-            <input type="hidden" name="locale" value="<?= $locale ?>">
-            <label for="supporter-name"><?= _('Please enter your name as you would like it to appear on your Mozilla Supporter card.') ?></label>
-            <input type="text" id="supporter-name" name="name" value="" />
-          </form>
-          <a class="call-to-action" href="#">
-            <span id="print-card-button" class="button fwd"><span><?= _('Print My Card') ?></span></span> 
-          </a> 
+          <div class="card-form">
+            <a class="call-to-action" href="#"> 
+              <img id="mozilla-card" src="assets/img/page-thanks/card-<?= $img_locale ?>.png" alt="" width="227" height="153" />
+            </a>
+            <form method="post" id="get-pdf" name="get-pdf" action="pdf.php" target="_blank" onsubmit="return false;">
+              <input type="hidden" name="locale" value="<?= $locale ?>">
+              <input type="text" id="supporter-name" name="name" value="" placeholder="<?= _('Your Name') ?>" />
+              <p class="contact"><label for="supporter-name"><?= _('Please enter your name as you would like it to appear on your Mozilla Supporter card.') ?></label></p>
+            </form>
+            <a href="#" id="print-card-button" class="call-to-action button fwd"><span><?= _('Print My Card') ?></span></a> 
+          </div><!--/card-form-->
         </div><!--/col-2--> 
       </div><!--/in--> 
     </section><!--/act-2--> 

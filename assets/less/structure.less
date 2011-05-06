@@ -304,28 +304,6 @@
 		font-size: 2em;
 	}
 	
-	#thanks {
-		background: url(../img/page-thanks/card-crowd.24bit.png) 0 0 no-repeat;
-		margin-left: -7px;
-		height: 303px;
-		padding-left: 377px;
-		padding-top: 70px;
-	}
-	#thanks .call-to-action {
-		left: 0;
-		position: absolute;
-		top: 304px;
-		text-align: center;
-		width: 370px;
-	}
-	#thanks .call-to-action:hover #mozilla-card {
-		-moz-transform: rotate(-4deg); /* FF3.5+ */
-		/* Temporarily removed due to flickering issues in latest Safari.
-		   See notes above
-		-webkit-transform: rotate(4deg); */ /* Saf3.1+, Chrome */
-		-o-transform: rotate(-4deg); /* Opera 10.5 */
-		transform: rotate(-4deg);
-	}
 	#thanks #get-pdf {
 		font-size: 1.3em;
 		left: 66px;
@@ -335,10 +313,10 @@
 	}
 	
 	#mozilla-card {
-		left: 70px;
+/*		left: 70px;
 		position: absolute;
 		top: -266px;
-		/* Temporarily removed due to flickering issues in latest Safari
+*/		/* Temporarily removed due to flickering issues in latest Safari
 		   I believe this is caused by broken form table markup output by BSD Tools
 		   - Gordon 2011-02-15
 		
@@ -361,4 +339,17 @@
 }
 .multiplebgs #act-2 {
 	background: #74736f url(../img/cardboard.png) center 0 repeat-x;
+}
+
+.card-form {
+	width: 290px;
+}
+.card-form .contact {
+	font-size: 1.4em;
+}
+.card-form input[type=text] {
+	width: 274px;
+}
+.card-form #print-card-button {
+	float: right;
 }
