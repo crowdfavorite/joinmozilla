@@ -105,7 +105,7 @@ function bsdtools_custom_fields_to_select_data() {
 		'custom2' => array(
 			'blue' => /* L10n: Blue T-Shirt select text */ _("Blue"),
 			'black' => /* L10n: Black T-Shirt select text */ _("Black"),
-			'white' => /* L10n: White T-Shirt select text */ _("White")
+			'grey' => /* L10n: Grey T-Shirt select text */ _("Grey")
 		)
 	);
 
