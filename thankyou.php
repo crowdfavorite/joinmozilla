@@ -48,14 +48,14 @@ require_once('config.php');
             };
           };
         });
-		// form submission
-		jQuery(function($) {
-			$('.call-to-action').click(function() {
-				$('form#get-pdf').removeAttr('onsubmit').submit();
-				return false;
-			});
-		});
-	</script>
+    // form submission
+    jQuery(function($) {
+      $('.call-to-action').click(function() {
+        $('form#get-pdf').removeAttr('onsubmit').submit();
+        return false;
+      });
+    });
+  </script>
     </head>
     <body class="page-compact">
     <div id="act-1" class="act"> 
@@ -69,9 +69,9 @@ require_once('config.php');
     </div><!--/act-1--> 
     <section id="act-2" class="act"> 
       <div class="in"> 
-        <div id="thanks"> 
+        <div class="col-1">
           <div class="title-card"> 
-            <h1><?= _('Thanks for making the web a better place!') ?></h1> 
+            <h1><?= _('Thanks for making<br/> the web a better place!') ?></h1> 
           </div> 
           <div class="content"> 
             <p><?= _('You&apos;re officially a card-carrying supporter of Mozilla. Print it out. Put it in your wallet. Flash it with pride.') ?></p> 
@@ -83,6 +83,8 @@ require_once('config.php');
               <li class="facebook"><a id="facebook-link" href="#"><?= _('Facebook') ?></a></li> 
             </ul> 
           </aside> 
+        </div><!--/col-1-->
+        <div id="thanks"> 
           <a class="call-to-action" href="#"> 
             <img id="mozilla-card" src="assets/img/page-thanks/card-<?= $img_locale ?>.png" alt="" width="227" height="153" />
           </a>
@@ -94,7 +96,7 @@ require_once('config.php');
           <a class="call-to-action" href="#">
             <span id="print-card-button" class="button fwd"><span><?= _('Print My Card') ?></span></span> 
           </a> 
-        </div><!--/call-to-action--> 
+        </div><!--/thanks--> 
       </div><!--/in--> 
     </section><!--/act-2--> 
     <!-- <?= /* L10n: Displayed next to a dynamic ticker showing number of downloads */ _('# of Firefox browsers distributed worldwide') ?> -->
