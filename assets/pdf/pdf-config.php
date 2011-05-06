@@ -18,6 +18,12 @@
 - To add new fonts see: http://www.fpdf.org/en/tutorial/tuto7.htm
 */
 
+$default_gray = array(
+	'r' => 78,
+	'g' => 78,
+	'b' => 78
+);
+
 $config = array(
 	'info' => array(
 		'title' => 'Mozilla Supporter Certification',
@@ -50,11 +56,7 @@ $config = array(
 					),
 					'font' => 'LeagueGothic',
 					'size' => 14, // in points
-					'color' => array(
-						'r' => 255,
-						'g' => 255,
-						'b' => 255
-					)
+					'color' => $default_gray
 				),
 				'date' => array(
 					'position' => array(
@@ -63,11 +65,7 @@ $config = array(
 					),
 					'font' => 'LeagueGothic',
 					'size' => '10',
-					'color' => array(
-						'r' => 255,
-						'g' => 255,
-						'b' => 255
-					)
+					'color' => $default_gray
 				)
 			)
 		),
@@ -84,11 +82,7 @@ $config = array(
 					'font' => 'LeagueGothic',
 					'size' => '30',
 					'align' => 'R', // optional, defaults to 'L'
-					'color' => array(
-						'r' => 255,
-						'g' => 255,
-						'b' => 255
-					)
+					'color' => $default_gray
 				),
 				'on_date' => array(
 					'position' => array(
@@ -97,11 +91,7 @@ $config = array(
 					),
 					'font' => 'LeagueGothic',
 					'size' => '30',
-					'color' => array(
-						'r' => 255,
-						'g' => 255,
-						'b' => 255
-					)
+					'color' => $default_gray
 				)
 			)
 		),

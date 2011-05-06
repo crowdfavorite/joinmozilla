@@ -11,7 +11,7 @@ if (!defined('PHP_EOL')) {
 define('APPLICATION_ROOT', $_SERVER['DOCUMENT_ROOT']);
 
 // Un-comment line below for local development - causes resources to be loaded from local assets
-//define('URL_BASE', '//joinmozilla.local/');
+define('URL_BASE', '//mozilla-donate.local/');
 if (!defined('URL_BASE')) {
   /**
    * URL base for assets CDN (default is path to BSD Tools CDN)
@@ -27,7 +27,7 @@ if (!defined('URL_BASE')) {
  * Change ver string when assets need to be refreshed.
  * Append ?ver=<?= VER > to end of assets urls
  */
-define('VER', '0.1');
+define('VER', '0.2');
 
 /**
  * Return the HTML tag fragment with conditional-comment IE classes.
@@ -58,7 +58,7 @@ function head_shared() { ?>
 
 <link rel="shortcut icon" type="image/ico" href="http://mozilla.org/favicon.ico" />
 
-<link rel="stylesheet" href="<?= URL_BASE; ?>assets/css/main-en.css?ver=<?= VER; ?>" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?= URL_BASE; ?>assets/css/main.css?ver=<?= VER; ?>" type="text/css" media="screen" />
 
 <script type="text/javascript" src="<?= URL_BASE; ?>assets/js/modernizr.js?ver=<?= VER; ?>"></script>
 <script type="text/javascript" data-main="<?= URL_BASE; ?>assets/js/main.js" src="<?= URL_BASE; ?>assets/js/require-jquery.js?ver=<?= VER; ?>"></script>

@@ -1,0 +1,173 @@
+/** @section Utility
+ * General-purpose utility classes, best used as mixins. Variables, too.
+ -------------------------------------------------- */
+@width-container: 740px;
+
+.str-container(@width: @width-container) {
+	margin: 0 auto;
+	position: relative;
+	width: @width;
+}
+
+/**
+ * Clear floats without markup
+ * This is the updated clearfix hack that fixes rare bugs caused by the original.
+ * Modified for handy use with LESS
+ * @see http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack/
+ */
+.clearfix {
+	display: block;
+	zoom: 1;
+
+	&:after {
+		content: " ";
+		display: block;
+		font-size: 0;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+}
+
+/**
+ * Horizontal menu utility class
+ */
+.nav() {
+	.clearfix;
+	list-style: none;
+	margin: 0;
+	
+	li {
+		display: inline;
+		float: left;
+		
+		a {
+			display: block;
+		}
+	}
+}
+
+.hide() {
+	left: -32000px;
+	position: absolute;
+	height: 1;
+	overflow: hidden;
+	width: 1px;
+}
+
+.sprite(@position, @background: url(../img/sprite-y.24bit.png) ) {
+	background-image: @background;
+	background-position: @position;
+	background-repeat: no-repeat;
+}
+
+.border-radius(@radius: 5px) {
+	-moz-border-radius: @radius; /* FF1+ */
+	-webkit-border-radius: @radius; /* Saf3+, Chrome */
+	-khtml-border-radius: @radius; /* Konqueror */
+	border-radius: @radius; /* Standard. IE9 */
+	/**
+	 * @workaround background bleed
+	 * @see http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed
+	 */
+	-webkit-background-clip: padding-box;
+}
+
+.box-shadow(@props) {
+	-moz-box-shadow: @props; /* FF3.5+ */
+	-webkit-box-shadow: @props; /* Saf3+, Chrome */
+	box-shadow: @props; /* Standard. Opera 10.5, IE9 */
+}
+
+.transition(@props) {
+	-webkit-transition: @props;
+	-o-transition: @props;
+	-moz-transition: @props;
+	transition: @props;
+}
+
+.transition-property(@props) {
+	-webkit-transition-property: @props;
+	-o-transition-property: @props;
+	-moz-transition-property: @props;
+	transition-property: @props;
+}
+
+.button-base(@height: 53px) {
+	.font-display;
+	.border-radius(5px);
+	.box-shadow(0 3px 0 rgba(0, 0, 0, .1));
+	
+	background: #0789bb url(../img/sprite-y.24bit.png) right -200px no-repeat;
+	border-color: #0079aa #046e96 #046e96;
+	border-style: solid;
+	border-width: 1px 1px 4px;
+	
+	color: #fff !important;
+	cursor: pointer;
+	display: inline-block; /* Standard. IE8+, Saf, FF3+ */
+	/**
+	 * @bugfix inline-block fix
+	 * @see http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/
+	 * @valid no
+	 */
+	zoom: 1;
+	*display: inline;
+	font-size: 3.6em;
+	font-weight: normal;
+	height: @height - 1px;
+	line-height: @height - 1px;
+	margin-bottom: 3px;
+	outline: 0;
+	padding: 0 49px 0 19px;
+	position: relative;
+	
+	/* IE button width fix */
+	overflow: visible;
+	width: auto;
+	
+	/**
+	 * Compound classes for icons
+	 */
+	&.down {
+		background-position: right -100px;
+		padding-right: 43px;
+	}
+	
+	&::-moz-focus-inner {
+		border: 0;
+		outline: 0;
+		padding: 0;
+	}
+	
+	&:focus,
+	&:active {
+		.box-shadow(0 1px 0 rgba(0, 0, 0, .1));
+		border-bottom-width: 2px;
+		margin-top: 2px;
+		/* We're already defining a visual outline style. Remove the visual border from active states. */
+		outline: 0;
+		top: 2px;
+	}
+}
+.button {
+	.button-base(53px);
+}
+.button-input {
+	@height: 57px;
+	/**
+	 * IE, FF and Safari all use the classic box model for inputs
+	 */
+	.button-base(@height);
+	
+	&:focus,
+	&:active {
+		height: @height - 3px;
+	}
+}
+
+/* Legal text */
+
+.legal {
+	font-size: 1.2em;
+}
