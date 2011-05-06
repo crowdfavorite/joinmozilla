@@ -284,7 +284,7 @@
 	}
 	
 	#act-2 .title-card {
-		margin-bottom: 18px;
+		margin-bottom: 8px;
 	}
 	
 	#act-2 .title-card h1 {
@@ -311,21 +311,6 @@
 		position: absolute;
 		top: 199px;
 		width: 240px;
-	}
-	
-	#mozilla-card {
-/*		left: 70px;
-		position: absolute;
-		top: -266px;
-*/		/* Temporarily removed due to flickering issues in latest Safari
-		   I believe this is caused by broken form table markup output by BSD Tools
-		   - Gordon 2011-02-15
-		
-		-webkit-transition: all .3s ease-in-out;
-		*/
-		-moz-transition: all .3s ease-in-out;
-		-o-transition: all .3s ease-in-out;
-		transition: all .3s ease-in-out;
 	}
 	
 	#faq {
@@ -357,4 +342,16 @@
 }
 .card-form #print-card-button {
 	float: right;
+}
+.card-form #mozilla-card {
+	margin-top: -24px;
+	/* Temporarily removed due to flickering issues in latest Safari
+	   I believe this is caused by broken form table markup output by BSD Tools
+	   - Gordon 2011-02-15
+	
+	-webkit-transition: all .3s ease-in-out;
+	*/
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }

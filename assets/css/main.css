@@ -147,13 +147,12 @@ body #contribution #custom1_fit{margin-right:11px;}
 .page-compact #act-2{background:#74736f;padding-top:16px;}
 .page-compact #act-2 .col-1 .content{color:#fff;font-size:2em;margin-bottom:36px;}
 .page-compact #act-2 .content h1{color:#fff;}
-.page-compact #act-2 .title-card{margin-bottom:18px;}
+.page-compact #act-2 .title-card{margin-bottom:8px;}
 .page-compact #act-2 .title-card h1{font-size:6em;line-height:48px;}
 .page-compact #act-2 .col-1,.page-compact #act-2 .col-2{display:inline;float:left;}
 .page-compact #act-2 .col-1{margin-right:40px;width:430px;}
 .page-compact #act-2 .col-2{width:290px;}
 .page-compact #thanks #get-pdf{font-size:1.3em;left:66px;position:absolute;top:199px;width:240px;}
-.page-compact #mozilla-card{-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}
 .page-compact #faq{margin-top:70px;}
 .multiplebgs .page-compact #act-1{background:url(../img/cardboard.png) center 0 repeat-x,url(../img/page-compact/act1-crowd.png) center bottom repeat-x,#d6e6f4;}
 .multiplebgs #act-2{background:url(../img/cardboard.png) center 0 repeat-x,url(../img/page-compact/act2-heart.jpg) center 0 no-repeat,#74736f;}
@@ -161,3 +160,4 @@ body #contribution #custom1_fit{margin-right:11px;}
 .card-form .caption{font-size:1.4em;font-style:italic;margin:8px 0 14px;}
 .card-form input[type=text]{width:274px;}
 .card-form #print-card-button{float:right;}
+.card-form #mozilla-card{margin-top:-24px;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}
