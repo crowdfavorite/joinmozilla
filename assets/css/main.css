@@ -1,8 +1,11 @@
-@font-face{font-family:'LeagueGothicRegular';src:url('../fonts/league-gothic/League_Gothic-webfont.eot');src:local('foobarbazbing'),url('../fonts/league-gothic/League_Gothic-webfont.woff') format('woff'),url('../fonts/league-gothic/League_Gothic-webfont.ttf') format('truetype'),url('../fonts/league-gothic/League_Gothic-webfont.svg#webfont1Lb5Pdit') format('svg');font-weight:normal;font-style:normal;}html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+@font-face{font-family:'LeagueGothicRegular';src:url('../fonts/league-gothic/league_gothic-webfont.eot');src:url('../fonts/league-gothic/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/league-gothic/league_gothic-webfont.woff') format('woff'),url('../fonts/league-gothic/league_gothic-webfont.ttf') format('truetype'),url('../fonts/league-gothic/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');font-weight:normal;font-style:normal;}html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
 nav ul{list-style:none;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+body{font-family:Georgia, Times, serif;font-size:1.6em;line-height:1.375;background:#f7fbfd;border-top:2px solid #686868;color:#fff;font-size:10px;line-height:1.5;min-width:740px;}
+a{color:#0089b7;text-decoration:none;}
+p{margin-bottom:1em;}
 ul{margin-left:25px;}
 input[type=text],input[type=email],input.text{background-color:#f1ebde;-moz-border-radius:7px;-webkit-border-radius:7px;-khtml-border-radius:7px;border-radius:7px;border:1px solid #d8d2c4;border-top:3px solid #d8d2c4;-webkit-background-clip:padding-box;color:#9f9785;font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;overflow:hidden;padding:6px 7px;width:224px;font-size:14px;height:16px;line-height:1;}
 select{background-color:#f1ebde;-moz-border-radius:7px;-webkit-border-radius:7px;-khtml-border-radius:7px;border-radius:7px;border:1px solid #d8d2c4;border-top:3px solid #d8d2c4;-webkit-background-clip:padding-box;color:#9f9785;font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;overflow:hidden;padding:6px 7px;width:224px;cursor:pointer;font-size:14px;height:31px;outline:0;vertical-align:middle;width:371px;}
@@ -104,9 +107,6 @@ body #contribution #custom1_fit{margin-right:11px;}
 #copyright-links a{font-size:11px;}
 #languages{float:right;margin-left:20px;}
 #languages select{margin-left:10px;}
-body{font-family:Georgia, Times, serif;font-size:1.6em;line-height:1.375;background:#f7fbfd;border-top:2px solid #686868;color:#fff;font-size:10px;line-height:1.5;min-width:740px;}
-a{color:#0089b7;text-decoration:none;}
-p{margin-bottom:1em;}
 .act{position:relative;}
 .act>.in{margin:0 auto;position:relative;width:740px;}
 .content{font-family:Georgia, Times, serif;font-size:1.6em;line-height:1.375;}.content a{color:#fff;}

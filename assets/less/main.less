@@ -13,10 +13,14 @@ League Gothic font face embed.
 *OMGWTF*: The current Git versions of the WebFonts contain more characters than are currently being used in production and 
 thus have a different bounding boxes. We need to account for this in the redesign
 */
+
 @font-face {
 	font-family: 'LeagueGothicRegular';
-	src: url('../fonts/league-gothic/League_Gothic-webfont.eot');
-	src: local('foobarbazbing'), url('../fonts/league-gothic/League_Gothic-webfont.woff') format('woff'), url('../fonts/league-gothic/League_Gothic-webfont.ttf') format('truetype'), url('../fonts/league-gothic/League_Gothic-webfont.svg#webfont1Lb5Pdit') format('svg');
+	src: url('../fonts/league-gothic/league_gothic-webfont.eot');
+	src: url('../fonts/league-gothic/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/league-gothic/league_gothic-webfont.woff') format('woff'),
+		 url('../fonts/league-gothic/league_gothic-webfont.ttf') format('truetype'),
+		 url('../fonts/league-gothic/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
