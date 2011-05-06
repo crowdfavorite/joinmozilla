@@ -6,7 +6,7 @@ Better solutions:
 - Somehow add an .htaccess rule to BSD or CDN allowing more permissive cross-domain loading of fonts
 - Make all pages live on the same domain
 */
-define('URL_BASE', '');
+//define('URL_BASE', '');
 require_once('config.php');
 ?>
 <!DOCTYPE html> 
