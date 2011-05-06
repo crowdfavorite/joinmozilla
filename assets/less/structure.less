@@ -223,12 +223,17 @@
 /** @section Thanks and FAQ Page Variants
  -------------------------------------------------- */
 
+.page-compact #act-1 {
+	background: #d6eaf7 url(../img/page-compact/act1-crowd.png) center bottom repeat-x;
+	min-height: 250px;
+	padding-bottom: 0;
+}
+.multiplebgs .page-compact #act-1 {
+	background: url(../img/cardboard.png) center 0 repeat-x,
+				url(../img/page-compact/act1-crowd.png) center bottom repeat-x,
+				#f6fafd;
+}
 .page-compact {
-	#act-1 {
-		background: #f6fafd url(../img/act1-crowd.png) center bottom repeat-x;
-		min-height: 0;
-		padding-bottom: 0;
-	}
 	#act-1 h1 {
 		.font-display;
 		font-size: 9em;
@@ -254,6 +259,7 @@
 	}
 	
 	#act-2 {
+		background: #74736f url(../img/cardboard.png) center 0 repeat-x;
 		padding-top: 16px;
 	}
 	
