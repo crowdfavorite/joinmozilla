@@ -1,5 +1,5 @@
 <header id="header">
-	<h1><a href="http://mozilla.org/"><?= _('Mozilla Firefox') ?></a></h1>
+	<h1><a href="http://mozilla.com/firefox"><?= _('Mozilla Firefox') ?></a></h1>
 	<a href="http://www.mozilla.org/" class="mozilla"><?= _('Mozilla') ?></a>
 	<nav id="nav-main" role="navigation"> 
 		<ul role="menubar">
