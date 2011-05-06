@@ -63,14 +63,14 @@ body #contribution #processbutton:focus,body #contribution #processbutton:active
 body #contribution #processbutton:focus,body #contribution #processbutton:active{height:54px;}
 body #contribution #custom1_fit,body #contribution #custom1_size{display:inline;width:180px;}
 body #contribution #custom1_fit{margin-right:11px;}
-#header{margin:0 auto;position:relative;width:960px;text-align:center;height:61px;}
+#header{margin:0 auto;position:relative;width:960px;text-align:center;height:61px;margin-bottom:45px;}
 #header h1{margin:0;float:left;}
 #header h1 a,#header h1 a:link,#header h1 a:visited{display:block;height:61px;width:160px;background:url(../img/title.png) 0 0 no-repeat;text-indent:-500px;font-size:1px;overflow:hidden;-moz-transition:background 0.2s ease-in-out;}
 #nav-main{display:inline-block;*display:inline;_height:47px;zoom:1;text-align:left;font-family:"Trebuchet MS",sans-serif;font-weight:bold;font-size:13px;text-transform:uppercase;}
 #nav-main li{list-style:none;}
 #nav-main ul{float:left;z-index:99;left:auto;margin:0;padding:0;}
 #nav-main li{float:left;background:none;margin:0 0 0 -1px;padding:0;position:relative;z-index:100;}
-#nav-main ul li a,#nav-main ul li a:link,#nav-main ul li a:visited,#nav-main ul li span{padding:15px 30px 10px 10px;height:18px;display:block;float:left;border-width:0 1px;border-style:solid;border-color:#98b2c9;z-index:100;position:relative;color:#484848;text-decoration:none;}
+#nav-main ul li a,#nav-main ul li a:link,#nav-main ul li a:visited,#nav-main ul li span{padding:15px 30px 10px 10px;height:18px;display:block;float:left;border-width:0 1px;border-style:solid;border-color:#98b2c9;z-index:100;min-width:61px;position:relative;color:#484848;text-decoration:none;}
 #nav-main ul li.current.last a{border-color:#98b2c9;}
 #nav-main ul li a:hover,#nav-main ul li:hover a,#nav-main ul li.hover a,#nav-main ul li.hover a:link,#nav-main ul li.hover a:visited{box-shadow:rgba(152, 178, 201, 0.2) 0 0px 0px,inset rgba(255, 255, 255, 0.8) 0 -6px 20px 10px;-moz-transition:0.2s linear;-moz-transition-property:background,box-shadow,border-right;background:#fbfdff;background:rgba(255, 255, 255, 0);outline:0;padding-bottom:15px;}
 #nav-main ul li.last a,#nav-main ul li.last span{border-right-color:transparent;}
@@ -109,21 +109,20 @@ body #contribution #custom1_fit{margin-right:11px;}
 #languages select{margin-left:10px;}
 .act{position:relative;}
 .act>.in{margin:0 auto;position:relative;width:740px;}
-.content{font-family:Georgia, Times, serif;font-size:1.6em;line-height:1.375;}.content a{color:#fff;}
-.content h1,.content h2,.content h3{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;color:#fff;font-size:1.5em;margin-bottom:6px;}
+.content{font-family:Georgia, Times, serif;font-size:1.6em;line-height:1.375;}.content h1,.content h2,.content h3{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;color:#fff;font-size:1.5em;margin-bottom:6px;}
 .social{font-size:18px;}.social h1.title,.social ul{display:-moz-inline-box;display:inline-block;zoom:1;*display:inline;vertical-align:top;}
-.social h1.title{color:#d0c8b4;font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;margin-right:16px;white-space:nowrap;}
+.social h1.title{color:#c7ccd6;font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;margin-right:16px;white-space:nowrap;}
 .social ul{list-style:none;margin:0;}
 .social ul li{margin-bottom:11px;}
 .social ul a{color:#fff !important;display:block;line-height:24px;padding-left:40px;text-decoration:underline;}
 .social ul .twitter a{background-image:url(../img/sprite-y.24bit.png);background-position:0 -1200px;background-repeat:no-repeat;}
 .social ul .facebook a{background-image:url(../img/sprite-y.24bit.png);background-position:0 -1300px;background-repeat:no-repeat;}
-#act-1{background:#f6fafd url(../img/act1-crowd.png) center bottom repeat-x;min-height:579px;padding-bottom:71px;}
+#act-1{background:#f6fafd url(../img/act1-crowd.png) center bottom repeat-x;min-height:603px;padding-bottom:46px;}
 .multiplebgs #act-1{background:url(../img/act1-crowd.png) center bottom repeat-x,url(../img/act1-background.png) center top repeat-x,#f6fafd;}
 .page-index{}.page-index #act-1 .title-card{color:#484848;margin-bottom:21px;text-align:center;}
 .page-index #act-1 .title-card h1{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;font-size:14em;}
 .page-index #act-1 .title-card h2{font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;color:#666;font-size:4.2em;}
-.page-index #crest{display:block;zoom:1;margin-bottom:28px;min-height:178px;padding-top:15px;position:relative;}.page-index #crest:after{content:" ";display:block;font-size:0;height:0;clear:both;visibility:hidden;}
+.page-index #crest{display:block;zoom:1;margin-bottom:5px;min-height:178px;padding-top:15px;position:relative;}.page-index #crest:after{content:" ";display:block;font-size:0;height:0;clear:both;visibility:hidden;}
 .page-index #crest #shield{left:243px;position:absolute;top:-39px;}
 .page-index #motto-1,.page-index #motto-2{color:#666;width:247px;}
 .page-index #motto-1{float:left;}
@@ -132,9 +131,9 @@ body #contribution #custom1_fit{margin-right:11px;}
 #act-2{background:#4e4d48 url(../img/act2-background.png) repeat-x center bottom;padding-bottom:104px;padding-top:41px;zoom:1;}
 #act-2 .title-card{margin-bottom:10px;}
 #act-2 .title-card h1{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;font-size:5em;line-height:.80;margin-bottom:7px;}
-#act-2 .title-card h2{font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;color:#d0c8b4;font-size:2.4em;}
+#act-2 .title-card h2{font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;color:#c7ccd6;font-size:2.4em;}
 #act-2 .content li{color:#fff;margin-bottom:8px;}
-#act-2 .content li span{color:#d0c8b4;}
+#act-2 .content li span{color:#c7ccd6;}
 #act-2 #img-merch{position:absolute;right:-7px;-moz-transition:-moz-transform 0.2s linear;-o-transition:transform .2s linear;transition:transform .2s linear;top:-43px;}
 #act-2:hover #img-merch{-moz-transform:rotate(4deg);-o-transform:rotate(4deg);transform:rotate(4deg);}
 #act-3{background:#757470;padding-bottom:105px;}#act-3 a{color:#A51022;}
@@ -147,7 +146,7 @@ body #contribution #custom1_fit{margin-right:11px;}
 .page-compact #act-1 .title-card{position:relative;zoom:1;}
 .page-compact #act-1 .title-card h1{position:relative;z-index:2;}
 .page-compact #act-2{padding-top:16px;}
-.page-compact #act-2 .content{color:#d0c8b4;}
+.page-compact #act-2 .content{color:#c7ccd6;}
 .page-compact #act-2 .content h1{color:#fff;}
 .page-compact #act-2 .title-card{margin-bottom:18px;}
 .page-compact #act-2 .title-card h1{font-size:50px;line-height:48px;}
