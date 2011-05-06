@@ -63,7 +63,7 @@ require_once('config.php');
       <div class="in"> 
         <div class="title-card"> 
           <h1><?= _('Join Mozilla') ?></h1> 
-          <img id="shield-thanks" src="assets/img/page-thanks/mozilla-logo.png" alt="Mozilla" /> 
+          <img id="shield-thanks" src="assets/img/page-compact/firefox-logo.png" alt="<?= _('Mozilla Firefox') ?>" /> 
         </div> 
       </div><!--/in--> 
     </div><!--/act-1--> 

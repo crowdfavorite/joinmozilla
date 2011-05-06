@@ -138,11 +138,10 @@ body #contribution #custom1_fit{margin-right:11px;}
 #act-2:hover #img-merch{-moz-transform:rotate(4deg);-o-transform:rotate(4deg);transform:rotate(4deg);}
 #act-3{background:#757470;padding-bottom:105px;}#act-3 a{color:#a5151e;}
 .page-compact #act-1{background:#d6eaf7 url(../img/page-compact/act1-crowd.png) center bottom repeat-x;min-height:250px;padding-bottom:0;}
-.multiplebgs .page-compact #act-1{background:url(../img/cardboard.png) center 0 repeat-x,url(../img/page-compact/act1-crowd.png) center bottom repeat-x,#f6fafd;}
-.page-compact #act-1 h1{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;font-size:9em;line-height:.80;margin-left:206px;}
+.page-compact #act-1 .title-card h1{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;font-size:9em;line-height:.80;margin-left:206px;}
 .page-compact #act-1 .title-card{position:relative;zoom:1;}
-.page-compact #act-1 .title-card h1{position:relative;z-index:2;}
-.page-compact #act-2{background:#74736f url(../img/cardboard.png) center 0 repeat-x;padding-top:16px;}
+.page-compact #act-1 .title-card h1{color:#484848;position:relative;z-index:2;}
+.page-compact #act-2{background:#74736f;padding-top:16px;}
 .page-compact #act-2 .content{color:#c7ccd6;}
 .page-compact #act-2 .content h1{color:#fff;}
 .page-compact #act-2 .title-card{margin-bottom:18px;}
@@ -154,4 +153,5 @@ body #contribution #custom1_fit{margin-right:11px;}
 .page-compact #thanks #get-pdf{font-size:1.3em;left:66px;position:absolute;top:199px;width:240px;}
 .page-compact #mozilla-card{left:70px;position:absolute;top:-266px;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}
 .page-compact #faq{margin-top:70px;}
-.multiplebgs .page-thanks{background:url(../img/page-thanks/cardboard-fade.png) center 0 repeat-x,url(../img/page-thanks/act1-crowd.jpg) center top repeat-x,#847e70;}
+.multiplebgs .page-compact #act-1{background:url(../img/cardboard.png) center 0 repeat-x,url(../img/page-compact/act1-crowd.png) center bottom repeat-x,#f6fafd;}
+.multiplebgs #act-2{background:#74736f url(../img/cardboard.png) center 0 repeat-x;}
