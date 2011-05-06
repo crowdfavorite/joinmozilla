@@ -31,8 +31,8 @@ body #contribution th,body #contribution td{position:relative;padding:4px 0 5px;
 body #contribution input[type="text"],body #contribution input[type="email"],body #contribution input.text{width:355px;}
 body #contribution label{font-weight:normal;}
 body #contribution .error{color:#921011 !important;font-weight:normal !important;}
-body #contribution .contribheader{background:url(../img/bullet.png) 0 bottom repeat-x;font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;font-size:36px;padding-bottom:10px;padding-top:30px;}
-body #contribution label.error,body #contribution .fieldlabel,body #contribution .radio{color:#e4dcc9;font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;font-size:16px;}
+body #contribution .contribheader{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;background:url(../img/bullet.png) 0 bottom repeat-x;font-size:50px;padding-bottom:13px;padding-top:30px;}
+body #contribution label.error,body #contribution .fieldlabel,body #contribution .radio{font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;color:#c7ccd6;font-size:16px;}
 body #contribution label.error,body #contribution .fieldlabel{float:left;height:30px;line-height:30px;margin-right:10px;text-transform:capitalize;width:114px;white-space:nowrap;}
 body #contribution .radio{line-height:22px;margin-right:10px;}
 body #contribution span.error{left:-32000px;position:absolute;height:1;overflow:hidden;width:1px;}
