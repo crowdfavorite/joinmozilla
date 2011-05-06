@@ -92,7 +92,7 @@ require_once('config.php');
             <form method="post" id="get-pdf" name="get-pdf" action="pdf.php" target="_blank" onsubmit="return false;">
               <input type="hidden" name="locale" value="<?= $locale ?>">
               <input type="text" id="supporter-name" name="name" value="" placeholder="<?= _('Your Name') ?>" />
-              <p class="contact"><label for="supporter-name"><?= _('Please enter your name as you would like it to appear on your Mozilla Supporter card.') ?></label></p>
+              <p class="caption"><label for="supporter-name"><?= _('Please enter your name as you would like it to appear on your Mozilla Supporter card.') ?></label></p>
             </form>
             <a href="#" id="print-card-button" class="call-to-action button fwd"><span><?= _('Print My Card') ?></span></a> 
           </div><!--/card-form-->
