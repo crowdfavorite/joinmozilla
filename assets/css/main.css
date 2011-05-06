@@ -145,10 +145,11 @@ body #contribution #custom1_fit{margin-right:11px;}
 .page-compact #act-1 .title-card h1{color:#484848;position:relative;z-index:2;}
 .page-compact #act-1 .title-card #firefox-compact{left:138px;position:absolute;top:-18px;}
 .page-compact #act-2{background:#74736f url(../img/page-compact/act2-heart.jpg) center 0 no-repeat;padding-top:16px;}
+.page-compact #act-2 a{color:#a5151e;}
 .page-compact #act-2 .col-1 .content{color:#fff;font-size:2em;margin-bottom:36px;}
 .page-compact #act-2 .content h1{color:#fff;}
 .page-compact #act-2 .title-card{margin-bottom:8px;}
-.page-compact #act-2 .title-card h1{font-size:6em;line-height:48px;}
+.page-compact #act-2 .title-card h1{font-size:6em;}
 .page-compact #act-2 .col-1,.page-compact #act-2 .col-2{display:inline;float:left;}
 .page-compact #act-2 .col-1{margin-right:40px;width:430px;}
 .page-compact #act-2 .col-2{width:290px;}

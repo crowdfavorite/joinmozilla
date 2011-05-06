@@ -26,12 +26,18 @@ textdomain('messages');
 <body class="page-compact">
 	<div id="act-1" class="act"> 
 		<?php require_once('moz-header.php'); ?>
+		<div class="in"> 
+      <div class="title-card"> 
+        <h1><?= _('Join Mozilla') ?></h1> 
+        <img id="firefox-compact" src="assets/img/page-compact/firefox-logo.png" alt="<?= _('Mozilla Firefox') ?>" /> 
+      </div> 
+    </div><!--/in-->
 	</div><!--/act-1-->
 	<section id="act-2" class="act">
 		<div id="faq" class="in content">
-		  <div class="title-card"> 
+      <div class="title-card"> 
 	        <h1><?= _('Join Mozilla Support FAQ') ?></h1> 
-	      </div> 
+	    </div> 
 	      
 		  <h2><?= _('How long will I be an official supporter?') ?></h2>
 		  <p>
