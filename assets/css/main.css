@@ -128,7 +128,7 @@ body #contribution #custom1_fit{margin-right:11px;}
 .page-index #motto-1{float:left;}
 .page-index #motto-2{float:right;}
 .page-index #act-1 .call-to-action{margin-bottom:6px;text-align:center;}
-#act-2{background:#4e4d48 url(../img/act2-background.png) repeat-x center bottom;padding-bottom:37px;padding-top:41px;zoom:1;}
+#act-2{background:#4e4d48 url(../img/act2-background.png) repeat-x center bottom;padding-bottom:75px;padding-top:41px;zoom:1;}
 #act-2 .title-card{margin-bottom:10px;}
 #act-2 .title-card h1{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;font-size:5em;line-height:.80;margin-bottom:7px;}
 #act-2 .title-card h2{font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;color:#c7ccd6;font-size:2.4em;}
@@ -155,7 +155,7 @@ body #contribution #custom1_fit{margin-right:11px;}
 .page-compact #thanks #get-pdf{font-size:1.3em;left:66px;position:absolute;top:199px;width:240px;}
 .page-compact #faq{margin-top:70px;}
 .multiplebgs .page-compact #act-1{background:url(../img/cardboard.png) center 0 repeat-x,url(../img/page-compact/act1-crowd.png) center bottom repeat-x,#d6e6f4;}
-.multiplebgs #act-2{background:url(../img/cardboard.png) center 0 repeat-x,url(../img/page-compact/act2-heart.jpg) center 0 no-repeat,#74736f;}
+.multiplebgs .page-compact #act-2{background:url(../img/cardboard.png) center 0 repeat-x,url(../img/page-compact/act2-heart.jpg) center 0 no-repeat,#74736f;padding-bottom:37px;}
 .card-form{width:290px;}
 .card-form .caption{font-size:1.4em;font-style:italic;margin:8px 0 14px;}
 .card-form input[type=text]{width:274px;}
