@@ -144,7 +144,7 @@ body #contribution #custom1_fit{margin-right:11px;}
 .page-compact #act-1 .title-card{position:relative;zoom:1;}
 .page-compact #act-1 .title-card h1{color:#484848;position:relative;z-index:2;}
 .page-compact #act-1 .title-card #firefox-compact{left:138px;position:absolute;top:-18px;}
-.page-compact #act-2{background:#74736f;padding-top:16px;}
+.page-compact #act-2{background:#74736f url(../img/page-compact/act2-heart.jpg) center 0 no-repeat;padding-top:16px;}
 .page-compact #act-2 .col-1 .content{color:#fff;font-size:2em;margin-bottom:36px;}
 .page-compact #act-2 .content h1{color:#fff;}
 .page-compact #act-2 .title-card{margin-bottom:8px;}
