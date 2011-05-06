@@ -62,6 +62,9 @@ require_once('header.php');
                             <input size="30" name="custom2" type="text" />
                           </td>
                         </tr>
+						<tr>
+							<td><input type="text" name="some-name" value="" id="some-name" /></td>
+						</tr>
                       </table>
                     </td>
                   </tr>
