@@ -11,7 +11,7 @@ if (!defined('PHP_EOL')) {
 define('APPLICATION_ROOT', $_SERVER['DOCUMENT_ROOT']);
 
 // Un-comment line below for local development - causes resources to be loaded from local assets
-define('URL_BASE', '//mozilla-donate.local/');
+//define('URL_BASE', '//mozilla-donate.local/');
 if (!defined('URL_BASE')) {
   /**
    * URL base for assets CDN (default is path to BSD Tools CDN)
