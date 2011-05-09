@@ -11,7 +11,7 @@ if (!defined('PHP_EOL')) {
 define('APPLICATION_ROOT', $_SERVER['DOCUMENT_ROOT']);
 
 // Un-comment line below for local development - causes resources to be loaded from local assets
-//define('URL_BASE', '//joinmozilla.local/');
+//define('URL_BASE', '//mozilla-donate.local/');
 if (!defined('URL_BASE')) {
   /**
    * URL base for assets CDN (default is path to BSD Tools CDN)
@@ -27,7 +27,7 @@ if (!defined('URL_BASE')) {
  * Change ver string when assets need to be refreshed.
  * Append ?ver=<?= VER > to end of assets urls
  */
-define('VER', '0.1');
+define('VER', '0.2');
 
 /**
  * Return the HTML tag fragment with conditional-comment IE classes.
@@ -105,7 +105,7 @@ function bsdtools_custom_fields_to_select_data() {
 		'custom2' => array(
 			'blue' => /* L10n: Blue T-Shirt select text */ _("Blue"),
 			'black' => /* L10n: Black T-Shirt select text */ _("Black"),
-			'white' => /* L10n: White T-Shirt select text */ _("White")
+			'grey' => /* L10n: Grey T-Shirt select text */ _("Grey")
 		)
 	);
 

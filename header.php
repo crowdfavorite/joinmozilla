@@ -15,7 +15,7 @@
         <h2><?= _('Help us build a better Web.') ?></h2>
       </hgroup>
       <div id="crest">
-        <img id="shield" src="<?= URL_BASE; ?>assets/img/mozilla-crest.png?ver=<?= VER ?>" alt="Mozilla" />
+        <img id="shield" src="<?= URL_BASE; ?>assets/img/firefox-crest.png?ver=<?= VER ?>" alt="<?= _('Mozilla Firefox') ?>" />
         <p id="motto-1" class="content"><?= _('We\'re a non-profit organization who believes the Web should be free, open, accessible, transparent, safe and&mdash;most of all&mdash;a force for the good of humanity.') ?></p>
         <p id="motto-2" class="content"><?= _('We\'re the proud makers of Firefox and, every day, we strive to create innovations that make the Web a better place for the billions of people who use it.') ?></p>
       </div><!--/crest-->
@@ -37,11 +37,9 @@
           <li><span><?= _('Access to cool Mozilla swag that will impress your friends') ?></span></li>
           <li><span><?= /* L10n: This can be replaced with a local idiom that means "good feelings" */ _('Good feelings in the cockles of your heart') ?></span></li>
         </ul>
-		<p><a href="http://www.mozilla.org/join/faq.html"><?= _('Have questions?') ?></a></p>
+        <p><a href="http://www.mozilla.org/join/faq.html"><?= _('Have questions?') ?></a></p>
       </div><!--/content-->
     </div><!--/in-->
   </section>
   <section id="act-3" class="act">
     <div class="in">
-      <img id="merch-shirt" src="<?= URL_BASE; ?>assets/img/shirt-<?= $img_locale ?>.png?ver=<?= VER ?>" alt="Shirt + Card - $30" />
-      <img id="merch-card" src="<?= URL_BASE; ?>assets/img/card-<?= $img_locale ?>.png?ver=<?= VER ?>" alt="Just the Card - $5" />

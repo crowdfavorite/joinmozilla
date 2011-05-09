@@ -2,7 +2,7 @@
  * @package protecttheweb
  * Base styles and utility classes.
  *
- * Don't compile this file! It's included in main-*.less
+ * Don't compile this file! It's included in main.less
  */
 
 
@@ -48,20 +48,46 @@ blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
 q:before, q:after { content: ''; content: none; }
 
+/** @section Typography
+ -------------------------------------------------- */
+
+body {
+	.font-text;
+	
+	background: #f7fbfd;
+	border-top: 2px solid #686868;
+	color: #fff;
+	font-size: 10px; /* Easy math for em-based or % font sizes */
+	line-height: 1.5;
+	min-width: @width-container;
+}
+
+a {
+	color: #0089b7;
+	text-decoration: none;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
 ul {
 	margin-left: 25px;
 }
 
+/** @section Forms
+ -------------------------------------------------- */
+
 .form-box-base(@width: 224px) {
-	background-color: #f1ebde;
+	background-color: #dedede;
 	-moz-border-radius: 7px; /* FF1+ */
 	-webkit-border-radius: 7px; /* Saf3+, Chrome */
 	-khtml-border-radius: 7px; /* Konqueror */
 	border-radius: 7px; /* Standard. IE9 */
-	border: 1px solid #d8d2c4;
-	border-top: 3px solid #d8d2c4;
+	border: 1px solid #c7c6c4;
+	border-top: 3px solid #c7c6c4;
 	-webkit-background-clip: padding-box;
-	color: #9f9785;
+	color: #757470;
 	.font-display-2;
 	overflow: hidden;
 	padding: 6px 7px;
@@ -92,159 +118,4 @@ html.webkit select {
 	.sprite(right -1000px);
 	-webkit-appearance: none;
 	padding-right: 36px;
-}
-
-/** @section Utility
- * General-purpose utility classes, best used as mixins. Variables, too.
- -------------------------------------------------- */
-@width-container: 740px;
-
-.str-container(@width: @width-container) {
-	margin: 0 auto;
-	position: relative;
-	width: @width;
-}
-
-/**
- * Clear floats without markup
- * This is the updated clearfix hack that fixes rare bugs caused by the original.
- * Modified for handy use with LESS
- * @see http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack/
- */
-.clearfix {
-	display: block;
-	zoom: 1;
-
-	&:after {
-		content: " ";
-		display: block;
-		font-size: 0;
-		height: 0;
-		clear: both;
-		visibility: hidden;
-	}
-}
-
-/**
- * Horizontal menu utility class
- */
-.nav() {
-	.clearfix;
-	list-style: none;
-	margin: 0;
-	
-	li {
-		display: inline;
-		float: left;
-		
-		a {
-			display: block;
-		}
-	}
-}
-
-.hide() {
-	left: -32000px;
-	position: absolute;
-	height: 1;
-	overflow: hidden;
-	width: 1px;
-}
-
-.sprite(@position, @background: url(../img/sprite-y.24bit.png) ) {
-	background-image: @background;
-	background-position: @position;
-	background-repeat: no-repeat;
-}
-
-.button-base(@height: 53px) {
-	.font-display;
-	
-	background: #0789bb url(../img/sprite-y.24bit.png) right -200px no-repeat;
-	border-color: #0079aa #046e96 #046e96;
-	border-style: solid;
-	border-width: 1px 1px 4px;
-	-moz-border-radius: 5px; /* FF1+ */
-	-webkit-border-radius: 5px; /* Saf3+, Chrome */
-	-khtml-border-radius: 5px; /* Konqueror */
-	border-radius: 5px; /* Standard. IE9 */
-	-moz-box-shadow: 0 3px 0 rgba(0, 0, 0, .1); /* FF3.5+ */
-	-webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, .1); /* Saf3+, Chrome */
-	box-shadow: 0 3px 0 rgba(0, 0, 0, .1); /* Standard. Opera 10.5, IE9 */
-	
-	color: #fff;
-	cursor: pointer;
-	display: inline-block; /* Standard. IE8+, Saf, FF3+ */
-	/**
-	 * @bugfix inline-block fix
-	 * @see http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/
-	 * @valid no
-	 */
-	zoom: 1;
-	*display: inline;
-	font-size: 3.6em;
-	font-weight: normal;
-	height: @height - 1px;
-	line-height: @height - 1px;
-	margin-bottom: 3px;
-	outline: 0;
-	padding: 0 49px 0 19px;
-	position: relative;
-	
-	/**
-	 * @workaround background bleed
-	 * @see http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed
-	 */
-	-webkit-background-clip: padding-box;
-	
-	/* IE button width fix */
-	overflow: visible;
-	width: auto;
-	
-	/**
-	 * Compound classes for icons
-	 */
-	&.down {
-		background-position: right -100px;
-		padding-right: 43px;
-	}
-	
-	&::-moz-focus-inner {
-		border: 0;
-		outline: 0;
-		padding: 0;
-	}
-	
-	&:focus,
-	&:active {
-		border-bottom-width: 2px;
-		-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, .1); /* FF3.5+ */
-		-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .1); /* Saf3+, Chrome */
-		box-shadow: 0 1px 0 rgba(0, 0, 0, .1); /* Standard. Opera 10.5, IE9 */
-		margin-top: 2px;
-		/* We're already defining a visual outline style. Remove the visual border from active states. */
-		outline: 0;
-		top: 2px;
-	}
-}
-.button {
-	.button-base(53px);
-}
-.button-input {
-	@height: 57px;
-	/**
-	 * IE, FF and Safari all use the classic box model for inputs
-	 */
-	.button-base(@height);
-	
-	&:focus,
-	&:active {
-		height: @height - 3px;
-	}
-}
-
-/* Legal text */
-
-.legal {
-	font-size: 1.2em;
 }

@@ -3,35 +3,8 @@
  * Main structural Stylesheet
  * This sheet handles colors, graphics, layout, etc
  *
- * Don't compile this file! It's included in main-*.less
+ * Don't compile this file! It's included in main.less
  */
-
-/* Color vars */
-@flesh: #d4b496;
-@lighttan: #d0c8b4;
-@bgred: #921011;
-@electricblue: #0089c0;
-
-/** @section Typography
- -------------------------------------------------- */
-
-body {
-	background: @bgred;
-	color: #fff;
-	.font-text;
-	font-size: 10px; /* Easy math for em-based or % font sizes */
-	line-height: 1.5;
-	min-width: @width-container;
-}
-
-a {
-	color: @electricblue;
-	text-decoration: none;
-}
-
-p {
-	margin-bottom: 1em;
-}
 
 /** @section Basic structure
  -------------------------------------------------- */
@@ -45,11 +18,8 @@ p {
 }
 .content {
 	.font-text;
-	
-	a {
-		color: #fff;
-	}
-	
+	color: #c7ccd6;
+
 	h1,
 	h2,
 	h3 {
@@ -64,8 +34,6 @@ p {
  * Sharing box (used on just Thanks page right now)
  */
 .social {
-	font-size: 18px;
-	
 	h1.title,
 	ul {
 		display: -moz-inline-box; /* FF2 */
@@ -81,13 +49,15 @@ p {
 	}
 	
 	h1.title {
-		color: @lighttan;
 		.font-display-2;
+		font-size: 2.2em;
+		line-height: 24px;
 		margin-right: 16px;
 		white-space: nowrap;
 	}
 	
 	ul {
+		font-size: 1.8em;
 		list-style: none;
 		margin: 0;
 	}
@@ -114,17 +84,18 @@ p {
 
 #act-1 {
 	/* Fallback for browsers that don't support multiple backgrounds */
-	background: url(../img/act1-crowd.jpg) center bottom repeat-x;
-	padding-top: 15px;
-	padding-bottom: 71px;
+	background: #f6fafd url(../img/act1-crowd.png) center bottom repeat-x;
+	min-height: 603px;
+	padding-bottom: 46px;
 }
 
 /**
  * Fancy stuff for browsers that can support multiple bgs.
  */
 .multiplebgs #act-1 {
-	background: url(../img/cardboard.png) center bottom repeat,
-				url(../img/act1-crowd.jpg) center bottom repeat-x;
+	background: url(../img/act1-crowd.png) center bottom repeat-x,
+				url(../img/act1-background.png) center top repeat-x,
+				#f6fafd;
 }
 
 /**
@@ -132,37 +103,36 @@ p {
  */
 .page-index {
 	#act-1 .title-card {
+		color: #484848;
 		margin-bottom: 21px;
 		text-align: center;
 	}
 	#act-1 .title-card h1 {
 		.font-display;
 		font-size: 14em;
-		/* Because of the vertical space in this font, we actually need a negative leading here. */
-		line-height: .80;
 	}
 	#act-1 .title-card  h2 {
-		color: @flesh;
 		.font-display-2;
+		color: #666;
 		font-size: 4.2em;
 	}
 
 	/* Crest - the logo/paragraph/paragraph thing at the top of the page */
 	#crest {
 		.clearfix;
-		margin-bottom: 28px;
+		margin-bottom: 5px;
 		min-height: 178px;
 		padding-top: 15px;
 		position: relative;
 	}
 	#crest #shield {
-		left: 245px;
+		left: 243px;
 		position: absolute;
 		top: -39px;
 	}
 	#motto-1,
 	#motto-2 {
-		color: @flesh;
+		color: #666;
 		width: 247px;
 	}
 	#motto-1 {
@@ -182,8 +152,8 @@ p {
  -------------------------------------------------- */
 
 #act-2 {
-	background: #767062 url(../img/act2-background.png) center bottom repeat-x;
-	padding-bottom: 104px;
+	background: #4e4d48 url(../img/act2-background.png) repeat-x center bottom;
+	padding-bottom: 75px;
 	padding-top: 41px;
 	/**
 	 * @bugfix hasLayout fix for background color
@@ -191,11 +161,6 @@ p {
 	 * @valid no
 	 */
 	zoom: 1;
-}
-html.multiplebgs #act-2 {
-	background: url(../img/act2-background.png) center bottom repeat-x,
-				url(../img/cardboard.png) center top,
-				#767062;
 }
 
 #act-2 .title-card {
@@ -209,7 +174,7 @@ html.multiplebgs #act-2 {
 }
 #act-2 .title-card h2 {
 	.font-display-2;
-	color: @lighttan;
+	color: #c7ccd6;
 	font-size: 2.4em;
 }
 #act-2 .content li {
@@ -217,7 +182,7 @@ html.multiplebgs #act-2 {
 	margin-bottom: 8px;
 }
 #act-2 .content li span {
-	color: @lighttan;
+	color: #c7ccd6;
 }
 
 #act-2 #img-merch {
@@ -244,64 +209,15 @@ html.multiplebgs #act-2 {
 	transform: rotate(4deg);
 }
 
-#act-2 a {
-	color: #A51022
-}
-
 /** @section Act 3
  -------------------------------------------------- */
 
 #act-3 {
-	background: #837d6f;
+	background: #757470;
 	padding-bottom: 105px;
 	
-	/* Standard blue not readable enough in this act */
 	a {
-		color: #A51022;
-	}
-	
-	#merch-shirt,
-	#merch-card {
-		/* Temporarily removed due to flickering issues in latest Safari
-		   I believe this is caused by broken form table markup output by BSD Tools
-		   - Gordon 2011-02-15
-		
-		-webkit-transition: -webkit-transform .2s linear;
-		*/
-		-moz-transition: -moz-transform .2s linear;
-		-o-transition: transform .2s linear;
-		transition: transform .2s linear;
-		position: absolute;
-	}
-	
-	#merch-card {
-		/* left: 30px; */
-		left: 0;
-		top: 482px;
-		
-		&:hover {
-			-moz-transform: rotate(4deg); /* FF3.5+ */
-			/* Temporarily removed due to flickering issues in latest Safari.
-			   See notes above
-			-webkit-transform: rotate(4deg); */ /* Saf3.1+, Chrome */
-			-o-transform: rotate(4deg); /* Opera 10.5 */
-			transform: rotate(4deg);
-		}
-	}
-	
-	#merch-shirt {
-		/* left: 30px; */
-		left: 0;
-		top: 650px;
-		
-		&:hover {
-			-moz-transform: rotate(-4deg); /* FF3.5+ */
-			/* Temporarily removed due to flickering issues in latest Safari.
-			   See notes above
-			-webkit-transform: rotate(4deg); */ /* Saf3.1+, Chrome */
-			-o-transform: rotate(-4deg); /* Opera 10.5 */
-			transform: rotate(-4deg);
-		}
+		color: #a5151e;
 	}
 }
 
@@ -309,24 +225,28 @@ html.multiplebgs #act-2 {
  -------------------------------------------------- */
 
 .page-compact {
-	background: #847e70 url(../img/page-thanks/act1-crowd.jpg) center top repeat-x;
-	
-	#act-1,
-	#act-2 {
-		background: transparent !important;
+	.act > .in {
+		/* Content areas are wider on compact pages */
+		width: 825px;
 	}
-
+	
+	#header {
+		margin-bottom: 28px;
+	}
+	
 	#act-1 {
-		height: 169px;
+		background: #d6e6f4 url(../img/page-compact/act1-crowd.png) center bottom repeat-x;
+		min-height: 250px;
 		padding-bottom: 0;
 	}
-	#act-1 h1 {
+	
+	#act-1 .title-card h1 {
 		.font-display;
-		font-size: 9em;
+		font-size: 8.4em;
 		line-height: .80;
 		/* Let text flow from left instead of truly centering.
 		This makes for better results with translating. */
-		margin-left: 206px;
+		margin-left: 260px;
 	}
 	
 	#act-1 .title-card {
@@ -340,58 +260,55 @@ html.multiplebgs #act-2 {
 		zoom: 1;
 	}
 	#act-1 .title-card h1 {
+		color: #484848;
 		position: relative;
 		z-index: 2;
 	}
+	#act-1 .title-card #firefox-compact {
+		left: 138px;
+		position: absolute;
+		top: -18px;
+	}
 	
 	#act-2 {
+		background: #74736f url(../img/page-compact/act2-heart.jpg) center 0 no-repeat;
 		padding-top: 16px;
 	}
 	
-	#act-2 .content {
-		color: @lighttan;
+	#act-2 a {
+		color: #a5151e;
+	}
+	
+	#act-2 .col-1 .content {
+		color: #fff;
+		font-size: 2em;
+		margin-bottom: 36px;
 	}
 	#act-2 .content h1 {
 		color: #fff;
 	}
 	
 	#act-2 .title-card {
-		margin-bottom: 18px;
+		margin-bottom: 8px;
 	}
 	
 	#act-2 .title-card h1 {
-		font-size: 50px;
-		line-height: 48px;
-	}
-
-	#shield-thanks {
-		left: -20px;
-		position: absolute;
-		top: -57px;
+		font-size: 6em;
 	}
 	
-	#thanks {
-		background: url(../img/page-thanks/card-crowd.24bit.png) 0 0 no-repeat;
-		margin-left: -7px;
-		height: 303px;
-		padding-left: 377px;
-		padding-top: 70px;
+	#act-2 .col-1,
+	#act-2 .col-2 {
+		display: inline;
+		float: left;
 	}
-	#thanks .call-to-action {
-		left: 0;
-		position: absolute;
-		top: 304px;
-		text-align: center;
-		width: 370px;
+	#act-2 .col-1 {
+		margin-right: 40px;
+		width: 430px;
 	}
-	#thanks .call-to-action:hover #mozilla-card {
-		-moz-transform: rotate(-4deg); /* FF3.5+ */
-		/* Temporarily removed due to flickering issues in latest Safari.
-		   See notes above
-		-webkit-transform: rotate(4deg); */ /* Saf3.1+, Chrome */
-		-o-transform: rotate(-4deg); /* Opera 10.5 */
-		transform: rotate(-4deg);
+	#act-2 .col-2 {
+		width: 290px;
 	}
+	
 	#thanks #get-pdf {
 		font-size: 1.3em;
 		left: 66px;
@@ -400,28 +317,46 @@ html.multiplebgs #act-2 {
 		width: 240px;
 	}
 	
-	#mozilla-card {
-		left: 70px;
-		position: absolute;
-		top: -266px;
-		/* Temporarily removed due to flickering issues in latest Safari
-		   I believe this is caused by broken form table markup output by BSD Tools
-		   - Gordon 2011-02-15
-		
-		-webkit-transition: all .3s ease-in-out;
-		*/
-		-moz-transition: all .3s ease-in-out;
-		-o-transition: all .3s ease-in-out;
-		transition: all .3s ease-in-out;
-	}
-	
 	#faq {
-		margin-top: 70px;
+		margin-top: 30px;
 	}
 }
 
-.multiplebgs .page-thanks {
-	background: url(../img/page-thanks/cardboard-fade.png) center 0 repeat-x,
-				url(../img/page-thanks/act1-crowd.jpg) center top repeat-x,
-				#847e70;
+.multiplebgs .page-compact #act-1 {
+	background: url(../img/cardboard.png) center 0 repeat-x,
+				url(../img/page-compact/act1-crowd.png) center bottom repeat-x,
+				#d6e6f4;
+}
+.multiplebgs .page-compact #act-2 {
+	background: url(../img/cardboard.png) center 0 repeat-x,
+				url(../img/page-compact/act2-heart.jpg) center 0 no-repeat,
+				#74736f;
+	padding-bottom: 37px;
+}
+
+.card-form {
+	width: 290px;
+}
+.card-form .caption {
+	font-size: 1.4em;
+	font-style: italic;
+	margin: 8px 0 14px;
+}
+.card-form input[type=text] {
+	width: 274px;
+}
+.card-form #print-card-button {
+	float: right;
+}
+.card-form #mozilla-card {
+	margin-top: -24px;
+	/* Temporarily removed due to flickering issues in latest Safari
+	   I believe this is caused by broken form table markup output by BSD Tools
+	   - Gordon 2011-02-15
+	
+	-webkit-transition: all .3s ease-in-out;
+	*/
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
