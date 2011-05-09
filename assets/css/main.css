@@ -110,6 +110,7 @@ body #contribution #custom1_fit{margin-right:11px;}
 .act{position:relative;}
 .act>.in{margin:0 auto;position:relative;width:740px;}
 .content{font-family:Georgia, Times, serif;font-size:1.6em;line-height:1.375;color:#c7ccd6;}.content h1,.content h2,.content h3{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;color:#fff;font-size:1.5em;margin-bottom:6px;}
+.content ul,.content ol{margin-bottom:1em;}
 .social h1.title,.social ul{display:-moz-inline-box;display:inline-block;zoom:1;*display:inline;vertical-align:top;}
 .social h1.title{font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;font-size:2.2em;line-height:24px;margin-right:16px;white-space:nowrap;}
 .social ul{font-size:1.8em;list-style:none;margin:0;}
@@ -117,8 +118,22 @@ body #contribution #custom1_fit{margin-right:11px;}
 .social ul a{color:#fff !important;display:block;line-height:24px;padding-left:40px;text-decoration:underline;}
 .social ul .twitter a{background-image:url(../img/sprite-y.24bit.png);background-position:0 -1200px;background-repeat:no-repeat;}
 .social ul .facebook a{background-image:url(../img/sprite-y.24bit.png);background-position:0 -1300px;background-repeat:no-repeat;}
+.card-form{width:290px;}
+.card-form .caption{font-size:1.4em;font-style:italic;margin:8px 0 14px;}
+.card-form input[type=text]{width:274px;}
+.card-form #print-card-button{float:right;}
+.card-form #mozilla-card{margin-top:-24px;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}
+.card-form #mozilla-card:hover{-moz-transform:rotate(-2deg);-webkit-transform:rotate(-2deg);-o-transform:rotate(-2deg);transform:rotate(-2deg);}
 #act-1{background:#f6fafd url(../img/act1-crowd.png) center bottom repeat-x;min-height:603px;padding-bottom:46px;}
 .multiplebgs #act-1{background:url(../img/act1-crowd.png) center bottom repeat-x,url(../img/act1-background.png) center top repeat-x,#f6fafd;}
+#act-2{background:#4e4d48 url(../img/act2-background.png) repeat-x center bottom;padding-bottom:75px;padding-top:41px;zoom:1;}
+#act-2 .title-card{margin-bottom:10px;}
+#act-2 .title-card h1{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;font-size:5em;line-height:.80;margin-bottom:7px;}
+#act-2 .title-card h2{font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;color:#c7ccd6;font-size:2.4em;}
+#act-2 .content li{color:#fff;margin-bottom:8px;}
+#act-2 .content li span{color:#c7ccd6;}
+#act-2 #img-merch{float:right;margin:-43px -7px 0 0;}
+#act-3{background:#757470;padding-bottom:105px;}#act-3 a{color:#a5151e;}
 .page-index{}.page-index #act-1 .title-card{color:#484848;margin-bottom:21px;text-align:center;}
 .page-index #act-1 .title-card h1{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;font-size:14em;}
 .page-index #act-1 .title-card h2{font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;color:#666;font-size:4.2em;}
@@ -128,15 +143,7 @@ body #contribution #custom1_fit{margin-right:11px;}
 .page-index #motto-1{float:left;}
 .page-index #motto-2{float:right;}
 .page-index #act-1 .call-to-action{margin-bottom:6px;text-align:center;}
-#act-2{background:#4e4d48 url(../img/act2-background.png) repeat-x center bottom;padding-bottom:75px;padding-top:41px;zoom:1;}
-#act-2 .title-card{margin-bottom:10px;}
-#act-2 .title-card h1{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;font-size:5em;line-height:.80;margin-bottom:7px;}
-#act-2 .title-card h2{font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;color:#c7ccd6;font-size:2.4em;}
-#act-2 .content li{color:#fff;margin-bottom:8px;}
-#act-2 .content li span{color:#c7ccd6;}
-#act-2 #img-merch{position:absolute;right:-7px;-moz-transition:-moz-transform 0.2s linear;-o-transition:transform .2s linear;transition:transform .2s linear;top:-43px;}
-#act-2:hover #img-merch{-moz-transform:rotate(4deg);-o-transform:rotate(4deg);transform:rotate(4deg);}
-#act-3{background:#757470;padding-bottom:105px;}#act-3 a{color:#a5151e;}
+.page-index #act-2 .title-card{margin-bottom:24px;}
 .page-compact .act>.in{width:825px;}
 .page-compact #header{margin-bottom:28px;}
 .page-compact #act-1{background:#d6e6f4 url(../img/page-compact/act1-crowd.png) center bottom repeat-x;min-height:250px;padding-bottom:0;}
@@ -149,7 +156,7 @@ body #contribution #custom1_fit{margin-right:11px;}
 .page-compact #act-2 .col-1 .content{color:#fff;font-size:2em;margin-bottom:36px;}
 .page-compact #act-2 .content h1{color:#fff;}
 .page-compact #act-2 .title-card{margin-bottom:8px;}
-.page-compact #act-2 .title-card h1{font-size:6em;}
+.page-compact #act-2 .title-card h1{font-size:6em;line-height:1;}
 .page-compact #act-2 .col-1,.page-compact #act-2 .col-2{display:inline;float:left;}
 .page-compact #act-2 .col-1{margin-right:40px;width:430px;}
 .page-compact #act-2 .col-2{width:290px;}
@@ -157,8 +164,3 @@ body #contribution #custom1_fit{margin-right:11px;}
 .page-compact #faq{margin-top:30px;}
 .multiplebgs .page-compact #act-1{background:url(../img/cardboard.png) center 0 repeat-x,url(../img/page-compact/act1-crowd.png) center bottom repeat-x,#d6e6f4;}
 .multiplebgs .page-compact #act-2{background:url(../img/cardboard.png) center 0 repeat-x,url(../img/page-compact/act2-heart.jpg) center 0 no-repeat,#74736f;padding-bottom:37px;}
-.card-form{width:290px;}
-.card-form .caption{font-size:1.4em;font-style:italic;margin:8px 0 14px;}
-.card-form input[type=text]{width:274px;}
-.card-form #print-card-button{float:right;}
-.card-form #mozilla-card{margin-top:-24px;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}

@@ -24,7 +24,7 @@ require_once('header.php');
                               <input id="q_0" type="radio" value="5" name="amount" onclick="" />
                               <label for="q_0">
                                 <span class="radio">
-                                  <?= sprintf( /* L10n: Please use US dollars as the currency. Both formatting arguments are the same number. Note that the first $ sign in both cases is an actual dollar sign; it is not part of the format string.*/ _('$%1$.2f - Sign me up and use my $%1$d to build a Web of good'), 5) ?>
+                                  <?= sprintf( /* L10n: Please use US dollars as the currency. Both formatting arguments are the same number. Note that the first $ sign in both cases is an actual dollar sign; it is not part of the format string.*/ _('$%1$.2f - Sign me up and use my $%1$.0f to build a Web of good'), 5) ?>
                                 </span>
                               </label>
                             </td>
