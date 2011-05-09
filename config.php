@@ -1,8 +1,11 @@
 <?php
+if (file_exists('local-config.php')) {
+  require_once('local-config.php');
+}
 
 // just in case... ~sp
 if (!defined('PHP_EOL')) {
-	define('PHP_EOL', "\n");
+  define('PHP_EOL', "\n");
 }
 
 /**
@@ -10,7 +13,9 @@ if (!defined('PHP_EOL')) {
  */
 define('APPLICATION_ROOT', $_SERVER['DOCUMENT_ROOT']);
 
-// Un-comment line below for local development - causes resources to be loaded from local assets
+/* Un-comment URL_BASE line below for local development - causes resources
+  to be loaded from local assets. Or, create a local-config.php file
+  to override constants. */
 //define('URL_BASE', '//mozilla-donate.local/');
 if (!defined('URL_BASE')) {
   /**
@@ -22,12 +27,14 @@ if (!defined('URL_BASE')) {
    */
   define('URL_BASE', '//donate.mozilla.org/page/-/protecttheweb/');
 }
-/**
- * Cache-busting constant for assets
- * Change ver string when assets need to be refreshed.
- * Append ?ver=<?= VER > to end of assets urls
- */
-define('VER', '0.2');
+if (!defined('VER')) {
+  /**
+   * Cache-busting constant for assets
+   * Change ver string when assets need to be refreshed.
+   * Append ?ver=<?= VER > to end of assets urls
+   */
+  define('VER', '0.2');
+}
 
 /**
  * Return the HTML tag fragment with conditional-comment IE classes.
