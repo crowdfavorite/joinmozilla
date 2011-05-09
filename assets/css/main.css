@@ -123,6 +123,7 @@ body #contribution #custom1_fit{margin-right:11px;}
 .card-form input[type=text]{width:274px;}
 .card-form #print-card-button{float:right;}
 .card-form #mozilla-card{margin-top:-24px;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}
+.card-form #mozilla-card:hover{-moz-transform:rotate(-2deg);-webkit-transform:rotate(-2deg);-o-transform:rotate(-2deg);transform:rotate(-2deg);}
 #act-1{background:#f6fafd url(../img/act1-crowd.png) center bottom repeat-x;min-height:603px;padding-bottom:46px;}
 .multiplebgs #act-1{background:url(../img/act1-crowd.png) center bottom repeat-x,url(../img/act1-background.png) center top repeat-x,#f6fafd;}
 #act-2{background:#4e4d48 url(../img/act2-background.png) repeat-x center bottom;padding-bottom:75px;padding-top:41px;zoom:1;}
