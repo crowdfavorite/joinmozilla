@@ -27,14 +27,12 @@
   <section id="act-2" class="act">
     <div class="in">
       <img id="img-merch" width="279" height="223" src="<?= URL_BASE; ?>assets/img/merch-<?= $img_locale ?>.png?ver=<?= VER ?>" alt="" />
-      <div class="title-card">
+      <hgroup class="title-card">
         <h1><?= _('Share the Love, Show the Love') ?></h1>
-
         <h2><?= _('For as little as $5, you can become a&nbsp;supporter.') ?> </h2>
-
-        <p><?= _('Joining gives you:') ?></p>
-      </div>
+      </hgroup>
       <div class="content">
+        <p><?= _('Joining gives you:') ?></p>
         <ul>
           <li><span><?= _('Deep inner pride for helping Mozilla build a Web for everyone') ?></span></li>
           <li><span><?= _('Access to cool Mozilla and Firefox gear that will impress your friends') ?></span></li>

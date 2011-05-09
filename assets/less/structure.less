@@ -28,12 +28,13 @@
 		font-size: 1.5em;
 		margin-bottom: 6px;
 	}
+	
+	ul,
+	ol {
+		margin-bottom: 1em;
+	}
 }
 
-.title-card p {
-	font-size: 16px;
-	margin: 8px 0;
-}
 
 /**
  * Sharing box (used on just Thanks page right now)
@@ -84,6 +85,34 @@
 	}
 }
 
+/* Card form used on Thank You page */
+.card-form {
+	width: 290px;
+}
+.card-form .caption {
+	font-size: 1.4em;
+	font-style: italic;
+	margin: 8px 0 14px;
+}
+.card-form input[type=text] {
+	width: 274px;
+}
+.card-form #print-card-button {
+	float: right;
+}
+.card-form #mozilla-card {
+	margin-top: -24px;
+	/* Temporarily removed due to flickering issues in latest Safari
+	   I believe this is caused by broken form table markup output by BSD Tools
+	   - Gordon 2011-02-15
+	
+	-webkit-transition: all .3s ease-in-out;
+	*/
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
 /** @section Act 1
  -------------------------------------------------- */
 
@@ -102,6 +131,63 @@
 				url(../img/act1-background.png) center top repeat-x,
 				#f6fafd;
 }
+
+/** @section Act 2
+ -------------------------------------------------- */
+
+#act-2 {
+	background: #4e4d48 url(../img/act2-background.png) repeat-x center bottom;
+	padding-bottom: 75px;
+	padding-top: 41px;
+	/**
+	 * @bugfix hasLayout fix for background color
+	 * @affected IE7
+	 * @valid no
+	 */
+	zoom: 1;
+}
+
+#act-2 .title-card {
+	margin-bottom: 10px;
+}
+#act-2 .title-card h1 {
+	.font-display;
+	font-size: 5em;
+	line-height: .80;
+	margin-bottom: 7px;
+}
+#act-2 .title-card h2 {
+	.font-display-2;
+	color: #c7ccd6;
+	font-size: 2.4em;
+}
+#act-2 .content li {
+	color: #fff;
+	margin-bottom: 8px;
+}
+#act-2 .content li span {
+	color: #c7ccd6;
+}
+
+#act-2 #img-merch {
+	float: right;
+	margin: -43px -7px 0 0;
+}
+
+/** @section Act 3
+ -------------------------------------------------- */
+
+#act-3 {
+	background: #757470;
+	padding-bottom: 105px;
+	
+	a {
+		color: #a5151e;
+	}
+}
+
+/** @section Home-specific styles for page
+ -------------------------------------------------- */
 
 /**
  * Index page specific styles for act-1.
@@ -151,60 +237,9 @@
 		margin-bottom: 6px;
 		text-align: center;
 	}
-}
-
-/** @section Act 2
- -------------------------------------------------- */
-
-#act-2 {
-	background: #4e4d48 url(../img/act2-background.png) repeat-x center bottom;
-	padding-bottom: 75px;
-	padding-top: 41px;
-	/**
-	 * @bugfix hasLayout fix for background color
-	 * @affected IE7
-	 * @valid no
-	 */
-	zoom: 1;
-}
-
-#act-2 .title-card {
-	margin-bottom: 10px;
-}
-#act-2 .title-card h1 {
-	.font-display;
-	font-size: 5em;
-	line-height: .80;
-	margin-bottom: 7px;
-}
-#act-2 .title-card h2 {
-	.font-display-2;
-	color: #c7ccd6;
-	font-size: 2.4em;
-}
-#act-2 .content li {
-	color: #fff;
-	margin-bottom: 8px;
-}
-#act-2 .content li span {
-	color: #c7ccd6;
-}
-
-#act-2 #img-merch {
-	float: right;
-	margin: -43px -7px 0 0;
-	position: relative;
-}
-
-/** @section Act 3
- -------------------------------------------------- */
-
-#act-3 {
-	background: #757470;
-	padding-bottom: 105px;
 	
-	a {
-		color: #a5151e;
+	#act-2 .title-card {
+		margin-bottom: 24px;
 	}
 }
 
@@ -320,31 +355,4 @@
 				url(../img/page-compact/act2-heart.jpg) center 0 no-repeat,
 				#74736f;
 	padding-bottom: 37px;
-}
-
-.card-form {
-	width: 290px;
-}
-.card-form .caption {
-	font-size: 1.4em;
-	font-style: italic;
-	margin: 8px 0 14px;
-}
-.card-form input[type=text] {
-	width: 274px;
-}
-.card-form #print-card-button {
-	float: right;
-}
-.card-form #mozilla-card {
-	margin-top: -24px;
-	/* Temporarily removed due to flickering issues in latest Safari
-	   I believe this is caused by broken form table markup output by BSD Tools
-	   - Gordon 2011-02-15
-	
-	-webkit-transition: all .3s ease-in-out;
-	*/
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
 }
