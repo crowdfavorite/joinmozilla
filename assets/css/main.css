@@ -110,6 +110,7 @@ body #contribution #custom1_fit{margin-right:11px;}
 .act{position:relative;}
 .act>.in{margin:0 auto;position:relative;width:740px;}
 .content{font-family:Georgia, Times, serif;font-size:1.6em;line-height:1.375;color:#c7ccd6;}.content h1,.content h2,.content h3{font-family:"LeagueGothicRegular",Impact,Charcoal,"Arial Narrow Bold",Arial,sans-serif;font-weight:normal;line-height:0.8;text-transform:uppercase;color:#fff;font-size:1.5em;margin-bottom:6px;}
+.title-card p{font-size:16px;margin:8px 0;}
 .social h1.title,.social ul{display:-moz-inline-box;display:inline-block;zoom:1;*display:inline;vertical-align:top;}
 .social h1.title{font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;font-size:2.2em;line-height:24px;margin-right:16px;white-space:nowrap;}
 .social ul{font-size:1.8em;list-style:none;margin:0;}
@@ -134,8 +135,7 @@ body #contribution #custom1_fit{margin-right:11px;}
 #act-2 .title-card h2{font-family:Georgia, Times, serif;font-style:italic;font-weight:normal;line-height:1.2;color:#c7ccd6;font-size:2.4em;}
 #act-2 .content li{color:#fff;margin-bottom:8px;}
 #act-2 .content li span{color:#c7ccd6;}
-#act-2 #img-merch{position:absolute;right:-7px;-moz-transition:-moz-transform 0.2s linear;-o-transition:transform .2s linear;transition:transform .2s linear;top:-43px;}
-#act-2:hover #img-merch{-moz-transform:rotate(4deg);-o-transform:rotate(4deg);transform:rotate(4deg);}
+#act-2 #img-merch{float:right;margin:-43px -7px 0 0;position:relative;}
 #act-3{background:#757470;padding-bottom:105px;}#act-3 a{color:#a5151e;}
 .page-compact .act>.in{width:825px;}
 .page-compact #header{margin-bottom:28px;}
