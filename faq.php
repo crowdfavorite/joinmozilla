@@ -50,7 +50,7 @@ textdomain('messages');
         <h2><?= _('When I Join Mozilla, what happens to my data?') ?></h2>
         <p>
           <?php /* TODO: Replace 'http://mozilla.org/' with actual URL for Join Mozilla ToS. */ ?>
-          <?= sprintf( /* L10n: both placeholders are URLs. */ _('At the point of signing up your data is being given to Mozilla (which includes the Mozilla Foundation and Corporation). We will never sell, rent, or give your information to any third-party, and will only contact you as part of this program. For more information, check out our <a href="%s">terms of service</a> and <a href="%s">privacy policy</a>.'), "http://mozilla.org/", "http://www.mozilla.org/about/policies/privacy-policy.html") ?>
+          <?= sprintf( /* L10n: both placeholders are URLs. */ _('At the point of signing up your data is being given to Mozilla (which includes the Mozilla Foundation and Corporation). We will never sell, rent, or give your information to any third-party, and will only contact you as part of this program. For more information, check out our <a href="%s">terms of service</a> and <a href="%s">privacy policy</a>.'), "http://www.mozilla.com/en-US/about/legal.html", "http://www.mozilla.org/about/policies/privacy-policy.html") ?>
         </p>
         <h2><?= _('How will my data be used?') ?></h2>
         <p>
