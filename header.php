@@ -39,7 +39,7 @@
           <li><span><?= /* L10n: This can be replaced with a local idiom that means "good feelings" */ _('Good feelings in the cockles of your heart') ?></span></li>
         </ul>
         <p><?= sprintf(_('Want to do more? We also have lots of amazing <a href="%s">volunteer opportunities</a> available.'), 'http://www.mozilla.org/contribute/') ?> </p>
-        <p><a href="http://www.mozilla.org/join/faq.html"><?= _('Have questions?') ?></a></p>
+        <p><a href="http://join.mozilla.org/faq.en.html"><?= _('Have questions?') ?></a></p>
       </div><!--/content-->
     </div><!--/in-->
   </section>
