@@ -42,7 +42,7 @@ require_once('config.php');
               		"picture":"http://donate.mozilla.org/page/-/protecttheweb/assets/img/mozilla-crest.png",
                     "link":"http://www.mozilla.org/join"
                 }, function() {
-                    window.location.href = "http://www.mozilla.org/join";
+                    //alert('Thanks for sharing!');
                 });
                 }, false);
             };
