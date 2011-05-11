@@ -39,7 +39,7 @@ require_once('config.php');
                     "method":"feed",
                     "description":"<?= /* L10n: Facebook status update body */ _('I just joined Mozilla, the makers of Firefox. Together we&rsquo;re protecting the world&rsquo;s largest public resource. Join us today!') ?>",
                     "name":"<?= /* L10n: Facebook status update title */ _('I protect the Internet!') ?>",
-              		"picture":"http://donate.mozilla.org/page/-/protecttheweb/assets/img/mozilla-crest.png",
+              		"picture":"https://donate.mozilla.org/page/-/joinmozilla/assets/img/firefox-crest.png",
                     "link":"http://www.mozilla.org/join"
                 }, function() {
                     //alert('Thanks for sharing!');
