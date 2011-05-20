@@ -92,15 +92,30 @@ textdomain('messages');
 
 function bsdtools_custom_fields_to_select_data() {
 	/**
+	 * Writing this object with PHP so we can do translation.
 	 * BSD Tools custom fields output defintions. Each 1st level array will create a Select box
 	 * Each 2nd level array item will create a select option.
 	 *
 	 * There must be a corresponding input element in the DOM for these items to replace.
 	 */
+	
+	/* Empty object properties are a temporary hack for BSD Tools.
+
+	Currently in the BSD environment, the value of the last object property is not output in the <option> tag. The key name IS output for all. This is a problem in ALL BROWSERS. No confirmation yet as to why, but we think it might have something to do with BSD Tools' Javascripts?
+
+	Everything works fine outside of BSD.
+
+	Tested so far:
+	- Added console.log(j) to live env to test if loop was running properly - all keys logged.
+	- Added console.log(options[j]) to live env to test if loop was running properly - all values logged.
+	- Added last item with empty key and value of "...". Option created, but no content output.
+	- Added '':'' to the end of objects. Empty option output. We have to go with this for now... */
+
 	$fields = array(
 		'custom1_fit' => array(
 			'womens' => /* L10n: Womens T-Shirt select text */ _("Women's"),
-			'mens' => /* L10n: Mens T-Shirt select text */ _("Men's")
+			'mens' => /* L10n: Mens T-Shirt select text */ _("Men's"),
+			'' => ''
 		),
 		'custom1_size' => array(
 			's' => /* L10n: Small T-Shirt Size select text */ _("Small"),
@@ -108,11 +123,13 @@ function bsdtools_custom_fields_to_select_data() {
 			'l' => /* L10n: Large T-Shirt Size select text */ _("Large"),
 			'xl' => /* L10n: X-Large T-Shirt Size select text */ _("XL"),
 			'xxl' => /* L10n: 2X-Large T-Shirt Size select text */ _("XXL"),
+			'' => ''
 		),
 		'custom2' => array(
 			'blue' => /* L10n: Blue T-Shirt select text */ _("Blue"),
 			'black' => /* L10n: Black T-Shirt select text */ _("Black"),
-			'grey' => /* L10n: Grey T-Shirt select text */ _("Grey")
+			'grey' => /* L10n: Grey T-Shirt select text */ _("Grey"),
+			'' => ''
 		)
 	);
 
