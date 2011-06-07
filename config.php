@@ -33,7 +33,7 @@ if (!defined('VER')) {
    * Change ver string when assets need to be refreshed.
    * Append ?ver=<?= VER > to end of assets urls
    */
-  define('VER', '0.3');
+  define('VER', '0.4');
 }
 
 /**
