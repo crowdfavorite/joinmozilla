@@ -74,7 +74,7 @@ require_once('config.php');
             <h1><?= _('Thanks for making<br/> the web a better place!') ?></h1> 
           </div> 
           <div class="content"> 
-            <p><?= _('You&apos;re officially a card-carrying<br /> supporter of Mozilla. Print it out.<br/> Put it in your wallet. Flash it with pride.') ?></p> 
+            <p><?= _('You&rsquo;re officially a card-carrying<br /> supporter of Mozilla. Print it out.<br/> Put it in your wallet. Flash it with pride.') ?></p> 
           </div> 
           <aside class="social"> 
             <h1 class="title"><?= _('Brag about it now:') ?></h1> 
