@@ -63,6 +63,9 @@ function head_shared() { ?>
 <meta name="viewport" content="width=978" />
 <meta name="DC.creator" content="Crowd Favorite - http://www.crowdfavorite.com" />
 
+<meta name="WT.si_n" content="Join Mozilla English Signup" />
+<meta name="WT.si_x" content="1" />
+
 <link rel="shortcut icon" type="image/ico" href="http://mozilla.org/favicon.ico" />
 
 <link rel="stylesheet" href="<?= URL_BASE; ?>assets/css/main.css?ver=<?= VER; ?>" type="text/css" media="screen" />
